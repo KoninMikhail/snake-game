@@ -1,0 +1,69 @@
+{
+  "name": "react-snake-game",
+  "version": "0.0.0",
+  "description": "React Snake Game(TypeScript)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoninMikhail/react-snake-game.git"
+  },
+  "keywords": [
+    "snake-game",
+    "react",
+    "typescript"
+  ],
+  "author": "Konin M. <hello@mkonin.ru> (https://vk.com/mkonin)",
+  "license": "MIT",
+  "homepage": "https://github.com/KoninMikhail/react-snake-game",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "test": "jest --passWithNoTests",
+    "serve": "vite preview",
+    "prepare": "husky install",
+    "commit": "commit",
+    "format": "prettier --write --ignore-unknown .",
+    "lint": "eslint --cache ./src"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-error-boundary": "^3.1.4",
+    "vite-plugin-svgr": "2.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@commitlint/prompt-cli": "^17.0.3",
+    "@testing-library/dom": "^8.14.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.2.1",
+    "@types/jest": "^28.1.4",
+    "@types/node": "^18.0.3",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "@vitejs/plugin-react": "^2.0.1",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.2.5",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.8.2",
+    "eslint-plugin-jest-dom": "^4.0.2",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-testing-library": "^5.6.0",
+    "husky": "^8.0.1",
+    "jest": "28.1.2",
+    "jest-environment-jsdom": "^28.1.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1",
+    "react-test-renderer": "^18.2.0",
+    "ts-jest": "28.0.5",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.7",
+    "vite-tsconfig-paths": "^3.5.0"
+  }
+}
