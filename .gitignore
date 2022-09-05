@@ -7,4 +7,4 @@ coverage
 .eslintcache
 pnpm-lock.yaml
 *.log
-/.husky/
+.idea
