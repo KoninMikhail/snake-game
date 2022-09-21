@@ -1,14 +1,29 @@
 import { StyledSoundControl, StyledSoundOffIcon, StyledSoundOnIcon } from './StyledSoundControl';
 
+/**
+ * @typedef ISoundControlProps
+ * @property {boolean} state - Sound service states
+ * @property {onClickHandler} label - {() => void} onClickHandler - Function to call when the sound control is clicked
+ */
 interface ISoundControlProps {
-  status: boolean;
+  state: boolean;
+  onClickHandler?: () => void;
 }
 
-export const SoundControl = ({ status }: ISoundControlProps): JSX.Element => {
+/**
+ * Sound Control
+ *
+ * @description Use for place sound controls
+ *
+ * @param {ISoundControlProps} props - Sound service states
+ * @return {JSX.Element}
+ * @constructor
+ */
+export const SoundControl = ({ state, onClickHandler }: ISoundControlProps): JSX.Element => {
   return (
     <>
-      <StyledSoundControl>
-        {status ? <StyledSoundOnIcon /> : <StyledSoundOffIcon />}
+      <StyledSoundControl onClick={onClickHandler}>
+        {state ? <StyledSoundOnIcon /> : <StyledSoundOffIcon />}
       </StyledSoundControl>
     </>
   );
