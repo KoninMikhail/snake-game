@@ -1,43 +1,47 @@
-import { Copyright } from '../../molecules/Copyright/Copyright';
-import { GitHubLink, IGitHubLinkProps } from '../../molecules/GithubLink/GitHubLink';
+import { Copyright, ICopyrightProps } from '../../molecules/texts/Copyright/Copyright';
+import { GitHubLink, IGitHubLinkProps } from '../../molecules/links/GithubLink/GitHubLink';
 import { GridItem } from '../../extend/GridItem/GridItem';
-import { gap } from '../../../../styles/variables';
-import useDeviceTypeScreenCheck from '../../../../hooks/use-device-screen-breakpoints';
-import { StyledFooter, StyledFooterGrid } from './StyledFooterGrid';
+import { StyledFooterGrid } from './StyledFooterGrid';
 
-export interface IFooterProps {
-  copyright: {
-    author: string;
-    creationYear: number;
-    license?: string;
+interface IFooterProps {
+  content: {
+    copyright: ICopyrightProps;
+    github: IGitHubLinkProps;
   };
-  github: IGitHubLinkProps;
+  template: 'compact' | 'wide';
 }
 
-export const Footer = ({ copyright, github }: IFooterProps): JSX.Element => {
-  const { isTablet } = useDeviceTypeScreenCheck();
+/**
+ * Footer
+ *
+ * Use for footer block on template
+ *
+ * @param {{copyright: ICopyrightProps, github: IGitHubLinkProps}} content
+ * @param {"compact" | "wide"} template
+ * @return {JSX.Element}
+ * @constructor
+ */
+export const Footer = ({ content, template }: IFooterProps) => {
+  const isWideTemplate = template === 'wide';
 
   return (
-    <StyledFooter>
-      <StyledFooterGrid
-        as="footer"
-        columns={isTablet ? 'repeat(2, 1fr)' : '1fr'}
-        justify={isTablet ? 'space-between' : 'center'}
-        gap={gap}
-        align="center"
-      >
-        <GridItem>
-          <Copyright
-            align={isTablet ? 'left' : 'center'}
-            author={copyright.author}
-            creationYear={copyright.creationYear}
-            license={copyright.license}
-          />
-        </GridItem>
-        <GridItem justify={isTablet ? 'end' : 'center'}>
-          <GitHubLink uri={github.uri} label={github.label} />
-        </GridItem>
-      </StyledFooterGrid>
-    </StyledFooter>
+    <StyledFooterGrid
+      as="footer"
+      columns={isWideTemplate ? 'repeat(2, 1fr)' : '1fr'}
+      justify={isWideTemplate ? 'space-between' : 'center'}
+      align="center"
+    >
+      <GridItem>
+        <Copyright
+          align={isWideTemplate ? 'left' : 'center'}
+          author={content.copyright.author}
+          creationYear={content.copyright.creationYear}
+          license={content.copyright.license}
+        />
+      </GridItem>
+      <GridItem justify={isWideTemplate ? 'end' : 'center'}>
+        <GitHubLink uri={content.github.uri} label={content.github.label} />
+      </GridItem>
+    </StyledFooterGrid>
   );
 };

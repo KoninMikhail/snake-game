@@ -1,10 +1,6 @@
 import styled from 'styled-components';
-import { Grid } from '../../extend/Grid/Grid';
+import { StyledGrid } from '../../extend/Grid/StyledGrid';
 
-export const StyledFooter = styled.footer`
-  display: block;
-`;
-
-export const StyledFooterGrid = styled(Grid)`
+export const StyledFooterGrid = styled(StyledGrid)`
   width: 100%;
 `;
