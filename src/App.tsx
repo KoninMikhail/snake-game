@@ -13,6 +13,7 @@ export default function App() {
   const [currentOutlet, setCurrentOutlet] = useState<React.ReactElement | null>(null);
   const [isRouting, setIsRouting] = useState<boolean>(true);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     setIsRouting(false);
 
@@ -23,7 +24,8 @@ export default function App() {
     }, PAGE_TRANSITION_DURATION_MS);
 
     return () => clearTimeout(timeout);
-  }, [pathname, outlet]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname]);
 
   return (
     <Fragment>
