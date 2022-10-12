@@ -1,41 +1,52 @@
 import { Wrapper } from '../../extend/Wrapper/Wrapper';
-import { Footer, IFooterProps } from 'components/UI/organisms/Footer/Footer';
+import { Footer } from 'components/UI/organisms/Footer/Footer';
 import { GridItem } from '../../extend/GridItem/GridItem';
-import { GameArea } from '../../organisms/GameArea/GameArea';
-import { BackgroundImage } from 'components/UI/atoms/images/BackgroundImage';
-import GameBG from 'assets/images/backgrounds/gamescreen.jpg';
+import { PlayArea } from '../../organisms/PlayArea/PlayArea';
 import { StyledGameTemplate, StyledGameTemplateGrid } from './StyledGameTemplate';
-import { Toolbar, IToolbarProps } from 'components/UI/organisms/Toolbar/Toolbar';
+import { Toolbar } from 'components/UI/organisms/Toolbar/Toolbar';
+import useDeviceScreenSize from '../../../../hooks/useDeviceScreenSize';
+import { IGitHubLinkProps } from '../../molecules/links/GithubLink/GitHubLink';
+import { ICopyrightProps } from '../../molecules/texts/Copyright/Copyright';
+import { DataStateType } from '../../../../store/slices/dataSlice';
+import { GameState } from '../../../../store/slices/gameSlice';
 
 interface IGameTemplateProps {
-  toolbar: IToolbarProps;
-  game: {
-    score: number;
-    maxScore: number;
-  };
-  footer: IFooterProps;
+  generalData: DataStateType;
+  gameData: GameState;
+  github: IGitHubLinkProps;
+  copyright: ICopyrightProps;
 }
 
-export const GameTemplate = ({ toolbar, game, footer }: IGameTemplateProps): JSX.Element => {
+/**
+ * GameTemplate
+ *
+ * Use for canvasBoard page
+ *
+ * @param {IGameTemplateProps} props
+ * @return {JSX.Element}
+ * @constructor
+ */
+export const GameTemplate = ({ generalData, gameData, copyright, github }: IGameTemplateProps) => {
+  const { isDesktop } = useDeviceScreenSize();
+
+  const { sound, maxScore } = generalData;
+  const { score } = gameData;
+
   return (
-    <>
-      <StyledGameTemplate>
-        <BackgroundImage src={GameBG}>
-          <Wrapper>
-            <StyledGameTemplateGrid rows="max-content auto max-content">
-              <GridItem justify="end">
-                <Toolbar {...toolbar} />
-              </GridItem>
-              <GridItem align="center">
-                <GameArea {...game} />
-              </GridItem>
-              <GridItem justify="stretch">
-                <Footer {...footer} />
-              </GridItem>
-            </StyledGameTemplateGrid>
-          </Wrapper>
-        </BackgroundImage>
-      </StyledGameTemplate>
-    </>
+    <StyledGameTemplate>
+      <Wrapper>
+        <StyledGameTemplateGrid rows="max-content 1fr max-content">
+          <GridItem justify="stretch">
+            <Toolbar exit={true} sound={sound} />
+          </GridItem>
+          <GridItem align="center">
+            <PlayArea scores={{ score, maxScore }} template={isDesktop ? 'wide' : 'compact'} />
+          </GridItem>
+          <GridItem justify="stretch">
+            <Footer content={{ copyright, github }} template={isDesktop ? 'wide' : 'compact'} />
+          </GridItem>
+        </StyledGameTemplateGrid>
+      </Wrapper>
+    </StyledGameTemplate>
   );
 };

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Grid } from '../../extend/Grid/Grid';
+import { StyledGrid } from '../../extend/Grid/StyledGrid';
 
 export const StyledGameTemplate = styled.div`
   display: block;
@@ -7,7 +7,7 @@ export const StyledGameTemplate = styled.div`
   height: 100%;
 `;
 
-export const StyledGameTemplateGrid = styled(Grid)`
+export const StyledGameTemplateGrid = styled(StyledGrid)`
   width: 100%;
   height: 100%;
 `;

@@ -14,7 +14,7 @@ interface IErrorTemplateProps {
 /**
  * Error Template
  *
- * @description Use for Error pages (AppError, 404, etc.)
+ * Use for Error pages (AppError, 404, etc.)
  *
  * @param {IErrorTemplateProps} props - Error template properties
  * @return {JSX.Element}

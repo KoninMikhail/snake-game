@@ -1,4 +1,4 @@
-import { Grid } from 'components/UI/extend/Grid/Grid';
+import { StyledGrid } from 'components/UI/extend/Grid/StyledGrid';
 import styled from 'styled-components';
 
 export const StyledHomeTemplate = styled.div`
@@ -7,7 +7,7 @@ export const StyledHomeTemplate = styled.div`
   height: 100%;
 `;
 
-export const StyledHomeTemplateGrid = styled(Grid)`
+export const StyledHomeTemplateGrid = styled(StyledGrid)`
   width: 100%;
   height: 100%;
 `;

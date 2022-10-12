@@ -1,16 +1,22 @@
 import { StyledHomeTemplate, StyledHomeTemplateGrid } from './StyledHomeTemplate';
 import { Wrapper } from 'components/UI/extend/Wrapper/Wrapper';
-import { BackgroundImage } from 'components/UI/atoms/images/BackgroundImage';
+import { BackgroundImage } from 'components/UI/atoms/images/BackgroundImage/BackgroundImage';
 import { GridItem } from 'components/UI/extend/GridItem/GridItem';
-import { IWelcomeBoxProps, WelcomeBox } from 'components/UI/organisms/WelcomeBox/WelcomeBox';
-import { Footer, IFooterProps } from 'components/UI/organisms/Footer/Footer';
-import { Toolbar, IToolbarProps } from 'components/UI/organisms/Toolbar/Toolbar';
-import HomeBGAnimation from 'assets/images/backgrounds/bg_animation.gif';
+import HomeBGAnimation from 'static/images/backgrounds/bg_animation.gif';
+import HomeBGAnimationMobile from 'static/images/backgrounds/bg_animation_mobile.gif';
+import { WelcomeBox } from 'components/UI/organisms/WelcomeBox/WelcomeBox';
+import { Footer } from 'components/UI/organisms/Footer/Footer';
+import { Toolbar } from 'components/UI/organisms/Toolbar/Toolbar';
+
+import useDeviceScreenSize from 'hooks/useDeviceScreenSize';
+import { IGitHubLinkProps } from '../../molecules/links/GithubLink/GitHubLink';
+import { ICopyrightProps } from '../../molecules/texts/Copyright/Copyright';
 
 interface IHomeTemplateProps {
-  toolbar: IToolbarProps;
-  welcome: IWelcomeBoxProps;
-  footer: IFooterProps;
+  sound: boolean;
+  message: string;
+  github: IGitHubLinkProps;
+  copyright: ICopyrightProps;
 }
 
 /**
@@ -18,27 +24,26 @@ interface IHomeTemplateProps {
  *
  * Use for Home page as template
  *
- * @param {IToolbarProps} toolbar - Toolbar properties
- * @param {IWelcomeBoxProps} welcome - Welcome box properties
- * @param {IFooterProps} footer - Footer static data
  * @return {JSX.Element}
  * @constructor
  */
-export const HomeTemplate = ({ toolbar, welcome, footer }: IHomeTemplateProps): JSX.Element => {
+export const HomeTemplate = ({ sound, message, copyright, github }: IHomeTemplateProps) => {
+  const { isDesktop, isTablet } = useDeviceScreenSize();
+
   return (
     <>
       <StyledHomeTemplate>
-        <BackgroundImage src={HomeBGAnimation}>
+        <BackgroundImage src={isTablet ? HomeBGAnimation : HomeBGAnimationMobile}>
           <Wrapper>
             <StyledHomeTemplateGrid rows="max-content auto max-content">
-              <GridItem justify="end">
-                <Toolbar {...toolbar} />
+              <GridItem justify="stretch">
+                <Toolbar exit={false} sound={sound} />
               </GridItem>
               <GridItem justify="center" align="center">
-                <WelcomeBox {...welcome} />
+                <WelcomeBox size={isDesktop ? '42vw' : '100%'} message={message} />
               </GridItem>
               <GridItem justify="stretch">
-                <Footer {...footer} />
+                <Footer content={{ copyright, github }} template={isDesktop ? 'wide' : 'compact'} />
               </GridItem>
             </StyledHomeTemplateGrid>
           </Wrapper>
