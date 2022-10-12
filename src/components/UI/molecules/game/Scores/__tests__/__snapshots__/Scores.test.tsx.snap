@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Scores render correctly 1`] = `
+.c0 {
+  font-size: 2em;
+}
+
+@media (min-width:1200px) {
+
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    font-size: 3em;
+  }
+}
+
+<span
+  class="c0"
+>
+  002222
+</span>
+`;
