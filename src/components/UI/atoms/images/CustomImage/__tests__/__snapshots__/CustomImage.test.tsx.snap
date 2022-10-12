@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Custom Image render correctly 1`] = `
+.c0 {
+  width: 76vw;
+  height: 22vh;
+}
+
+<img
+  alt="alt"
+  class="c0"
+  data-testid="custom-image"
+  height="22vh"
+  src="#imageurl"
+  width="76vw"
+/>
+`;
