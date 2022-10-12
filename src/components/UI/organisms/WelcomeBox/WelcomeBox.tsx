@@ -1,29 +1,34 @@
-import useDeviceTypeScreenCheck from '../../../../hooks/use-device-screen-breakpoints';
-import { Grid } from '../../extend/Grid/Grid';
+import { StyledGrid } from '../../extend/Grid/StyledGrid';
 import { GridItem } from '../../extend/GridItem/GridItem';
-import { LogoImage } from 'components/UI/molecules/LogoImage/LogoImage';
-import { StartMessage } from '../../molecules/StartMessage/StartMessage';
+import { LogoImage } from 'components/UI/molecules/images/LogoImage/LogoImage';
+import { StartNotice } from '../../molecules/notices/StartNotice/StartNotice';
 import { StyledWelcomeBox } from './StyledWelcomeBox';
 
-export interface IWelcomeBoxProps {
+interface IWelcomeBoxProps {
   message: string;
+  size: string;
 }
 
-export const WelcomeBox = ({ message }: IWelcomeBoxProps): JSX.Element => {
-  const { isDesktop } = useDeviceTypeScreenCheck();
-
+/**
+ * WelcomeBox
+ *
+ * Use for showing the activity box on home screen
+ * @param {string} message
+ * @param size
+ * @return {JSX.Element}
+ * @constructor
+ */
+export const WelcomeBox = ({ message, size }: IWelcomeBoxProps) => {
   return (
-    <>
-      <StyledWelcomeBox>
-        <Grid gap={'2rem'}>
-          <GridItem justify="center">
-            <LogoImage width={isDesktop ? '42vw' : '100%'} />
-          </GridItem>
-          <GridItem justify="center">
-            <StartMessage align="center" content={message} />
-          </GridItem>
-        </Grid>
-      </StyledWelcomeBox>
-    </>
+    <StyledWelcomeBox>
+      <StyledGrid gap={'2rem'}>
+        <GridItem justify="center">
+          <LogoImage width={size} />
+        </GridItem>
+        <GridItem justify="center">
+          <StartNotice align="center" content={message} />
+        </GridItem>
+      </StyledGrid>
+    </StyledWelcomeBox>
   );
 };
