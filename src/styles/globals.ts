@@ -23,6 +23,8 @@ export const GlobalStyles = createGlobalStyle`
     font-family: ${font_family_body};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    user-select: none;
+    overscroll-behavior: contain;
 
     ${up('xl')} {
       font-size: ${font_size_body_desktop};
