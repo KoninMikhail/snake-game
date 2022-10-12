@@ -1,7 +1,7 @@
 // fonts.ts
 import { createGlobalStyle } from 'styled-components';
-import PixeloidBoldWoff2 from 'assets/fonts/pixeloidsans-bold-webfont.woff2';
-import PixeloidBoldWoff from 'assets/fonts/pixeloidsans-bold-webfont.woff';
+import PixeloidBoldWoff2 from 'static/fonts/pixeloidsans-bold-webfont.woff2';
+import PixeloidBoldWoff from 'static/fonts/pixeloidsans-bold-webfont.woff';
 
 export const FontStyles = createGlobalStyle`
   @font-face {
