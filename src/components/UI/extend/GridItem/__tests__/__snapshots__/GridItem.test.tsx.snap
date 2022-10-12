@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GridItem equal snapshot 1`] = `
+.c0 {
+  display: block;
+  position: relative;
+  grid-column: auto;
+  grid-row: auto;
+  justify-self: auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+<div
+  class="c0"
+  data-testid="gridItemTestId"
+>
+  childrenContent
+</div>
+`;
