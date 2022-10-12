@@ -7,5 +7,10 @@ module.exports = {
   coverageProvider: 'v8',
   extensionsToTreatAsEsm: ['.ts', '.tsx'],
   moduleDirectories: ['node_modules', './src'],
-  rootDir: './src',
+  roots: ['<rootDir>/src/'],
+  moduleNameMapper: {
+    '\\.svg$': '<rootDir>/__mocks__/svg.ts',
+    '^@/(.*)$': '<rootDir>/src/$1',
+  },
+  setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
 };
