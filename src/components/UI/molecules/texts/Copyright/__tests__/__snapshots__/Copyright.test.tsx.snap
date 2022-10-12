@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Copyright render correctly 1`] = `
+.c2 {
+  font-size: 14px;
+  font-family: 'pixeloid_bold','Segoe UI','Roboto','Oxygen','Ubuntu','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+  font-weight: normal;
+  color: white;
+}
+
+.c1 {
+  text-align: left;
+}
+
+.c0 {
+  display: block;
+}
+
+@media (min-width:1200px) {
+  .c2 {
+    font-size: 1vw;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        © 2017-2022  |  Mickey Mouse. GNUv2 license.
+      </div>
+    </div>
+  </div>
+</div>
+`;
