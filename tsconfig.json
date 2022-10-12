@@ -16,7 +16,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "src",
-    "types": ["vite-plugin-svgr/client", "jest"]
+    "types": ["vite-plugin-svgr/client", "jest", "node"]
   },
-  "include": ["./src"]
+  "include": ["./src", "./src/setupTests.ts"]
 }
