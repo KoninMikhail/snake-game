@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundImage Image should be equal snapshot 1`] = `
+.c0 {
+  background-image: url(#bgImage.png);
+  background-position: center bottom;
+  background-size: cover;
+  width: inherit;
+  height: inherit;
+}
+
+.c1 {
+  font-size: 14px;
+  font-family: 'pixeloid_bold','Segoe UI','Roboto','Oxygen','Ubuntu','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+  font-weight: normal;
+  color: white;
+}
+
+@media (min-width:1200px) {
+  .c1 {
+    font-size: 1vw;
+  }
+}
+
+<div
+  class="c0"
+  data-testid="background-element"
+  src="#bgImage.png"
+>
+  <p
+    class="c1"
+  >
+    blah
+  </p>
+</div>
+`;
