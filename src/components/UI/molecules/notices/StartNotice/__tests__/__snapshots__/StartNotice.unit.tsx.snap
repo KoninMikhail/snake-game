@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Start Notice render correctly 1`] = `
+.c1 {
+  text-align: left;
+}
+
+.c0 {
+  -webkit-animation-duration: 1200ms;
+  animation-duration: 1200ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: iDIVWf;
+  animation-name: iDIVWf;
+  -webkit-animation-timing-function: step-start;
+  animation-timing-function: step-start;
+}
+
+.c2 {
+  text-shadow: 2px 2px 0 rgba(0,0,0,1);
+}
+
+.c3 {
+  font-size: 1em;
+}
+
+@media (min-width:576px) {
+  .c3 {
+    font-size: 1.3em;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+      data-testid="text-align"
+    >
+      <div
+        class="c2"
+      >
+        <span
+          class="c3"
+        >
+          Vasya
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
