@@ -1,20 +1,42 @@
-import { Provider } from 'react-redux';
-import { Fragment } from 'react';
-import { Outlet, ScrollRestoration } from 'react-router-dom';
-import { FontStyles } from './styles/fonts';
+import React, { Fragment, useEffect, useState } from 'react';
+import { ScrollRestoration, useLocation, useOutlet } from 'react-router-dom';
+import { FontStyles } from 'styles/fonts';
 import { GlobalStyles } from 'styles/globals';
-
-import store from './store';
+import { PAGE_TRANSITION_DURATION_MS } from './constants/APP';
+import FadeAnimation from 'components/UI/atoms/assets/animations/fade-animation';
 
 export default function App() {
+  const { pathname } = useLocation();
+  const outlet = useOutlet();
+
+  // Changing page transition states
+  const [currentOutlet, setCurrentOutlet] = useState<React.ReactElement | null>(null);
+  const [isRouting, setIsRouting] = useState<boolean>(true);
+
+  useEffect(() => {
+    setIsRouting(false);
+
+    const timeout = setTimeout(() => {
+      setCurrentOutlet(outlet);
+      setIsRouting(true);
+      clearTimeout(timeout);
+    }, PAGE_TRANSITION_DURATION_MS);
+
+    return () => clearTimeout(timeout);
+  }, [pathname, outlet]);
+
   return (
     <Fragment>
-      <Provider store={store}>
-        <GlobalStyles />
-        <FontStyles />
-        <Outlet />
-        <ScrollRestoration />
-      </Provider>
+      <GlobalStyles />
+      <FontStyles />
+      <FadeAnimation
+        direction={isRouting ? 'in' : 'out'}
+        duration={PAGE_TRANSITION_DURATION_MS}
+        style={{ width: 'inherit', height: 'inherit' }}
+      >
+        {currentOutlet}
+      </FadeAnimation>
+      <ScrollRestoration />
     </Fragment>
   );
 }
