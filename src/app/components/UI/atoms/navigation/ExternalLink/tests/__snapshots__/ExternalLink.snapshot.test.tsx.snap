@@ -3,11 +3,9 @@
 exports[`ExternalLink equal snapshot 1`] = `
 .c0 {
   cursor: pointer;
-  color: white;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  color: white;
 }
 
 .c0:hover {
