@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Github link render correctly 1`] = `
+.c1 {
+  box-shadow: rgba(0,0,0,0.25) 0px 54px 55px,rgba(0,0,0,0.12) 0px -12px 30px, rgba(0,0,0,0.12) 0px 4px 6px,rgba(0,0,0,0.17) 0px 12px 13px, rgba(0,0,0,0.09) 0px -3px 5px;
+}
+
+.c2 {
+  display: grid;
+  grid-template-columns: auto max-content;
+  gap: 1rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.8rem 0.8rem 0.8rem;
+  background: black;
+}
+
+.c0 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: white;
+}
+
+.c0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c3 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: white;
+  font-family: 'pixeloid_bold','Segoe UI','Roboto','Oxygen','Ubuntu','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+  font-weight: normal;
+}
+
+.c3:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (min-width:1200px) {
+  .c2 {
+    padding: 0.8vw 0.8vw 0.8vw;
+  }
+}
+
+<div>
+  <a
+    class="c0"
+    href="https://github.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+        style="border: 0.25em dashed deeppink;"
+      >
+        <span
+          class="c3"
+        >
+          welcome to github
+        </span>
+        <div
+          fill="currentColor"
+          height="1.8em"
+          width="1.8em"
+        />
+      </div>
+    </div>
+  </a>
+</div>
+`;
