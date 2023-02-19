@@ -1,24 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Text equal snapshot 1`] = `
+exports[`Text equal to snapshot 1`] = `
 .c0 {
+  color: white;
   font-size: 14px;
   font-family: 'pixeloid_bold','Segoe UI','Roboto','Oxygen','Ubuntu','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
   font-weight: normal;
-  color: white;
+  text-align: center;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 16px;
+  }
 }
 
 @media (min-width:1200px) {
   .c0 {
-    font-size: 1vw;
+    font-size: 1.1vw;
   }
 }
 
 <div>
-  <p
+  <span
     class="c0"
   >
-    Awesome text
-  </p>
+    Arriva
+  </span>
 </div>
 `;
