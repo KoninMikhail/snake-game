@@ -1,11 +1,16 @@
 // global.ts
 import { createGlobalStyle } from 'styled-components';
-import { font_color, font_family_body, font_size_body, font_size_body_desktop } from './variables';
 import { up } from 'styled-breakpoints';
 
+/* Creating a global style for the app. */
 export const GlobalStyles = createGlobalStyle`
   * {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  :root {
+    background-color: black;
   }
 
   html {
@@ -16,18 +21,24 @@ export const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     width: 100%;
-    font-size: ${font_size_body};
+    font-size: ${({ theme }) => theme.typography.fontSize.body.mobile};
     height: 100%;
-    color: ${font_color};
+    line-height: 1.3;
+    color: ${({ theme }) => theme.colors.body};
     background-color: black;
-    font-family: ${font_family_body};
+    font-family: ${({ theme }) => theme.typography.fontFamily.body};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     user-select: none;
     overscroll-behavior: contain;
+    overflow: hidden;
+
+    ${up('md')} {
+      font-size: ${({ theme }) => theme.typography.fontSize.body.tablet};
+    }
 
     ${up('xl')} {
-      font-size: ${font_size_body_desktop};
+      font-size: ${({ theme }) => theme.typography.fontSize.body.desktop};
     }
   }
 
