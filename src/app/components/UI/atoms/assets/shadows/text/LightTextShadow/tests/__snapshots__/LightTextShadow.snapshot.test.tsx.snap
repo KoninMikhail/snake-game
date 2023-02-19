@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LightTextShadow equal snapshot 1`] = `
+<div>
+  <div
+    style="text-shadow: 2px 2px 0 rgba(0, 0, 0, 1);"
+  >
+    Test ITextProps
+  </div>
+</div>
+`;
