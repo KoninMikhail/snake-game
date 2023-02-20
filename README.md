@@ -1,9 +1,9 @@
 <!-- markdownlint-disable MD032 MD033-->
 <!-- Write your README.md file. Build something amazing! This README.md template can guide you to build your project documentation, but feel free to modify it as you wish 🥰 -->
 
-# **Repository Project Template**
+# **Snake Game (React / Redux /TypeScript)**
 
-> Using it for fast creation new beautiful repository.
+> Game it! Start it! Use it! Fork it!.
 <div align="center">
   <!-- Change your logo -->
   <a href="https://github.com/KoninMikhail/snake-game">
