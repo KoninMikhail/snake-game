@@ -3,7 +3,7 @@
 module.exports = {
     preset: 'ts-jest',
     testEnvironment: 'jsdom',
-    testEnvironmentOptions: { resources: 'usable' },
+    testEnvironmentOptions: {resources: 'usable'},
     coverageDirectory: 'coverage',
     coverageProvider: 'v8',
     extensionsToTreatAsEsm: ['.ts', '.tsx'],
@@ -26,9 +26,6 @@ module.exports = {
         '^@store/(.*)$': '<rootDir>/src/app/store/$1',
         '^@styles/(.*)$': '<rootDir>/src/app/styles/$1',
         '^@utils/(.*)$': '<rootDir>/src/utils/$1',
-    },
-    jest: {
-        transformIgnorePatterns: ['node_modules/(?!@ngrx|(?!deck.gl)|ng-dynamic)'],
     },
     setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
 };
