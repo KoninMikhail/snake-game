@@ -3,7 +3,7 @@
 
 # **Snake Game (React / Redux /TypeScript)**
 
-> Game it! Start it! Use it! Fork it!.
+> Super arcade game club atmosphere. Game it! Start it! Use it! Fork it!.
 <div align="center">
   <!-- Change your logo -->
   <a href="https://github.com/KoninMikhail/snake-game">
