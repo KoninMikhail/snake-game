@@ -43,7 +43,7 @@
     * [eslint](https://eslint.org/) - ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
     * [prettier](https://prettier.io/) - Prettier is an opinionated code formatter.
     * [Husky](https://github.com/typicode/husky) - Pre-commit tests
-    * [Commitlint](https://github.com/koninmikhail/social-analytics-dashboard-template/issues) - Conventional changelog commits linter
+    * [Commitlint](https://commitlint.js.org/#/) - Conventional changelog commits linter
 * **This repo can be used as prepared entrypoint for your own snake game :)**
 
 <br />
