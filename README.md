@@ -36,7 +36,7 @@
 * **React, Typescript, Redux Toolkit**
 * **Clean Atomic Design Architecture**
 * **Mobile First Optimization**
-* **Direct assets (load personal assets set by device type)**
+* **Responsive media (personal media by device type)**
 * **Multilanguage with autodetect locale by user-agent**
 * **High percentage of code coverage for tests**
 * **Quick start** from prepared workspace: 🗲🗲
