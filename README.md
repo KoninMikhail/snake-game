@@ -11,7 +11,7 @@
   </a>
   <br>
   <a href="#">
-    <img src="https://img.shields.io/badge/build-stable-blue?style=for-the-badge&color=succeess" alt="KoninMikhail/snake-game">
+    <img src="https://img.shields.io/badge/build-alpha-blue?style=for-the-badge&color=warning" alt="KoninMikhail/snake-game">
      </a>
     <a href="https://github.com/KoninMikhail/snake-game/issues">
       <img src="https://img.shields.io/github/issues/KoninMikhail/snake-game?color=0088ff&style=for-the-badge&logo=github" alt="KoninMikhail/snake-game issues"/>
