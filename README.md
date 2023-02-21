@@ -48,12 +48,6 @@
 
 <br />
 
-# **About heading**
-
-* <!-- ... [WHY DID YOU CREATED THIS PROJECT?, MOTIVATION, PURPOSE, DESCRIPTION, OBJECTIVES, etc] -->
-
-<br />
-
 ## Request features ⚡
 
 > Use [issue](https://github.com/KoninMikhail/snake-game/issues) and follow the rules :)
