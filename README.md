@@ -105,7 +105,7 @@ recently with desktop publishing software like Aldus PageMaker including version
 
 ## Routes
 
-> By default, all routes are in the file `./src/app/routes/routes.tsx`
+> All routes are in the file `./src/app/routes/routes.tsx`
 
 | Route    |     Type     |                                                                              Description                                                                               | Restrictions |
 |----------|:------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------:|-------------:|
@@ -118,13 +118,11 @@ recently with desktop publishing software like Aldus PageMaker including version
 
 ## Localization
 
-> By default, all locales are in `./src/locale` and connect by index.ts
+> All locales are in `./src/locale` and connect by index.ts
 
 <a href="https://github.com/KoninMikhail/snake-game/fork">
   <img alt="KoninMikhail/snake-game Author brand logo without text" align="right" src="https://raw.githubusercontent.com/KoninMikhail/snake-game/main/.resources/images/logo.png" width="25%" />
 </a>
-
-### main
 
 i18n-next is the primary tool for multilingual support.
 
