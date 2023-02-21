@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Launcher should equal snapshot 1`] = `
+.c0 {
+  font-size: 1.3em;
+  font-weight: normal;
+  text-align: center;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    font-size: 1.18em;
+  }
+}
+
+<span
+  class="c0"
+  style="text-shadow: 2px 2px 0 rgba(0, 0, 0, 1);"
+>
+  test message
+</span>
+`;
