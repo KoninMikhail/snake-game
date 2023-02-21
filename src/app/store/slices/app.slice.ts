@@ -1,6 +1,6 @@
-import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {RootState} from '@store/store';
-import {Device, DeviceInfo, DeviceOrientation} from '@/types/device-screen-type';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { RootState } from '@store/store';
+import { Device, DeviceInfo, DeviceOrientation } from '@/types/device';
 
 /**
  * Constants
@@ -70,5 +70,5 @@ export const appDeviceInfoSelector = (state: RootState) => state.app.device;
 export const appDeviceScreenTypeSelector = (state: RootState) => state.app.device.screen;
 export const appDeviceOrientationSelector = (state: RootState) => state.app.device.orientation;
 
-export const {reducer: appReducer, actions: appActions} = soundSlice;
+export const { reducer: appReducer, actions: appActions } = soundSlice;
 export default appReducer;

@@ -1,7 +1,7 @@
-import {between, down, up} from 'styled-breakpoints';
-import {useBreakpoint} from 'styled-breakpoints/react-styled';
-import {useMemo, useState} from 'react';
-import {Device} from '@/types/device-screen-type';
+import { between, down, up } from 'styled-breakpoints';
+import { useBreakpoint } from 'styled-breakpoints/react-styled';
+import { useMemo, useState } from 'react';
+import { Device } from '@/types/device';
 
 /**
  * @name useDeviceScreenType
