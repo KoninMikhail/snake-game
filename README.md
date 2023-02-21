@@ -122,7 +122,7 @@ if you are use `./public/` folder as host for application assets - is folder nam
 All pictures and sounds used in the application are delivered within the application itself, using the element ID found
 in the context.
 
-For example:
+**For example:**
 
 ```
 // get image source
@@ -137,7 +137,7 @@ const sound = getSoundSourceById(soundContext, sourceID);
 It is recommended to use pre-made components from @ui/atoms/images when working with images; all you need to do is pass
 the image's ID in the component's properties.
 
----
+<br />
 
 #### Images Data Source & Assets injection
 
@@ -163,6 +163,9 @@ Note: placeholder value - is an optional image for time when load original image
 ---
 <img width="100%" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/images/project_image_data_scheme.jpg" alt="@KoninMikhail/snake-game's logo">
 
+<br />
+<br />
+
 ## Routes
 
 > All routes are in the file `./src/app/routes/routes.tsx`
@@ -174,6 +177,7 @@ Note: placeholder value - is an optional image for time when load original image
 | `/*`     |  not found   |                                                         Redirects here if the user is looking for easter eggs.                                                         |          yes |
 | `/error` | error in app |                                                   Redirects here only if there is a fatal error in the application.                                                    |          yes |
 
+<br />
 <br />
 
 ## Localization
