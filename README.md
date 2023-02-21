@@ -33,12 +33,11 @@
 
 # **What is this game all about?**
 
-* **React, Typescrip*t*
+* **React, Typescrip**
 * **Redux Toolkit**
 * **Fully Responsive Screens support (Mobile first)**
 * **Clean Atomic Design Architecture**
 * **Multilanguage support with auto select locale (by browser lang)**
-* **No JQuery**
 * All code based on BEM principles
 * Sass
 * Google Fonts
