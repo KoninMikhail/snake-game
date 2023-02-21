@@ -73,9 +73,9 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     - [Report a bug](#disclamer--%EF%B8%8F)
 - [App](#app-documentation)
     - [configuration](#app-configuration)
-    - [localization](#localization)
-        - [How add my locale](#how-add-my-locale)
     - [routes](#routes)
+    - [localization](#localization)
+        - [How add your own locale](#how-add-your-locale)
 - [Game](#game-documentation)
     - [Configuration](#game-configuration)
 - [Environment](#environment)
@@ -94,13 +94,25 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 ### Configuration
 
-> Lorem Ipsum is
+> All constants placed in `./src/constants/APP.ts`
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+#### Global
+
+| Constant                   | Default value | Effect                                                                                                                                                                                                                       |
+|----------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `SOUND_ENABLED`            | true          | The initial audio volume is set from this constant value, unless it is changed in the browser. If the user alters the volume, their new setting is stored in the local storage of their browser and will be used from there. |
+| `PAGE_TRANSITION_DURATION` | 1400          | This constant is the base value for the duration of all transitions and animations in the application. When the route is changed, re-rendering will occur halfway through this duration.                                     |
+
+#### PATHS
+
+if you are use `./public/` folder as host for application assets - is folder names in paths for use in app context
+
+| Constant     | Default value |
+|--------------|---------------|
+| `ASSETS_DIR` | 'assets'      |
+| `IMAGES_DIR` | 'images'      |
+| `SOUNDS_DIR` | 'sounds'      |
+
 <br />
 
 ## Routes
@@ -147,18 +159,18 @@ settings.
 4) `import your localce` to `./src/locale/index.ts`.
 5) `insert to export object`.
 
-> Make sure that there are no Cyrillic characters in our language pack. (If they are, then you need to replace the main
-> application font with one that supports them)
+> Ensure that our language pack does not contain any Cyrillic characters. If present, replace the main application font
+> with one that supports them.
 
 <br /><br />
 
 <img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
 
-### Game
+## Game
 
 #### Configuration
 
-> Lorem Ipsum is
+> All constants placed in `./src/constants/Game.ts`
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
 dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
@@ -171,6 +183,16 @@ recently with desktop publishing software like Aldus PageMaker including version
 <img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
 
 ## Environment
+
+### Development
+
+> Lorem Ipsum is
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 
 ### Testing
 
