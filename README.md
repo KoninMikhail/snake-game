@@ -37,9 +37,7 @@
 * **Fully Responsive Screens support (Mobile first)**
 * **Clean Atomic Design Architecture**
 * **Multilanguage support with auto select locale (by browser lang)**
-* All code based on BEM principles
-* Sass
-* Google Fonts
+* Hight tests coverage
 * Quick start from prepared workspace: 🗲🗲
     * [Husky](https://github.com/typicode/husky) - Pre-commit tests
     * [Commitlint](https://github.com/koninmikhail/social-analytics-dashboard-template/issues) - Conventional changelog commits linter
