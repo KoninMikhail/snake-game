@@ -24,7 +24,7 @@
     <a href="https://case.mikekonin.com/snake-game/">
          <img src="https://img.shields.io/badge/ -live demo-blue?style=for-the-badge&color=success" alt="KoninMikhail/snake-game link to live demo.">
     </a>
-    <a href="https://github.com/KoninMikhail/snake-game/generate">
+    <a href="https://github.com/KoninMikhail/snake-game/fork">
       <img src="https://img.shields.io/badge/fork%20this-game-blue?logo=github-sponsors&style=for-the-badge&color=ff69b4" alt="KoninMikhail/snake-game create fork">
     </a>
 </div>
@@ -91,7 +91,7 @@ I am <3 contributions big or small. If you help my project --> 🍰**link to you
 
 ## Buy Me A Coffee
 
-<a href="https://github.com/KoninMikhail/snake-game/generate">
+<a href="https://github.com/KoninMikhail/snake-game/fork">
   <img alt="KoninMikhail/snake-game Author brand logo without text" align="right" src="https://raw.githubusercontent.com/KoninMikhail/snake-game/main/.resources/images/logo.png" width="25%" />
 </a>
 
