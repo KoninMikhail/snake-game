@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountdownModal equal snapshot when hidden 1`] = `
+.c0 {
+  position: absolute;
+  display: grid;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
+  z-index: 9010;
+  height: 100%;
+  background: black;
+}
+
+.c1 {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.c2 {
+  font-family: 'pixeloid_bold','Segoe UI','Roboto','Oxygen','Ubuntu','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+  font-size: 2.8em;
+  font-weight: normal;
+  text-align: center;
+}
+
+.c3 {
+  color: white;
+  font-size: 14px;
+  font-family: 'pixeloid_bold','Segoe UI','Roboto','Oxygen','Ubuntu','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width:1200px) {
+  .c2 {
+    font-size: 3.4em;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1200px) {
+  .c3 {
+    font-size: 1.1vw;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+      >
+        1
+      </span>
+      <span
+        class="c3"
+      >
+        message
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CountdownModal equal snapshot when showed 1`] = `
+.c0 {
+  position: absolute;
+  display: grid;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
+  z-index: 9010;
+  height: 100%;
+  background: black;
+}
+
+.c1 {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.c2 {
+  font-family: 'pixeloid_bold','Segoe UI','Roboto','Oxygen','Ubuntu','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+  font-size: 2.8em;
+  font-weight: normal;
+  text-align: center;
+}
+
+.c3 {
+  color: white;
+  font-size: 14px;
+  font-family: 'pixeloid_bold','Segoe UI','Roboto','Oxygen','Ubuntu','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width:1200px) {
+  .c2 {
+    font-size: 3.4em;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1200px) {
+  .c3 {
+    font-size: 1.1vw;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+      >
+        5
+      </span>
+      <span
+        class="c3"
+      >
+        message
+      </span>
+    </div>
+  </div>
+</div>
+`;
