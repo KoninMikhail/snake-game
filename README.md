@@ -124,6 +124,8 @@ recently with desktop publishing software like Aldus PageMaker including version
   <img alt="KoninMikhail/snake-game Author brand logo without text" align="right" src="https://raw.githubusercontent.com/KoninMikhail/snake-game/main/.resources/images/logo.png" width="25%" />
 </a>
 
+### tool
+
 i18n-next is the primary tool for multilingual support.
 
 ### locales
