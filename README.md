@@ -71,17 +71,16 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 - [Quick start](#quick-start)
     - [Requirements](#requirements)
     - [Report a bug](#disclamer--%EF%B8%8F)
-- [Documentation](#documentation)
-    - [App](#app-documentation)
-        - [configuration](#app-configuration)
-        - [localization](#localization)
-            - [How add my locale](#how-add-my-locale)
-        - [routes](#routes)
-    - [Game](#game-documentation)
-        - [Configuration](#game-configuration)
-    - [Environment](#environment)
-        - [testing](#testing)
-        - [deployment](#deployment)
+- [App](#app-documentation)
+    - [configuration](#app-configuration)
+    - [localization](#localization)
+        - [How add my locale](#how-add-my-locale)
+    - [routes](#routes)
+- [Game](#game-documentation)
+    - [Configuration](#game-configuration)
+- [Environment](#environment)
+    - [testing](#testing)
+    - [deployment](#deployment)
 
 - [Contributing](#contributors)
 - [Buy Me A Coffee](#buy-me-a-coffee)
@@ -91,11 +90,9 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 <img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
 
-## Documentation
+## App
 
-### App
-
-> #### Configuration
+> ### Configuration
 
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
@@ -104,7 +101,7 @@ book. It has survived not only five centuries, but also the leap into electronic
 unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 
-> #### localization
+> ### localization
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
 dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
@@ -112,7 +109,7 @@ book. It has survived not only five centuries, but also the leap into electronic
 unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 
-##### How add my locale
+#### How add my locale
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
 dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
@@ -130,9 +127,9 @@ book. It has survived not only five centuries, but also the leap into electronic
 unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 
-### Environment
+## Environment
 
-> #### testing
+> ### testing
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
 dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
@@ -140,7 +137,7 @@ book. It has survived not only five centuries, but also the leap into electronic
 unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 
-> #### deployment
+> ### deployment
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
 dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
