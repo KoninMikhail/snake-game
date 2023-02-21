@@ -96,12 +96,16 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 > All constants placed in `./src/constants/APP.ts`
 
+<br />
+
 ##### Global
 
 | Constant                   | Default value | Effect                                                                                                                                                                                                                       |
 |----------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `SOUND_ENABLED`            | true          | The initial audio volume is set from this constant value, unless it is changed in the browser. If the user alters the volume, their new setting is stored in the local storage of their browser and will be used from there. |
 | `PAGE_TRANSITION_DURATION` | 1400          | This constant is the base value for the duration of all transitions and animations in the application. When the route is changed, re-rendering will occur halfway through this duration.                                     |
+
+<br />
 
 ##### Paths
 
@@ -139,7 +143,9 @@ the image's ID in the component's properties.
 
 <br />
 
-#### Images Data Source & Assets injection
+### Images Data Source & Assets injection
+
+<br />
 
 `imageID` - The basic element of the image context structure.
 Her name is key of imagesData if you are using
@@ -155,6 +161,8 @@ suited for it. If there are no specific resources available for the screen type,
 
 `imageSourceItem` - Provide an object containing image source links for the current screen type.
 Note: placeholder value - is an optional image for time when load original image.
+
+<br />
 
 ---
 
