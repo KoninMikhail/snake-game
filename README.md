@@ -16,10 +16,10 @@
     <img src="https://img.shields.io/badge/build-alpha-blue?style=for-the-badge&color=critical" alt="KoninMikhail/snake-game">
      </a>
     <a href="https://github.com/KoninMikhail/snake-game/issues">
-      <img src="https://img.shields.io/github/issues/KoninMikhail/snake-game?color=informational&style=for-the-badge&logo=github" alt="KoninMikhail/snake-game issues"/>
+      <img src="https://img.shields.io/github/issues/KoninMikhail/snake-game?color=001e74&style=for-the-badge&logo=github" alt="KoninMikhail/snake-game issues"/>
     </a>
     <a href="https://github.com/KoninMikhail/snake-game/pulls">
-      <img src="https://img.shields.io/github/issues-pr/koninmikhail/social-analytics-dashboard-template?color=informational&style=for-the-badge&logo=github"  alt="KoninMikhail/ pull requests"/>
+      <img src="https://img.shields.io/github/issues-pr/koninmikhail/social-analytics-dashboard-template?color=001e74&style=for-the-badge&logo=github"  alt="KoninMikhail/ pull requests"/>
     </a>
     <a href="https://case.mikekonin.com/snake-game/">
          <img src="https://img.shields.io/badge/ -live demo-blue?style=for-the-badge&color=important" alt="KoninMikhail/snake-game link to live demo.">
