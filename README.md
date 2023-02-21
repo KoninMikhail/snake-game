@@ -9,9 +9,7 @@
   <a href="https://github.com/KoninMikhail/snake-game">
     <img width="100%" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/images/project_image.jpg" alt="@KoninMikhail/snake-game's logo">
   </a>
-  
-  <br>
-  
+
   <a href="#">
     <img src="https://img.shields.io/badge/build-alpha-blue?style=for-the-badge&color=critical" alt="KoninMikhail/snake-game">
      </a>
@@ -28,7 +26,8 @@
       <img src="https://img.shields.io/badge/fork%20this-game-blue?logo=github-sponsors&style=for-the-badge&color=ff69b4" alt="KoninMikhail/snake-game create fork">
     </a>
 </div>
-
+<br />
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 <br />
 
 # **What is this game all about?**
@@ -38,22 +37,17 @@
 * **Mobile First Optimization**
 * **All remote assets delivery into app by Context**
 * **Responsive media (personal media by device type)**
-* **Multilanguage with autodetect locale by user-agent**
+* **Multilingual with autodetect locale by user-agent**
 * **High percentage of code coverage for tests**
 * **Quick start** from prepared workspace: 🗲🗲
     * [vite](https://vitejs.dev/) - Next Generation Frontend Tooling
-    * [eslint](https://eslint.org/) - ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
+    * [eslint](https://eslint.org/) - ESLint is a tool for identifying and reporting on patterns found in
+      ECMAScript/JavaScript code.
     * [prettier](https://prettier.io/) - Prettier is an opinionated code formatter.
     * [Husky](https://github.com/typicode/husky) - Pre-commit tests
     * [Commitlint](https://commitlint.js.org/#/) - Conventional changelog commits linter
 * **This repo can be used as prepared entrypoint for your own snake game :)**
 
-<br />
-
-<a href="https://github.com/KoninMikhail/snake-game">
-    <img width="100%" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/images/project_image_2.jpg" alt="@KoninMikhail/snake-game's ">
-  </a>
-  
 <br />
 
 ## Request features ⚡
@@ -72,14 +66,203 @@
 
 ## TABLE OF CONTENTS
 
-- [General](#what-is-this-template-all-about)
+- [General](#the-snake-game)
     - [Request feature](#request-features-)
 - [Quick start](#quick-start)
     - [Requirements](#requirements)
     - [Report a bug](#disclamer--%EF%B8%8F)
+- [App](#app-documentation)
+    - [configuration](#app-configuration)
+    - [routes](#routes)
+    - [localization](#localization)
+        - [How add your own locale](#how-add-your-locale)
+- [Game](#game-documentation)
+    - [Configuration](#game-configuration)
+- [Environment](#environment)
+    - [testing](#testing)
+    - [deployment](#deployment)
+
 - [Contributing](#contributors)
 - [Buy Me A Coffee](#buy-me-a-coffee)
 - [License and Changelog](#license-and-changelog)
+
+<br /><br />
+
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
+
+## App
+
+### Configuration
+
+> All constants placed in `./src/constants/APP.ts`
+
+##### Global
+
+| Constant                   | Default value | Effect                                                                                                                                                                                                                       |
+|----------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `SOUND_ENABLED`            | true          | The initial audio volume is set from this constant value, unless it is changed in the browser. If the user alters the volume, their new setting is stored in the local storage of their browser and will be used from there. |
+| `PAGE_TRANSITION_DURATION` | 1400          | This constant is the base value for the duration of all transitions and animations in the application. When the route is changed, re-rendering will occur halfway through this duration.                                     |
+
+##### Paths
+
+if you are use `./public/` folder as host for application assets - is folder names in paths for use in app context
+
+| Constant     | Default value |
+|--------------|---------------|
+| `ASSETS_DIR` | 'assets'      |
+| `IMAGES_DIR` | 'images'      |
+| `SOUNDS_DIR` | 'sounds'      |
+
+<br />
+
+## Application assets
+
+> All assets data placed in `./src/data`;
+
+All pictures and sounds used in the application are delivered within the application itself, using the element ID found
+in the context.
+
+For example:
+
+```
+// get image source
+const imageContext = useImagesContext();
+const image = getImageSourceById(imageContext, sourceID, deviceScreenType);
+ 
+// get sound source
+const soundContext = useSoundsContext();
+const sound = getSoundSourceById(soundContext, sourceID);
+```
+
+It is recommended to use pre-made components from @ui/atoms/images when working with images; all you need to do is pass
+the image's ID in the component's properties.
+
+---
+
+#### Images Data Source & Assets injection
+
+`imageID` - The basic element of the image context structure.
+Her name is key of imagesData if you are using
+default context.
+
+`screenType` - Device screen type.
+it is determined automatically when the application is initialized.
+May be set to: Default, mobile, tablet, desktop.
+> ⚠️Item with `default` screen type - required. More details below ⚠️
+
+At the start of the application, it will identify the type of screen being used and provide the resources that are best
+suited for it. If there are no specific resources available for the screen type, it will return the default resources.
+
+`imageSourceItem` - Provide an object containing image source links for the current screen type.
+Note: placeholder value - is an optional image for time when load original image.
+
+---
+
+**Images Data structure:** `imageID` - `screenType` - `imageSourceItem`
+
+---
+<img width="100%" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/images/project_image_data_scheme.jpg" alt="@KoninMikhail/snake-game's logo">
+
+## Routes
+
+> All routes are in the file `./src/app/routes/routes.tsx`
+
+| Route    |     Type     |                                                                              Description                                                                               | Restrictions |
+|----------|:------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------:|-------------:|
+| `/`      |    index     |                                                                    Used as the homepage of the app.                                                                    |           no |
+| `/game`  |  game page   | Restricted route with game page. Access is only allowed after launching the application on the index route (the `store/game/gameLaunch` value is changed to `launch`). |          yes |
+| `/*`     |  not found   |                                                         Redirects here if the user is looking for easter eggs.                                                         |          yes |
+| `/error` | error in app |                                                   Redirects here only if there is a fatal error in the application.                                                    |          yes |
+
+<br />
+
+## Localization
+
+> All locales are in `./src/locale` and connect by index.ts
+
+<a href="https://github.com/KoninMikhail/snake-game/fork">
+  <img alt="KoninMikhail/snake-game Author brand logo without text" align="right" src="https://raw.githubusercontent.com/KoninMikhail/snake-game/main/.resources/images/logo.png" width="25%" />
+</a>
+
+### tool
+
+i18n-next is the primary tool for multilingual support.
+
+### locales
+
+By default, you will have one language pack installed, but you can add additional language packs if desired. If an error
+occurs in the language pack, it will be taken from the default pack, so it is important to not delete it unless you
+understand the potential consequences.
+
+#### Auto-select locale
+
+i18next-browser-languagedetector used to automatically select the language based on the user's browser language
+settings.
+
+### How add your locale
+
+1) goto `./src/locale` and `Copy / Paste` a JSON with name `en-US.json.`
+2) `Rename file` with your own language code
+3) `Replace values` with your language
+4) `import your localce` to `./src/locale/index.ts`.
+5) `insert to export object`.
+
+> Ensure that our language pack does not contain any Cyrillic characters. If present, replace the main application font
+> with one that supports them.
+
+<br /><br />
+
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
+
+## Game
+
+#### Configuration
+
+> All constants placed in `./src/constants/Game.ts`
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+
+<br /><br />
+
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
+
+## Environment
+
+### Development
+
+> Lorem Ipsum is
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+
+### Testing
+
+> Lorem Ipsum is
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+
+---
+
+### Deployment
+
+> Lorem Ipsum is
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 
 <br /><br />
 
