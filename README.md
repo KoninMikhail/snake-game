@@ -38,7 +38,7 @@
 * **Mobile First Optimization**
 * **Multilanguage support with auto select locale (by browser lang)**
 * **High percentage of code coverage for tests**
-* Quick start from prepared workspace: 🗲🗲
+* **Quick start** from prepared workspace: 🗲🗲
     * [Husky](https://github.com/typicode/husky) - Pre-commit tests
     * [Commitlint](https://github.com/koninmikhail/social-analytics-dashboard-template/issues) - Conventional changelog commits linter
     * [vite](https://github.com/koninmikhail/social-analytics-dashboard-template/issues) - Conventional changelog commits linter
