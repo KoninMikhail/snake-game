@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PrimaryButton equal snapshot 1`] = `
+.c0 {
+  cursor: pointer;
+  display: block;
+  color: deeppink;
+  border: 3px dashed deeppink;
+  padding: 5px 25px;
+  background: black;
+  font-family: 'Nineteen Eighty Seven','Segoe UI','Roboto','Oxygen','Ubuntu','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+  text-align: center;
+  font-size: mobile:14px;
+  tablet: 17px;
+  desktop: 0.9vw;
+  font-weight: normal;
+}
+
+.c0:hover {
+  color: #ffffff;
+  background: deeppink;
+  border: 3px dashed #000000;
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    Hello world
+  </button>
+</div>
+`;

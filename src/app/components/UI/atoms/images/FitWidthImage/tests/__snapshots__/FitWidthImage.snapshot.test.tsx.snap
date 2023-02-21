@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FitWidthImage equal snapshot 1`] = `
+.c0 {
+  width: 100%;
+  height: auto;
+}
+
+<div>
+  <img
+    alt="app Name Here"
+    class="c0"
+    data-testid="custom-logo"
+    src="PLACEHOLDER_SRC"
+  />
+</div>
+`;

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlinkAnimation equal snapshot 1`] = `
+.c0 {
+  -webkit-animation-duration: 1200ms;
+  animation-duration: 1200ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-name: iDIVWf;
+  animation-name: iDIVWf;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: step-start;
+  animation-timing-function: step-start;
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;

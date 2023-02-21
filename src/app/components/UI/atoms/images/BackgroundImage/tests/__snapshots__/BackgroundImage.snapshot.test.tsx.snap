@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundImage equal snapshot 1`] = `
+.c0 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+<div>
+  <img
+    alt="app Name Here"
+    class="c0"
+    data-testid="custom-logo"
+    src="LOAD_SUCCESS_SRC"
+  />
+</div>
+`;

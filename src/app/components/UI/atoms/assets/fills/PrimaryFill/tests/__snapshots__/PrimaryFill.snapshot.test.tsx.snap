@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Primary IFillProps equal snapshots 1`] = `
+<div>
+  <div
+    class="testElement"
+    data-testid="testElementID"
+    style="color: deeppink;"
+  >
+    Test Element
+  </div>
+</div>
+`;
