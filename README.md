@@ -9,7 +9,9 @@
   <a href="https://github.com/KoninMikhail/snake-game">
     <img width="100%" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/images/project_image.jpg" alt="@KoninMikhail/snake-game's logo">
   </a>
+  
   <br>
+  
   <a href="#">
     <img src="https://img.shields.io/badge/build-alpha-blue?style=for-the-badge&color=critical" alt="KoninMikhail/snake-game">
      </a>
