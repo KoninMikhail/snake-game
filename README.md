@@ -126,17 +126,17 @@ recently with desktop publishing software like Aldus PageMaker including version
 
 ### main
 
-i118n-next acts as the main multilingual tool.
+> i118n-next acts as the main multilingual tool.
 
 ### locales
 
-By default, you have one language pack however you can expand support and add your own language pack.
-If there is an error in your language pack, then the value will be taken from the default pack. Please do not delete it
-if you are not sure what you are doing.
+> By default, you have one language pack however you can expand support and add your own language pack.
+> If there is an error in your language pack, then the value will be taken from the default pack. Please do not delete it
+> if you are not sure what you are doing.
 
 #### Auto-select locale
 
-Also i18next-browser-languagedetector provides automatic selection by user-agent language.
+> Also i18next-browser-languagedetector provides automatic selection by user-agent language.
 
 ### How add your locale
 
