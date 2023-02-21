@@ -34,7 +34,7 @@
 # **What is this game all about?**
 
 * **React, Typescript, Redux Toolkit**
-* **Fully Responsive Screens support (Mobile first)**
+* **Fully Responsive Screen Optiization (Mobile first)**
 * **Clean Atomic Design Architecture**
 * **Multilanguage support with auto select locale (by browser lang)**
 * Hight tests coverage
