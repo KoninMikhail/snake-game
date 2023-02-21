@@ -138,31 +138,28 @@ const soundContext = useSoundsContext();
 const sound = getSoundSourceById(soundContext, sourceID);
 ```
 
-It is recommended to use pre-made components from @ui/atoms/images when working with images; all you need to do is pass
-the image's ID in the component's properties.
+> It is recommended to use pre-made components from @ui/atoms/images when working with images; all you need to do is
+> pass the image's ID in the component's properties.
 
 <br />
 
 ### Images Data Source & Assets injection
 
-<br />
+* `imageID` - The basic element of the image context structure.
+  Her name is key of imagesData if you are using
+  default context.
 
-`imageID` - The basic element of the image context structure.
-Her name is key of imagesData if you are using
-default context.
+* `screenType` - Device screen type.
+  it is determined automatically when the application is initialized.
+  May be set to: Default, mobile, tablet, desktop.
+* `imageSourceItem` - Provide an object containing image source links for the current screen type.
+  Note: placeholder value - is an optional image for time when load original image.
 
-`screenType` - Device screen type.
-it is determined automatically when the application is initialized.
-May be set to: Default, mobile, tablet, desktop.
-> ⚠️Item with `default` screen type - required. More details below ⚠️
+> ⚠️`default` screen type in every item - required. More details below ⚠️
 
 At the start of the application, it will identify the type of screen being used and provide the resources that are best
 suited for it. If there are no specific resources available for the screen type, it will return the default resources.
 
-`imageSourceItem` - Provide an object containing image source links for the current screen type.
-Note: placeholder value - is an optional image for time when load original image.
-
-<br />
 
 ---
 
