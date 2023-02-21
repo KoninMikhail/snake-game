@@ -9,9 +9,9 @@
   <a href="https://github.com/KoninMikhail/snake-game">
     <img width="100%" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/images/project_image.jpg" alt="@KoninMikhail/snake-game's logo">
   </a>
-  
+
   <br>
-  
+
   <a href="#">
     <img src="https://img.shields.io/badge/build-alpha-blue?style=for-the-badge&color=critical" alt="KoninMikhail/snake-game">
      </a>
@@ -38,22 +38,17 @@
 * **Mobile First Optimization**
 * **All remote assets delivery into app by Context**
 * **Responsive media (personal media by device type)**
-* **Multilanguage with autodetect locale by user-agent**
+* **Multilingual with autodetect locale by user-agent**
 * **High percentage of code coverage for tests**
 * **Quick start** from prepared workspace: 🗲🗲
     * [vite](https://vitejs.dev/) - Next Generation Frontend Tooling
-    * [eslint](https://eslint.org/) - ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
+    * [eslint](https://eslint.org/) - ESLint is a tool for identifying and reporting on patterns found in
+      ECMAScript/JavaScript code.
     * [prettier](https://prettier.io/) - Prettier is an opinionated code formatter.
     * [Husky](https://github.com/typicode/husky) - Pre-commit tests
     * [Commitlint](https://commitlint.js.org/#/) - Conventional changelog commits linter
 * **This repo can be used as prepared entrypoint for your own snake game :)**
 
-<br />
-
-<a href="https://github.com/KoninMikhail/snake-game">
-    <img width="100%" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/images/project_image_2.jpg" alt="@KoninMikhail/snake-game's ">
-  </a>
-  
 <br />
 
 ## Request features ⚡
