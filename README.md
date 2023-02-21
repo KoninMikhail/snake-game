@@ -101,37 +101,53 @@ dummy text ever since the 1500s, when an unknown printer took a galley of type a
 book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
 unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+<br />
 
 ## Routes
 
 > By default, all routes are in the file `./src/app/routes/routes.tsx`
 
-| Route    |     Type     |                                                                            Description                                                                            | Restrictions |
-|----------|:------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------:|-------------:|
-| `/`      |    index     |                                                                   Using as homepage in this app                                                                   |           no |
-| `/game`  |  game page   | Restricted route with game page. Access is allowed only after launch application on the index route (In store/game/gameLaunch value will be changed to `launch`). |          yes |
-| `/*`     |  not found   |                                                         Redirect here if user is looking for easter eggs.                                                         |          yes |
-| `/error` | error in app |                                                  Кedirect here only if there is a fatal error in the application                                                  |          yes |
+| Route    |     Type     |                                                                              Description                                                                               | Restrictions |
+|----------|:------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------:|-------------:|
+| `/`      |    index     |                                                                    Used as the homepage of the app.                                                                    |           no |
+| `/game`  |  game page   | Restricted route with game page. Access is only allowed after launching the application on the index route (the `store/game/gameLaunch` value is changed to `launch`). |          yes |
+| `/*`     |  not found   |                                                         Redirects here if the user is looking for easter eggs.                                                         |          yes |
+| `/error` | error in app |                                                   Redirects here only if there is a fatal error in the application.                                                    |          yes |
 
-### Localization
+<br />
+
+## Localization
 
 > By default, all locales are in `./src/locale` and connect by index.ts
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+<a href="https://github.com/KoninMikhail/snake-game/fork">
+  <img alt="KoninMikhail/snake-game Author brand logo without text" align="right" src="https://raw.githubusercontent.com/KoninMikhail/snake-game/main/.resources/images/logo.png" width="25%" />
+</a>
 
-#### How add my locale
+### main
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+i118n-next acts as the main multilingual tool.
 
-<br /><br />
+### locales
+
+By default, you have one language pack however you can expand support and add your own language pack.
+If there is an error in your language pack, then the value will be taken from the default pack. Please do not delete it
+if you are not sure what you are doing.
+
+#### Auto-select locale
+
+Also i18next-browser-languagedetector provides automatic selection by user-agent language.
+
+### How add your locale
+
+1) Make sure that there are no Cyrillic characters in our language pack. (If they are, then you need to replace the main
+   application font with one that supports them)
+2) goto `./src/locale` and `Copy / Paste` a JSON with name `en-US.json.`
+3) `Rename file` with your own language code
+4) `Replace values` with your language
+5) `import your localce` to `./src/locale/index.ts`.
+6) `insert to export object`.
+   <br /><br />
 
 <img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
 
