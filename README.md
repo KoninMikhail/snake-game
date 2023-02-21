@@ -105,7 +105,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 ##### Paths
 
-`if you are use./public/ folder as host for application assets - is folder names in paths for use in app context`
+if you are use `./public/` folder as host for application assets - is folder names in paths for use in app context
 
 | Constant     | Default value |
 |--------------|---------------|
