@@ -25,7 +25,7 @@
          <img src="https://img.shields.io/badge/ -live demo-blue?style=for-the-badge&color=important" alt="KoninMikhail/snake-game link to live demo.">
     </a>
     <a href="https://github.com/KoninMikhail/snake-game/generate">
-      <img src="https://img.shields.io/badge/fork%20this-game-blue?logo=github-sponsors&style=for-the-badge&color=green" alt="KoninMikhail/snake-game create fork">
+      <img src="https://img.shields.io/badge/fork%20this-game-blue?logo=github-sponsors&style=for-the-badge&color=ff69b4" alt="KoninMikhail/snake-game create fork">
     </a>
 </div>
 
