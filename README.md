@@ -92,8 +92,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 ## App
 
----
-
 ### Configuration
 
 > Lorem Ipsum is
@@ -123,9 +121,11 @@ book. It has survived not only five centuries, but also the leap into electronic
 unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 
-### Game
+<br /><br />
 
----
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
+
+### Game
 
 #### configuration
 
@@ -137,9 +137,11 @@ book. It has survived not only five centuries, but also the leap into electronic
 unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 
-## Environment
+<br /><br />
 
----
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
+
+## Environment
 
 ### testing
 
