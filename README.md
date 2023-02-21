@@ -44,7 +44,7 @@
     * [vite](https://github.com/koninmikhail/social-analytics-dashboard-template/issues) - Conventional changelog commits linter
     * [eslint](https://github.com/koninmikhail/social-analytics-dashboard-template/issues) - Conventional changelog commits linter
     * [prettier](https://github.com/koninmikhail/social-analytics-dashboard-template/issues) - Conventional changelog commits linter
-* This template can be used as a base layer for any of your future projects
+* This repo can be used as prepared entry point four your own snake game :)
 
 <br />
 
