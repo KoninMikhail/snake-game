@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LightBorder return element with valid styles 1`] = `
+<div>
+  <div
+    class="testElement"
+    data-testid="testElementID"
+    style="border: 0.61em solid white;"
+  >
+    Test Element
+  </div>
+</div>
+`;

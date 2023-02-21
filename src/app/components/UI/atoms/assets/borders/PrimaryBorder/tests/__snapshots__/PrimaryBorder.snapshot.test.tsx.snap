@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PrimaryBorder return element with valid styles 1`] = `
+<div>
+  <div
+    class="testElement"
+    data-testid="testElementID"
+    style="border: 0.25em dashed deeppink;"
+  >
+    Test Element
+  </div>
+</div>
+`;
