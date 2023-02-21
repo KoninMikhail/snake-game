@@ -96,14 +96,14 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 > All constants placed in `./src/constants/APP.ts`
 
-#### Global
+##### Global
 
 | Constant                   | Default value | Effect                                                                                                                                                                                                                       |
 |----------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `SOUND_ENABLED`            | true          | The initial audio volume is set from this constant value, unless it is changed in the browser. If the user alters the volume, their new setting is stored in the local storage of their browser and will be used from there. |
 | `PAGE_TRANSITION_DURATION` | 1400          | This constant is the base value for the duration of all transitions and animations in the application. When the route is changed, re-rendering will occur halfway through this duration.                                     |
 
-#### PATHS
+##### Paths
 
 if you are use `./public/` folder as host for application assets - is folder names in paths for use in app context
 
