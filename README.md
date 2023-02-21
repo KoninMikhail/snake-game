@@ -36,7 +36,7 @@
 * **React, Typescript, Redux Toolkit**
 * **Clean Atomic Design Architecture**
 * **Mobile First Optimization**
-* **Multilanguage with autoselect locale by user-agent*
+* **Multilanguage with autoselect locale by user-agent**
 * **High percentage of code coverage for tests**
 * **Quick start** from prepared workspace: 🗲🗲
     * [vite](https://vitejs.dev/) - Next Generation Frontend Tooling
