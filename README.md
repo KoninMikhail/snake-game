@@ -33,10 +33,11 @@
 
 # **What is this game all about?**
 
-* **Fully CSS-Grid**
-* **Fully responsive**
-* **Fully separate to components**
-* **No require dependencies**
+* **React, Typescript*
+* **Redux Toolkit*
+* **Fully Responsive Screens support (Mobile first)**
+* **Clean Atomic Design Architecture**
+* **Multilanguage support with auto select locale (by browser lang)**
 * **No JQuery**
 * All code based on BEM principles
 * Sass
@@ -45,6 +46,8 @@
     * [Husky](https://github.com/typicode/husky) - Pre-commit tests
     * [Commitlint](https://github.com/koninmikhail/social-analytics-dashboard-template/issues) - Conventional changelog commits linter
     * [vite](https://github.com/koninmikhail/social-analytics-dashboard-template/issues) - Conventional changelog commits linter
+    * [eslint](https://github.com/koninmikhail/social-analytics-dashboard-template/issues) - Conventional changelog commits linter
+    * [prettier](https://github.com/koninmikhail/social-analytics-dashboard-template/issues) - Conventional changelog commits linter
 * This template can be used as a base layer for any of your future projects
 
 <br />
