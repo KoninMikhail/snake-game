@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Level equal snapshot 1`] = `
+.c0 {
+  display: grid;
+  grid-template-columns: min-content auto;
+  gap: 1rem;
+}
+
+.c1 {
+  display: grid;
+}
+
+.c3 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.c4 {
+  color: white;
+  font-size: 14px;
+  font-family: 'pixeloid_bold','Segoe UI','Roboto','Oxygen','Ubuntu','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+  font-weight: normal;
+}
+
+.c2 {
+  font-size: 2.3em;
+  font-weight: normal;
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1200px) {
+  .c4 {
+    font-size: 1.1vw;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 2.3em;
+  }
+}
+
+@media (min-width:1200px) {
+  .c2 {
+    font-size: 2em;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+      >
+        5
+      </span>
+    </div>
+    <div
+      class="c3"
+    >
+      <span
+        class="c4"
+      >
+        current
+      </span>
+      <span
+        class="c4"
+      >
+        level
+      </span>
+    </div>
+  </div>
+</div>
+`;

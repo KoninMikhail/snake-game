@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconToggle equal snapshot when false 1`] = `
+.c0 {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  width: 1em;
+  height: 1em;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      soundOnIcon
+    </span>
+    <span
+      class="c2"
+    >
+      soundOffIcon
+    </span>
+  </div>
+</div>
+`;
+
+exports[`IconToggle equal snapshot when true 1`] = `
+.c0 {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  width: 1em;
+  height: 1em;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      soundOnIcon
+    </span>
+    <span
+      class="c2"
+    >
+      soundOffIcon
+    </span>
+  </div>
+</div>
+`;

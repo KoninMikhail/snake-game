@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Score equal snapshot 1`] = `
+.c0 {
+  font-size: 1.3em;
+  font-weight: normal;
+  text-align: left;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    font-size: 1.18em;
+  }
+}
+
+<div>
+  <span
+    class="c0"
+  >
+    record: 30
+  </span>
+</div>
+`;
