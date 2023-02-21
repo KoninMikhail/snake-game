@@ -36,7 +36,7 @@
 * **React, Typescript, Redux Toolkit**
 * **Clean Atomic Design Architecture**
 * **Mobile First Optimization**
-* **Context - all remote assets delivery into app by context**
+* **All remote assets delivery into app by Context**
 * **Responsive media (personal media by device type)**
 * **Multilanguage with autodetect locale by user-agent**
 * **High percentage of code coverage for tests**
