@@ -126,28 +126,31 @@ recently with desktop publishing software like Aldus PageMaker including version
 
 ### main
 
-> i118n-next acts as the main multilingual tool.
+i18n-next is the primary tool for multilingual support.
 
 ### locales
 
-> By default, you have one language pack however you can expand support and add your own language pack.
-> If there is an error in your language pack, then the value will be taken from the default pack. Please do not delete it
-> if you are not sure what you are doing.
+By default, you will have one language pack installed, but you can add additional language packs if desired. If an error
+occurs in the language pack, it will be taken from the default pack, so it is important to not delete it unless you
+understand the potential consequences.
 
 #### Auto-select locale
 
-> Also i18next-browser-languagedetector provides automatic selection by user-agent language.
+i18next-browser-languagedetector used to automatically select the language based on the user's browser language
+settings.
 
 ### How add your locale
 
-1) Make sure that there are no Cyrillic characters in our language pack. (If they are, then you need to replace the main
-   application font with one that supports them)
-2) goto `./src/locale` and `Copy / Paste` a JSON with name `en-US.json.`
-3) `Rename file` with your own language code
-4) `Replace values` with your language
-5) `import your localce` to `./src/locale/index.ts`.
-6) `insert to export object`.
-   <br /><br />
+1) goto `./src/locale` and `Copy / Paste` a JSON with name `en-US.json.`
+2) `Rename file` with your own language code
+3) `Replace values` with your language
+4) `import your localce` to `./src/locale/index.ts`.
+5) `insert to export object`.
+
+> Make sure that there are no Cyrillic characters in our language pack. (If they are, then you need to replace the main
+> application font with one that supports them)
+
+<br /><br />
 
 <img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
 
