@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExternalLink equal snapshot 1`] = `
+.c0 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: white;
+}
+
+.c0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<div>
+  <a
+    class="c0"
+    href="https://www.google.com/"
+    rel="nofollow"
+    target="_self"
+  >
+    yeah!
+  </a>
+</div>
+`;
