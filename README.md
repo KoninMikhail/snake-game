@@ -27,8 +27,6 @@
     </a>
 </div>
 <br />
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-<br />
 
 # **What is this game all about?**
 
@@ -90,22 +88,16 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 <img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
 
-## App
+## Configuration
 
-### Configuration
+### App
 
 > All constants placed in `./src/constants/APP.ts`
-
-<br />
-
-##### Global
 
 | Constant                   | Default value | Effect                                                                                                                                                                                                                       |
 |----------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `SOUND_ENABLED`            | true          | The initial audio volume is set from this constant value, unless it is changed in the browser. If the user alters the volume, their new setting is stored in the local storage of their browser and will be used from there. |
 | `PAGE_TRANSITION_DURATION` | 1400          | This constant is the base value for the duration of all transitions and animations in the application. When the route is changed, re-rendering will occur halfway through this duration.                                     |
-
-<br />
 
 ##### Paths
 
@@ -117,9 +109,20 @@ if you are use `./public/` folder as host for application assets - is folder nam
 | `IMAGES_DIR` | 'images'      |
 | `SOUNDS_DIR` | 'sounds'      |
 
+### Game
+
+> All constants placed in `./src/constants/Game.ts`
+
+| Constant                             | Default value | Effect                                                                                            |
+|--------------------------------------|---------------|---------------------------------------------------------------------------------------------------|
+| `BASE_SCORE_STEP`                    | 10            | Step for increase game score.                                                                     |
+| `DEFAULT_NEXT_LEVEL_COUNTDOWN_VALUE` | 80            | The number of game glasses in which the first raising of the game level will occur.               |
+| `NEXT_LEVEL_COUNTDOWN_MULTIPLIER`    | 1.2           | If the level 2 or higher, then this multiplier will be used to increase points to the next level. |
+| `LEVEL_UP_SPEED_AMPLIFIER`           | 0.7           | Levelup game speed amplifier. Less number, faster acceleration.                                   |                                                                            
+
 <br />
 
-## Application assets
+## Assets
 
 > All assets data placed in `./src/data`;
 
@@ -143,7 +146,7 @@ const sound = getSoundSourceById(soundContext, sourceID);
 
 <br />
 
-### Images Data Source & Assets injection
+### Image Sources & Assets injection
 
 * `imageID` - The basic element of the image context structure.
   Her name is key of imagesData if you are using
