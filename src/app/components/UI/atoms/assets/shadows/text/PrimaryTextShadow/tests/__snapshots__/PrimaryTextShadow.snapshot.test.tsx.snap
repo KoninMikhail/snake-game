@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PrimaryTextShadow equal snapshot 1`] = `
+<div>
+  <div
+    style="text-shadow: 2px 2px 0 deeppink;"
+  >
+    Test ITextProps
+  </div>
+</div>
+`;
