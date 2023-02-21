@@ -48,6 +48,12 @@
 
 <br />
 
+<a href="https://github.com/KoninMikhail/snake-game">
+    <img width="100%" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/images/project_image_2.jpg" alt="@KoninMikhail/snake-game's ">
+  </a>
+  
+<br />
+
 ## Request features ⚡
 
 > Use [issue](https://github.com/KoninMikhail/snake-game/issues) and follow the rules :)
