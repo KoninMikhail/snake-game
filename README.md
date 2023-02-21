@@ -31,6 +31,24 @@
 
 <br />
 
+# **What is this game all about?**
+
+* **Fully CSS-Grid**
+* **Fully responsive**
+* **Fully separate to components**
+* **No require dependencies**
+* **No JQuery**
+* All code based on BEM principles
+* Sass
+* Google Fonts
+* Quick start from prepared workspace: 🗲🗲
+    * [Husky](https://github.com/typicode/husky) - Pre-commit tests
+    * [Commitlint](https://github.com/koninmikhail/social-analytics-dashboard-template/issues) - Conventional changelog commits linter
+    * [vite](https://github.com/koninmikhail/social-analytics-dashboard-template/issues) - Conventional changelog commits linter
+* This template can be used as a base layer for any of your future projects
+
+<br />
+
 # **About heading**
 
 * <!-- ... [WHY DID YOU CREATED THIS PROJECT?, MOTIVATION, PURPOSE, DESCRIPTION, OBJECTIVES, etc] -->
