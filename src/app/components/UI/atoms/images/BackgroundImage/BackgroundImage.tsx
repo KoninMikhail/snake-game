@@ -1,11 +1,11 @@
 import useProgressiveImageLoader from '@hooks/useProgressiveImageSource/useProgressiveImageSource';
-import {StyledBackgroundImage} from './style/StyledBackgroundImage';
-import {useImagesContext} from '@context/ImagesContext';
-import {Device} from '@/types/device-screen-type';
+import { StyledBackgroundImage } from './style/StyledBackgroundImage';
+import { useImagesContext } from '@context/ImagesContext';
+import { Device } from '@/types/device';
 import getImageSourceById from '@/helpers/getters/getImageSourceById';
 import useAppSelector from '@hooks/useAppSelector/useAppSelector';
-import {appDeviceInfoSelector} from '@store/slices/app.slice';
-import {IImage} from '@ui/atoms/images/images.interface';
+import { appDeviceInfoSelector } from '@store/slices/app.slice';
+import { IImage } from '@ui/atoms/images/images.interface';
 
 /**
  * @name BackgroundImage
@@ -17,7 +17,7 @@ import {IImage} from '@ui/atoms/images/images.interface';
  * @param alt - logo alt attrib.
  */
 
-export const BackgroundImage = ({sourceID, alt, ...rest}: IImage) => {
+export const BackgroundImage = ({ sourceID, alt, ...rest }: IImage) => {
     const ctx = useImagesContext();
     const deviceInfo = useAppSelector(appDeviceInfoSelector);
     const deviceScreenType = deviceInfo.screen as Device;

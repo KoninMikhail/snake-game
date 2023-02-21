@@ -1,10 +1,10 @@
-import {StyledFitWidthImage} from './style/StyledFitWidthImage';
+import { StyledFitWidthImage } from './style/StyledFitWidthImage';
 import useProgressiveImageLoader from '@hooks/useProgressiveImageSource/useProgressiveImageSource';
-import {IImage} from '@ui/atoms/images/images.interface';
-import {useImagesContext} from '@context/ImagesContext';
+import { IImage } from '@ui/atoms/images/images.interface';
+import { useImagesContext } from '@context/ImagesContext';
 import useAppSelector from '@hooks/useAppSelector/useAppSelector';
-import {appDeviceInfoSelector} from '@store/slices/app.slice';
-import {Device} from '@/types/device-screen-type';
+import { appDeviceInfoSelector } from '@store/slices/app.slice';
+import { Device } from '@/types/device';
 import getImageSourceById from '@/helpers/getters/getImageSourceById';
 
 /**
@@ -16,7 +16,7 @@ import getImageSourceById from '@/helpers/getters/getImageSourceById';
  * @param id - image id in context
  * @param alt - logo alt attrib.
  */
-export const FitWidthImage = ({sourceID, alt, ...rest}: IImage) => {
+export const FitWidthImage = ({ sourceID, alt, ...rest }: IImage) => {
     const ctx = useImagesContext();
     const deviceInfo = useAppSelector(appDeviceInfoSelector);
     const deviceScreenType = deviceInfo.screen as Device;
