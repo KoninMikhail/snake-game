@@ -104,9 +104,20 @@ recently with desktop publishing software like Aldus PageMaker including version
 
 ---
 
-### localization
+### Routes
 
-> Lorem Ipsum is
+> By default, all routes are in the file `./src/app/routes/routes.tsx`
+
+| Route    |     Type     |                                                                            Description                                                                            | Restrictions |
+|----------|:------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------:|-------------:|
+| `/`      |    index     |                                                                   Using as homepage in this app                                                                   |           no |
+| `/game`  |  game page   | Restricted route with game page. Access is allowed only after launch application on the index route (In store/game/gameLaunch value will be changed to `launch`). |          yes |
+| `/*`     |  not found   |                                                         Redirect here if user is looking for easter eggs.                                                         |          yes |
+| `/error` | error in app |                                                  Кedirect here only if there is a fatal error in the application                                                  |          yes |
+
+### Localization
+
+> By default, all locales are in `./src/locale` and connect by index.ts
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
 dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
@@ -128,7 +139,7 @@ recently with desktop publishing software like Aldus PageMaker including version
 
 ### Game
 
-#### configuration
+#### Configuration
 
 > Lorem Ipsum is
 
@@ -144,7 +155,7 @@ recently with desktop publishing software like Aldus PageMaker including version
 
 ## Environment
 
-### testing
+### Testing
 
 > Lorem Ipsum is
 
@@ -156,7 +167,7 @@ recently with desktop publishing software like Aldus PageMaker including version
 
 ---
 
-### deployment
+### Deployment
 
 > Lorem Ipsum is
 
