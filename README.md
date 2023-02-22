@@ -240,7 +240,7 @@ suited for it. If there are no specific resources available for the screen type,
 > All locales are in `./src/locale` and connect by index.ts
 
 <a href="https://github.com/KoninMikhail/snake-game/fork">
-  <img alt="KoninMikhail/snake-game Author brand logo without text" align="right" src="https://raw.githubusercontent.com/KoninMikhail/snake-game/main/.resources/images/logo.png" width="25%" />
+  <img alt="KoninMikhail/snake-game Author brand logo without text" align="right" src="https://raw.githubusercontent.com/KoninMikhail/snake-game/main/.resources/images/i118next_logo.png" width="25%" />
 </a>
 
 ### tool
