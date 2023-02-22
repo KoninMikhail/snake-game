@@ -58,13 +58,15 @@
 > risk.
 **If you want report a bug** - use [issue](https://github.com/KoninMikhail/snake-game/issues)
 
+<br />
+
+<a href="https://github.com/KoninMikhail/snake-game">
+<img width="100%" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/images/project_tablet_image.png" alt="@KoninMikhail/snake-game's logo">
+</a>
+
 <br /><br />
 
 <img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/menu.png" width="50px" />
-
-<a href="https://github.com/KoninMikhail/snake-game">
-  <img width="100%" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/images/project_tablet_image.jpg" alt="@KoninMikhail/snake-game's logo">
-</a>
 
 ## TABLE OF CONTENTS
 
@@ -80,7 +82,7 @@
     - [How add your own locale](#how-add-your-locale)
 - [Services](#game-documentation)
 - [Additional Information](#environment)
-- [Testing](#testing)
+- [testing](#testing)
 - [Contributing](#contributors)
 - [Buy Me A Coffee](#buy-me-a-coffee)
 - [License and Changelog](#license-and-changelog)
