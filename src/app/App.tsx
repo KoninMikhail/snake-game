@@ -1,15 +1,16 @@
-import {Outlet, ScrollRestoration, useLocation} from 'react-router-dom';
-import {FontStyles} from '@styles/fonts-face';
-import {GlobalStyles} from '@styles/globals';
-import useActionCreators from '@hooks/useActionCreators/useActionCreators';
-import {appActions} from '@store/slices/app.slice';
+import { useEffect } from 'react';
+import { useEffectOnce, useUpdateEffect } from 'usehooks-ts';
+import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom';
+import { FontStyles } from '@styles/fonts-face';
+import { GlobalStyles } from '@styles/globals';
+import { appActions } from '@store/slices/app.slice';
+import { startAppListening } from '@store/store';
 import useWindowOrientation from '@hooks/useWindowOrientation/useWindowOrientation';
-import {useEffectOnce, useUpdateEffect} from 'usehooks-ts';
 import useDeviceScreenType from '@hooks/useDeviceScreenType/useDeviceScreenType';
-import {useEffect} from 'react';
-import {setupAppListeners, setupGameListeners} from '@store/middlewares/setupListeners';
-import {startAppListening} from '@store/store';
-import {Loader} from '@ui/atoms/loaders/Loader/Loader';
+import useActionCreators from '@hooks/useActionCreators/useActionCreators';
+import { setupAppListeners, setupGameListeners } from '@store/middlewares/setupListeners';
+import { Loader } from '@ui/atoms/loaders/Loader/Loader';
+import { isTouchDevice } from '@helpers/validators/isTouchDevice';
 
 /**
  * App
@@ -31,6 +32,12 @@ const App = () => {
     useEffect(() => {
         actions.setDeviceOrientation({ orientation });
     }, [actions, orientation]);
+
+    /** Detect touch
+     * ======================== */
+    useEffectOnce(() => {
+        isTouchDevice() && actions.setDeviceTouchState({ touch: true });
+    });
 
     /** Detect Change Route
      * ======================== */
