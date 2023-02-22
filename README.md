@@ -3,7 +3,7 @@
 
 # **The Snake Game**
 
-> The ambience of the Arcade Slot machines room. Game it! Star it! Fork it!.
+> The ambience of the Arcade machines room. Game it! Star it! Fork it!.
 <div align="center">
   <!-- Change your logo -->
   <a href="https://github.com/KoninMikhail/snake-game">
