@@ -146,7 +146,7 @@ if you are use `./public/` folder as host for application assets - is folder nam
 
 <br /><br />
 
-<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/features.png" width="50px" />
 
 ## Assets control & injection
 
@@ -222,7 +222,7 @@ suited for it. If there are no specific resources available for the screen type,
 
 <br /><br />
 
-<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/features.png" width="50px" />
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/wtf.png" width="50px" />
 
 ## Routes
 
