@@ -286,7 +286,8 @@ settings.
 
 > located in `./src/app/services/engine/useGameEngine.ts`
 
-re like Aldus PageMaker including versions of Lorem Ipsum
+This service is responsible for ensuring the performance of the game board. It contains the complete logical part of the
+game, which utilizes the @store/gameSlice data to operate.
 
 ### Sounds Services
 
