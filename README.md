@@ -33,10 +33,10 @@
 * **React, Typescript, Redux Toolkit**
 * **Clean Atomic Design Architecture**
 * **Mobile First Optimization**
-* **All remote assets delivery into app by Context**
+* **All remote assets deliveries into app by Context**
 * **Responsive media (personal media by device type)**
 * **Multilingual with autodetect locale by user-agent**
-* **High percentage of code coverage for tests**
+* **High percentage test coverage (>95%)**
 * **Quick start** from prepared workspace: 🗲🗲
     * [vite](https://vitejs.dev/) - Next Generation Frontend Tooling
     * [eslint](https://eslint.org/) - ESLint is a tool for identifying and reporting on patterns found in
@@ -82,7 +82,6 @@
     - [How add your own locale](#how-add-your-locale)
 - [Services](#services)
 - [Additional Information](#additional-information)
-- [Testing](#testing)
 - [Contributing](#contributors)
 - [Buy Me A Coffee](#buy-me-a-coffee)
 - [License and Changelog](#license-and-changelog)
@@ -291,17 +290,22 @@ book. It has survived not only five centuries, but also the leap into electronic
 unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 
+<br /><br />
+
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
+
 ## Additional Information
 
-## Testing
+> information that can help you learn the architecture of the project faster
 
-> Lorem Ipsum is
+### how does the pipeline initialize and load the application?
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+* initialize react
+* Implementing a middleware that monitors and records the device's data (including type and screen size) for set app
+  params.
+* Once data about the device has been obtained, the resources needed for its selection and implementation are chosen and
+  put into action.
+* After loading image placeholders, loader be hidden
 
 ## Contributors
 
