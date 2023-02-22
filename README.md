@@ -120,9 +120,11 @@ if you are use `./public/` folder as host for application assets - is folder nam
 | `NEXT_LEVEL_COUNTDOWN_MULTIPLIER`    | 1.2           | If the level 2 or higher, then this multiplier will be used to increase points to the next level. |
 | `LEVEL_UP_SPEED_AMPLIFIER`           | 0.7           | Levelup game speed amplifier. Less number, faster acceleration.                                   |                                                                            
 
-<br />
+<br /><br />
 
-## Assets
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
+
+## Assets control & injection
 
 > All assets data placed in `./src/data`;
 
@@ -171,8 +173,10 @@ suited for it. If there are no specific resources available for the screen type,
 ---
 <img width="100%" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/images/project_image_data_scheme.jpg" alt="@KoninMikhail/snake-game's logo">
 
-<br />
-<br />
+
+<br /><br />
+
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
 
 ## Routes
 
@@ -185,8 +189,9 @@ suited for it. If there are no specific resources available for the screen type,
 | `/*`     |  not found   |                                                         Redirects here if the user is looking for easter eggs.                                                         |          yes |
 | `/error` | error in app |                                                   Redirects here only if there is a fatal error in the application.                                                    |          yes |
 
-<br />
-<br />
+<br /><br />
+
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
 
 ## Localization
 
@@ -221,22 +226,6 @@ settings.
 
 > Ensure that our language pack does not contain any Cyrillic characters. If present, replace the main application font
 > with one that supports them.
-
-<br /><br />
-
-<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
-
-## Game
-
-#### Configuration
-
-> All constants placed in `./src/constants/Game.ts`
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 
 <br /><br />
 
