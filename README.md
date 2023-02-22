@@ -190,6 +190,8 @@ suited for it. If there are no specific resources available for the screen type,
 
 * `soundSourceItem` - Provide an object containing sound source links and pass options.
 
+---
+
 **Sounds Data structure:** `soundID` - `soundSourceItem`
 
 ---
