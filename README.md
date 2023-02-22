@@ -237,7 +237,7 @@ suited for it. If there are no specific resources available for the screen type,
 
 <br /><br />
 
-<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/lang.png" width="50px" />
 
 ## Localization
 
