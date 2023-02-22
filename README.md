@@ -62,6 +62,10 @@
 
 <img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/menu.png" width="50px" />
 
+<a href="https://github.com/KoninMikhail/snake-game">
+  <img width="100%" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/images/project_tablet_image.jpg" alt="@KoninMikhail/snake-game's logo">
+</a>
+
 ## TABLE OF CONTENTS
 
 - [General](#the-snake-game)
@@ -76,7 +80,7 @@
     - [How add your own locale](#how-add-your-locale)
 - [Services](#game-documentation)
 - [Additional Information](#environment)
-- [testing](#testing)
+- [Testing](#testing)
 - [Contributing](#contributors)
 - [Buy Me A Coffee](#buy-me-a-coffee)
 - [License and Changelog](#license-and-changelog)
@@ -265,7 +269,7 @@ settings.
 1) goto `./src/locale` and `Copy / Paste` a JSON with name `en-US.json.`
 2) `Rename file` with your own language code
 3) `Replace values` with your language
-4) `import your localce` to `./src/locale/index.ts`.
+4) `import` into `./src/locale/index.ts`.
 5) `insert to export object`.
 
 > Ensure that our language pack does not contain any Cyrillic characters. If present, replace the main application font
