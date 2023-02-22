@@ -275,7 +275,7 @@ settings.
 
 <br /><br />
 
-<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/tests.png" width="50px" />
 
 ## Services
 
