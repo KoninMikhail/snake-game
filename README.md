@@ -343,9 +343,9 @@ README.md*, so everyone will see your contribution and visit your content⭐.
 #### OR CLICK BUTTON
 
 [![GitHub followers](https://img.shields.io/github/followers/koninmikhail.svg?style=social)](https://github.com/koninmikhail)
-[![GitHub stars](https://img.shields.io/github/stars/koninmikhail/social-analytics-dashboard-template.svg?style=social)](https://github.com/koninmikhail/social-analytics-dashboard-template/stargazers)
-[![GitHub watchers](https://img.shields.io/github/watchers/koninmikhail/social-analytics-dashboard-template.svg?style=social)](https://github.com/koninmikhail/social-analytics-dashboard-template/watchers)
-[![GitHub forks](https://img.shields.io/github/forks/koninmikhail/social-analytics-dashboard-template.svg?style=social)](https://github.com/koninmikhail/social-analytics-dashboard-template/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/koninmikhail/snake-game.svg?style=social)](https://github.com/koninmikhail/snake-game/stargazers)
+[![GitHub watchers](https://img.shields.io/github/watchers/koninmikhail/snake-game.svg?style=social)](https://github.com/koninmikhail/snake-game/watchers)
+[![GitHub forks](https://img.shields.io/github/forks/koninmikhail/snake-game.svg?style=social)](https://github.com/koninmikhail/snake-game/network/members)
 
 <br /><br />
 
