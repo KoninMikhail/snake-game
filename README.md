@@ -222,7 +222,7 @@ suited for it. If there are no specific resources available for the screen type,
 
 <br /><br />
 
-<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/features.png" width="50px" />
 
 ## Routes
 
@@ -296,7 +296,7 @@ the conditions it has been assigned are met.
 
 <br /><br />
 
-<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/tree.png" width="50px" />
 
 ## Additional Information
 
@@ -312,6 +312,10 @@ the conditions it has been assigned are met.
   put into action.
 * After loading image placeholders, loader be hidden
   ```
+
+<br /><br />
+
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/template.png" width="50px" />
 
 ## Contributors
 
