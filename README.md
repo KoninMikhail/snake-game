@@ -191,15 +191,12 @@ suited for it. If there are no specific resources available for the screen type,
 
 * `soundSourceItem` - Provide an object containing sound source links and pass options.
 
----
-
 **Sounds Data structure:** `soundID` - `soundSourceItem`
 
 ---
 
 <img width="100%" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/images/project_image_data_scheme.jpg" alt="@KoninMikhail/snake-game's logo">
 
----
 
 <br /><br />
 
