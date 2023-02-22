@@ -284,13 +284,17 @@ settings.
 
 ### Game Engine Service
 
-> Lorem Ipsum is
+> located in `./src/app/services/engine/useGameEngine.ts`
 
 re like Aldus PageMaker including versions of Lorem Ipsum
 
 ### Sounds Services
 
-> Lorem Ipsum is
+> located in `./src/app/components/sounds`
+
+A set of microservices that are implemented as a separate layer in Atomic Design.
+Each microservice is responsible for monitoring the overall state of the application and triggering an audio response if
+the conditions it has been assigned are met.
 
 <br /><br />
 
