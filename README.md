@@ -97,8 +97,8 @@
 3. Console or bash command for install package.json<br>
    `` cd snake-game``<br>
    `` npm install``
-4. `` npm run build``
-5. `` npm run serve``!
+4. build package `` npm run build``
+5. run server `` npm run serve``!
 6. Enjoy this!
 
 ---------
@@ -146,7 +146,7 @@ if you are use `./public/` folder as host for application assets - is folder nam
 
 <br /><br />
 
-<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/features.png" width="50px" />
 
 ## Assets control & injection
 
@@ -222,7 +222,7 @@ suited for it. If there are no specific resources available for the screen type,
 
 <br /><br />
 
-<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/wtf.png" width="50px" />
 
 ## Routes
 
@@ -237,7 +237,7 @@ suited for it. If there are no specific resources available for the screen type,
 
 <br /><br />
 
-<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/lang.png" width="50px" />
 
 ## Localization
 
@@ -275,7 +275,7 @@ settings.
 
 <br /><br />
 
-<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/tests.png" width="50px" />
 
 ## Services
 
@@ -296,7 +296,7 @@ the conditions it has been assigned are met.
 
 <br /><br />
 
-<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/tree.png" width="50px" />
 
 ## Additional Information
 
@@ -312,6 +312,10 @@ the conditions it has been assigned are met.
   put into action.
 * After loading image placeholders, loader be hidden
   ```
+
+<br /><br />
+
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/template.png" width="50px" />
 
 ## Contributors
 
