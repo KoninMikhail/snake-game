@@ -130,8 +130,9 @@ if you are use `./public/` folder as host for application assets - is folder nam
 
 ---
 
-All pictures and sounds used in the application are delivered within the application itself, using the element ID found
-in the context.
+**All pictures and sounds used in the application are delivered within the application itself, using the element ID
+found
+in the context.**
 
 ---
 
@@ -175,8 +176,30 @@ suited for it. If there are no specific resources available for the screen type,
 **Images Data structure:** `imageID` - `screenType` - `imageSourceItem`
 
 ---
+
 <img width="100%" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/images/project_image_data_scheme.jpg" alt="@KoninMikhail/snake-game's logo">
 
+---
+
+<br />
+
+### Sound Sources
+
+* `soundID` - The basic element of the sound context structure.
+  Her name is key of soundsData if you are using
+  default context.
+
+* `soundSourceItem` - Provide an object containing sound source links and pass options.
+
+---
+
+**Sounds Data structure:** `soundID` - `soundSourceItem`
+
+---
+
+<img width="100%" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/images/project_image_data_scheme.jpg" alt="@KoninMikhail/snake-game's logo">
+
+---
 
 <br /><br />
 
