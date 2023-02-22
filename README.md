@@ -114,7 +114,7 @@
 
 ## Configuration
 
-### App
+### App 📺
 
 > All constants placed in `./src/constants/APP.ts`
 
@@ -123,7 +123,7 @@
 | `SOUND_ENABLED`            | true          | The initial audio volume is set from this constant value, unless it is changed in the browser. If the user alters the volume, their new setting is stored in the local storage of their browser and will be used from there. |
 | `PAGE_TRANSITION_DURATION` | 1400          | This constant is the base value for the duration of all transitions and animations in the application. When the route is changed, re-rendering will occur halfway through this duration.                                     |
 
-##### Paths
+### Paths 🗃
 
 if you are use `./public/` folder as host for application assets - is folder names in paths for use in app context
 
@@ -133,7 +133,7 @@ if you are use `./public/` folder as host for application assets - is folder nam
 | `IMAGES_DIR` | 'images'      |
 | `SOUNDS_DIR` | 'sounds'      |
 
-### Game
+### Game 🎰
 
 > All constants placed in `./src/constants/Game.ts`
 
@@ -152,13 +152,9 @@ if you are use `./public/` folder as host for application assets - is folder nam
 
 > All assets data placed in `./src/data`;
 
----
-
-**All pictures and sounds used in the application are delivered within the application itself, using the element ID
+All pictures and sounds used in the application are delivered within the application itself, using the element ID
 found
-in the context.**
-
----
+in the context.
 
 **For example:**
 
@@ -262,7 +258,7 @@ understand the potential consequences.
 i18next-browser-languagedetector used to automatically select the language based on the user's browser language
 settings.
 
-### How add your locale
+### How add your locale 📝
 
 1) goto `./src/locale` and `Copy / Paste` a JSON with name `en-US.json.`
 2) `Rename file` with your own language code
@@ -279,14 +275,14 @@ settings.
 
 ## Services
 
-### Game Engine Service
+### Game Engine Service 🎮
 
 > located in `./src/app/services/engine/useGameEngine.ts`
 
 This service is responsible for ensuring the performance of the game board. It contains the complete logical part of the
 game, which utilizes the @store/gameSlice data to operate.
 
-### Sounds Services
+### Sounds Services 📢
 
 > located in `./src/app/components/sounds`
 
