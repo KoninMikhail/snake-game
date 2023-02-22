@@ -298,14 +298,16 @@ recently with desktop publishing software like Aldus PageMaker including version
 
 > information that can help you learn the architecture of the project faster
 
-### how does the pipeline initialize and load the application?
+#### how does the pipeline initialize and load the application?
 
+```
 * initialize react
 * Implementing a middleware that monitors and records the device's data (including type and screen size) for set app
   params.
 * Once data about the device has been obtained, the resources needed for its selection and implementation are chosen and
   put into action.
 * After loading image placeholders, loader be hidden
+  ```
 
 ## Contributors
 
