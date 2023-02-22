@@ -173,7 +173,7 @@ const sound = getSoundSourceById(soundContext, sourceID);
 
 <br />
 
-### Image Sources & Assets injection 🎴
+### Image Sources & Assets injection
 
 * `imageID` - The basic element of the image context structure.
   Her name is key of imagesData if you are using
@@ -199,7 +199,7 @@ suited for it. If there are no specific resources available for the screen type,
 
 <img width="100%" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/images/project_image_data_scheme.jpg" alt="@KoninMikhail/snake-game's logo">
 
-### Sound Sources 🪩
+### Sound Sources
 
 * `soundID` - The basic element of the sound context structure.
   Her name is key of soundsData if you are using
