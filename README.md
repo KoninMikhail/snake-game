@@ -92,23 +92,20 @@
 
 ## Quick start
 
-> If you need full workspace:
-
-1. Clone this repository
+1. Clone `git clone https://github.com/KoninMikhail/snake-game.git`
 2. Check system requirements.
 3. Console or bash command for install package.json<br>
-   `` cd html-social-analytics-dashboard-template``<br>
-   `` yarn install``
-4. Enjoy this!
+   `` cd snake-game``<br>
+   `` npm install``
+4. `` npm run build``
+5. `` npm run serve``!
+6. Enjoy this!
 
 ---------
-if you do not have installed Yarn package manager:
-``npm install -g yarn``, and repeat guide;
 
 ## Requirements:
 
 > - **NodeJS:** 17.3 (My version at building time)
->- **Yarn:** 1.22
 
 
 <br /><br />
