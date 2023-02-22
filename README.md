@@ -123,7 +123,7 @@
 | `SOUND_ENABLED`            | true          | The initial audio volume is set from this constant value, unless it is changed in the browser. If the user alters the volume, their new setting is stored in the local storage of their browser and will be used from there. |
 | `PAGE_TRANSITION_DURATION` | 1400          | This constant is the base value for the duration of all transitions and animations in the application. When the route is changed, re-rendering will occur halfway through this duration.                                     |
 
-##### Paths 🗃
+### Paths 🗃
 
 if you are use `./public/` folder as host for application assets - is folder names in paths for use in app context
 
