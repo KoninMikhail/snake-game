@@ -69,20 +69,42 @@
 - [Quick start](#quick-start)
     - [Requirements](#requirements)
     - [Report a bug](#disclamer--%EF%B8%8F)
-- [App](#app-documentation)
-    - [configuration](#app-configuration)
-    - [routes](#routes)
-    - [localization](#localization)
-        - [How add your own locale](#how-add-your-locale)
-- [Game](#game-documentation)
-    - [Configuration](#game-configuration)
-- [Environment](#environment)
-    - [testing](#testing)
-    - [deployment](#deployment)
-
+- [Configuration](#app-configuration)
+- [Asset control & injection](#routes)
+- [Routes](#routes)
+- [localization](#localization)
+    - [How add your own locale](#how-add-your-locale)
+- [Services](#game-documentation)
+- [Additional Information](#environment)
+- [testing](#testing)
 - [Contributing](#contributors)
 - [Buy Me A Coffee](#buy-me-a-coffee)
 - [License and Changelog](#license-and-changelog)
+
+<br /><br />
+
+<img align="left" src="https://raw.githubusercontent.com/KoninMikhail/social-analytics-dashboard-template/master/.repo/iconpack/qs.png" width="50px" />
+
+## Quick start
+
+> If you need full workspace:
+
+1. Clone this repository
+2. Check system requirements.
+3. Console or bash command for install package.json<br>
+   `` cd html-social-analytics-dashboard-template``<br>
+   `` yarn install``
+4. Enjoy this!
+
+---------
+if you do not have installed Yarn package manager:
+``npm install -g yarn``, and repeat guide;
+
+## Requirements:
+
+> - **NodeJS:** 17.3 (My version at building time)
+>- **Yarn:** 1.22
+
 
 <br /><br />
 
@@ -253,9 +275,7 @@ settings.
 
 <img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
 
-## Environment
-
-### Development
+## Services
 
 > Lorem Ipsum is
 
@@ -265,7 +285,9 @@ book. It has survived not only five centuries, but also the leap into electronic
 unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 
-### Testing
+## Additional Information
+
+## Testing
 
 > Lorem Ipsum is
 
@@ -274,22 +296,6 @@ dummy text ever since the 1500s, when an unknown printer took a galley of type a
 book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
 unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-
----
-
-### Deployment
-
-> Lorem Ipsum is
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-
-<br /><br />
-
-<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
 
 ## Contributors
 
