@@ -33,10 +33,10 @@
 * **React, Typescript, Redux Toolkit**
 * **Clean Atomic Design Architecture**
 * **Mobile First Optimization**
-* **All remote assets delivery into app by Context**
+* **All remote assets deliveries into app by Context**
 * **Responsive media (personal media by device type)**
 * **Multilingual with autodetect locale by user-agent**
-* **High percentage of code coverage for tests**
+* **High percentage test coverage (>95%)**
 * **Quick start** from prepared workspace: 🗲🗲
     * [vite](https://vitejs.dev/) - Next Generation Frontend Tooling
     * [eslint](https://eslint.org/) - ESLint is a tool for identifying and reporting on patterns found in
@@ -74,15 +74,14 @@
     - [Request feature](#request-features-)
 - [Quick start](#quick-start)
     - [Requirements](#requirements)
-    - [Report a bug](#disclamer--%EF%B8%8F)
-- [Configuration](#app-configuration)
-- [Asset control & injection](#routes)
+    - [Report a bug](#report-bug-)
+- [Configuration](#configuration)
+- [Asset control & injection](#assets-control--injection)
 - [Routes](#routes)
 - [localization](#localization)
     - [How add your own locale](#how-add-your-locale)
-- [Services](#game-documentation)
-- [Additional Information](#environment)
-- [testing](#testing)
+- [Services](#services)
+- [Additional Information](#additional-information)
 - [Contributing](#contributors)
 - [Buy Me A Coffee](#buy-me-a-coffee)
 - [License and Changelog](#license-and-changelog)
@@ -93,23 +92,20 @@
 
 ## Quick start
 
-> If you need full workspace:
-
-1. Clone this repository
+1. Clone `git clone https://github.com/KoninMikhail/snake-game.git`
 2. Check system requirements.
 3. Console or bash command for install package.json<br>
-   `` cd html-social-analytics-dashboard-template``<br>
-   `` yarn install``
-4. Enjoy this!
+   `` cd snake-game``<br>
+   `` npm install``
+4. `` npm run build``
+5. `` npm run serve``!
+6. Enjoy this!
 
 ---------
-if you do not have installed Yarn package manager:
-``npm install -g yarn``, and repeat guide;
 
 ## Requirements:
 
 > - **NodeJS:** 17.3 (My version at building time)
->- **Yarn:** 1.22
 
 
 <br /><br />
@@ -283,25 +279,39 @@ settings.
 
 ## Services
 
-> Lorem Ipsum is
+### Game Engine Service
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+> located in `./src/app/services/engine/useGameEngine.ts`
+
+This service is responsible for ensuring the performance of the game board. It contains the complete logical part of the
+game, which utilizes the @store/gameSlice data to operate.
+
+### Sounds Services
+
+> located in `./src/app/components/sounds`
+
+A set of microservices that are implemented as a separate layer in Atomic Design.
+Each microservice is responsible for monitoring the overall state of the application and triggering an audio response if
+the conditions it has been assigned are met.
+
+<br /><br />
+
+<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
 
 ## Additional Information
 
-## Testing
+> information that can help you learn the architecture of the project faster
 
-> Lorem Ipsum is
+#### how does the pipeline initialize and load the application?
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+```
+* initialize react
+* Implementing a middleware that monitors and records the device's data (including type and screen size) for set app
+  params.
+* Once data about the device has been obtained, the resources needed for its selection and implementation are chosen and
+  put into action.
+* After loading image placeholders, loader be hidden
+  ```
 
 ## Contributors
 

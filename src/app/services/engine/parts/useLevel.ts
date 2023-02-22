@@ -6,8 +6,15 @@ import {
     gameStatusSelector,
 } from '@store/slices/game.slice';
 import useActionCreators from '@hooks/useActionCreators/useActionCreators';
-import { useUpdateEffect } from 'usehooks-ts';
+import {useUpdateEffect} from 'usehooks-ts';
 
+/**
+ * @function useLevel
+ *
+ * It used to increase the game level.
+ *
+ * @returns {void}
+ */
 export const useLevel = () => {
     const gameActionsList = useActionCreators(gameActions);
     const gameStatus = useAppSelector(gameStatusSelector);
