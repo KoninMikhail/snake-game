@@ -97,8 +97,8 @@
 3. Console or bash command for install package.json<br>
    `` cd snake-game``<br>
    `` npm install``
-4. `` npm run build``
-5. `` npm run serve``!
+4. build package `` npm run build``
+5. run server `` npm run serve``!
 6. Enjoy this!
 
 ---------
