@@ -128,10 +128,12 @@ if you are use `./public/` folder as host for application assets - is folder nam
 
 > All assets data placed in `./src/data`;
 
+<br />
 All pictures and sounds used in the application are delivered within the application itself, using the element ID found
 in the context.
 
 <br />
+
 **For example:**
 
 ```
