@@ -62,6 +62,10 @@
 
 <img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/menu.png" width="50px" />
 
+<a href="https://github.com/KoninMikhail/snake-game">
+  <img width="100%" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/images/project_tablet_image.jpg" alt="@KoninMikhail/snake-game's logo">
+</a>
+
 ## TABLE OF CONTENTS
 
 - [General](#the-snake-game)
@@ -69,20 +73,42 @@
 - [Quick start](#quick-start)
     - [Requirements](#requirements)
     - [Report a bug](#disclamer--%EF%B8%8F)
-- [App](#app-documentation)
-    - [configuration](#app-configuration)
-    - [routes](#routes)
-    - [localization](#localization)
-        - [How add your own locale](#how-add-your-locale)
-- [Game](#game-documentation)
-    - [Configuration](#game-configuration)
-- [Environment](#environment)
-    - [testing](#testing)
-    - [deployment](#deployment)
-
+- [Configuration](#app-configuration)
+- [Asset control & injection](#routes)
+- [Routes](#routes)
+- [localization](#localization)
+    - [How add your own locale](#how-add-your-locale)
+- [Services](#game-documentation)
+- [Additional Information](#environment)
+- [Testing](#testing)
 - [Contributing](#contributors)
 - [Buy Me A Coffee](#buy-me-a-coffee)
 - [License and Changelog](#license-and-changelog)
+
+<br /><br />
+
+<img align="left" src="https://raw.githubusercontent.com/KoninMikhail/social-analytics-dashboard-template/master/.repo/iconpack/qs.png" width="50px" />
+
+## Quick start
+
+> If you need full workspace:
+
+1. Clone this repository
+2. Check system requirements.
+3. Console or bash command for install package.json<br>
+   `` cd html-social-analytics-dashboard-template``<br>
+   `` yarn install``
+4. Enjoy this!
+
+---------
+if you do not have installed Yarn package manager:
+``npm install -g yarn``, and repeat guide;
+
+## Requirements:
+
+> - **NodeJS:** 17.3 (My version at building time)
+>- **Yarn:** 1.22
+
 
 <br /><br />
 
@@ -243,7 +269,7 @@ settings.
 1) goto `./src/locale` and `Copy / Paste` a JSON with name `en-US.json.`
 2) `Rename file` with your own language code
 3) `Replace values` with your language
-4) `import your localce` to `./src/locale/index.ts`.
+4) `import` into `./src/locale/index.ts`.
 5) `insert to export object`.
 
 > Ensure that our language pack does not contain any Cyrillic characters. If present, replace the main application font
@@ -253,9 +279,7 @@ settings.
 
 <img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
 
-## Environment
-
-### Development
+## Services
 
 > Lorem Ipsum is
 
@@ -265,7 +289,9 @@ book. It has survived not only five centuries, but also the leap into electronic
 unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 
-### Testing
+## Additional Information
+
+## Testing
 
 > Lorem Ipsum is
 
@@ -274,22 +300,6 @@ dummy text ever since the 1500s, when an unknown printer took a galley of type a
 book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
 unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-
----
-
-### Deployment
-
-> Lorem Ipsum is
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-
-<br /><br />
-
-<img align="left" src="https://github.com/KoninMikhail/snake-game/blob/main/.resources/icons/contributors.png" width="50px" />
 
 ## Contributors
 
