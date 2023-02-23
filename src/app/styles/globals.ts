@@ -21,7 +21,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     width: 100%;
-    font-size: ${({ theme }) => theme.typography.fontSize.body.mobile};
+    font-size: ${({ theme }) => theme.typography.fontSize.body.small};
     height: 100%;
     line-height: 1.3;
     color: ${({ theme }) => theme.colors.body};
@@ -34,11 +34,11 @@ export const GlobalStyles = createGlobalStyle`
     overflow: hidden;
 
     ${up('md')} {
-      font-size: ${({ theme }) => theme.typography.fontSize.body.tablet};
+      font-size: ${({ theme }) => theme.typography.fontSize.body.middle};
     }
 
     ${up('xl')} {
-      font-size: ${({ theme }) => theme.typography.fontSize.body.desktop};
+      font-size: ${({ theme }) => theme.typography.fontSize.body.large};
     }
   }
 
