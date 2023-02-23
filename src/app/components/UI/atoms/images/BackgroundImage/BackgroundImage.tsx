@@ -1,7 +1,7 @@
 import useProgressiveImageLoader from '@hooks/useProgressiveImageSource/useProgressiveImageSource';
 import { StyledBackgroundImage } from './style/StyledBackgroundImage';
 import { useImagesContext } from '@context/ImagesContext';
-import { Device } from '@/types/device';
+import { DeviceScreenSize } from '@/types/device';
 import getImageSourceById from '@/helpers/getters/getImageSourceById';
 import useAppSelector from '@hooks/useAppSelector/useAppSelector';
 import { appDeviceInfoSelector } from '@store/slices/app.slice';
@@ -20,9 +20,9 @@ import { IImage } from '@ui/atoms/images/images.interface';
 export const BackgroundImage = ({ sourceID, alt, ...rest }: IImage) => {
     const ctx = useImagesContext();
     const deviceInfo = useAppSelector(appDeviceInfoSelector);
-    const deviceScreenType = deviceInfo.screen as Device;
+    const deviceScreenSize = deviceInfo.screen as DeviceScreenSize;
 
-    const dataForLoading = getImageSourceById(ctx, sourceID, deviceScreenType);
+    const dataForLoading = getImageSourceById(ctx, sourceID, deviceScreenSize);
     const output = useProgressiveImageLoader(dataForLoading);
 
     return <StyledBackgroundImage src={output} alt={alt} {...rest} />;

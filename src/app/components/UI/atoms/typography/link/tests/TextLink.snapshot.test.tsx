@@ -1,5 +1,5 @@
-import {TextLink} from '@ui/atoms/typography/link/TextLink';
-import {renderWithProviders} from '@utils/test-utils';
+import { TextLink } from '@ui/atoms/typography/link/TextLink';
+import { renderWithProviders } from '@utils/test-utils';
 
 /**
  * Test

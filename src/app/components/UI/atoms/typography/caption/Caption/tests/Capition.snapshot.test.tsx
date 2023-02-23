@@ -1,5 +1,5 @@
-import {Caption} from '@ui/atoms/typography/caption/Caption/Caption';
-import {renderWithProviders} from '@utils/test-utils';
+import { Caption } from '@ui/atoms/typography/caption/Caption/Caption';
+import { renderWithProviders } from '@utils/test-utils';
 
 /**
  * Test

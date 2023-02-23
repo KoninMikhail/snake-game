@@ -1,8 +1,8 @@
-import {screen, waitFor} from '@testing-library/react';
-import {FitWidthImage} from '../FitWidthImage';
-import {LOAD_SUCCESS_SRC, PLACEHOLDER_SRC, PLACEHOLDER_SRC_MOBILE} from '@/setupTests';
-import {renderWithProviders} from '@utils/test-utils';
-import {AppGlobalState} from '@store/slices/app.slice';
+import { screen, waitFor } from '@testing-library/react';
+import { FitWidthImage } from '../FitWidthImage';
+import { LOAD_SUCCESS_SRC, PLACEHOLDER_SRC, PLACEHOLDER_SRC_MOBILE } from '@/setupTests';
+import { renderWithProviders } from '@utils/test-utils';
+import { AppGlobalState } from '@store/slices/app.slice';
 
 /**
  * Constants
@@ -46,9 +46,9 @@ describe('FitWidthImage', () => {
         expect(screen.getByTestId(IMAGE_TEST_ID)).toHaveAttribute('alt', IMAGE_ALT);
     });
 
-    it('should render mobile logo', () => {
+    it('should render small screen logo', () => {
         const initialState = {
-            preloadedState: { app: { device: { screen: 'mobile' } } as AppGlobalState },
+            preloadedState: { app: { device: { screen: 'small' } } as AppGlobalState },
         };
 
         renderWithProviders(

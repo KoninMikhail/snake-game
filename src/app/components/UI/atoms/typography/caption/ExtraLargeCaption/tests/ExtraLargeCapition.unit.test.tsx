@@ -1,6 +1,6 @@
-import {screen} from '@testing-library/react';
-import {ExtraLargeCaption} from '@ui/atoms/typography/caption/ExtraLargeCaption/ExtraLargeCaption';
-import {renderWithProviders} from '@utils/test-utils';
+import { screen } from '@testing-library/react';
+import { ExtraLargeCaption } from '@ui/atoms/typography/caption/ExtraLargeCaption/ExtraLargeCaption';
+import { renderWithProviders } from '@utils/test-utils';
 
 /**
  * Test

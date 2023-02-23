@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import {up} from 'styled-breakpoints';
-import {ITextProps} from '@ui/atoms/typography/Typography.interface';
+import { up } from 'styled-breakpoints';
+import { ITextProps } from '@ui/atoms/typography/Typography.interface';
 
 /**
  * @name Text
@@ -15,15 +15,15 @@ import {ITextProps} from '@ui/atoms/typography/Typography.interface';
  */
 export const HeavyCaption = styled.span<ITextProps>`
     font-family: ${({ theme }) => theme.typography.fontFamily.body};
-    font-size: ${({ theme }) => theme.typography.fontSize.caption.xxl.mobile};
+    font-size: ${({ theme }) => theme.typography.fontSize.caption.xxl.small};
     font-weight: ${({ weight }) => weight ?? 'normal'};
 
     ${({ align }) => align && `text-align: ${align};`}
     ${up('md')} {
-        font-size: ${({ theme }) => theme.typography.fontSize.caption.xxl.tablet};
+        font-size: ${({ theme }) => theme.typography.fontSize.caption.xxl.middle};
     }
 
     ${up('xl')} {
-        font-size: ${({ theme }) => theme.typography.fontSize.caption.xxl.desktop};
+        font-size: ${({ theme }) => theme.typography.fontSize.caption.xxl.large};
     }
 `;

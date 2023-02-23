@@ -11,16 +11,16 @@ describe('getImageSourceById', () => {
                 placeholder: `${getBaseUrl()}/backgrounds/placeholders/bg_animation.jpg`,
                 src: `${getBaseUrl()}/backgrounds/bg_animation.gif`,
             },
-            tablet: {
+            middle: {
                 placeholder: `${getBaseUrl()}/backgrounds/placeholders/bg_animation_tablet.jpg`,
                 src: `${getBaseUrl()}/backgrounds/bg_animation_tablet.gif`,
             },
         },
     } as ImagesData;
 
-    it('should return tablet image source', () => {
-        const imageSource = getImageSourceById(imagesData, 'background', 'tablet');
-        expect(imageSource.src).toEqual(imagesData.background.tablet.src);
-        expect(imageSource.placeholder).toEqual(imagesData.background.tablet.placeholder);
+    it('should return middle screen image source', () => {
+        const imageSource = getImageSourceById(imagesData, 'background', 'middle');
+        expect(imageSource.src).toEqual(imagesData.background.middle.src);
+        expect(imageSource.placeholder).toEqual(imagesData.background.middle.placeholder);
     });
 });
