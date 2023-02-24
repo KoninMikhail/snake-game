@@ -1,10 +1,7 @@
 import { isRouteErrorResponse, useRouteError } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 
 export const DefaultErrorPage = () => {
-    const { t } = useTranslation();
     const error = useRouteError();
-    console.log(error);
 
     if (isRouteErrorResponse(error)) {
         return (
