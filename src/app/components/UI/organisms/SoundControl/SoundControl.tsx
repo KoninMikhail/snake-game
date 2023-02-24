@@ -1,10 +1,10 @@
-import {soundActions, soundStatusSelector} from '@store/slices/sound.slice';
-import useActionCreators from '@hooks/useActionCreators/useActionCreators';
+import { soundActions, soundStatusSelector } from '@store/slices/sound.slice';
 import useAppSelector from '@hooks/useAppSelector/useAppSelector';
-import {SoundOnIcon} from '@ui/atoms/assets/icons/SoundOnIcon/SoundOnIcon';
-import {IconToggle} from '@ui/molecules/inputs/toggles/IconToggle/IconToggle';
-import {ISoundControl} from '@ui/organisms/SoundControl/ISoundControl.interface';
-import {SoundOffIcon} from '@ui/atoms/assets/icons/SoundOffIcon/SoundOffIcon';
+import { SoundOnIcon } from '@ui/atoms/assets/icons/SoundOnIcon/SoundOnIcon';
+import { IconToggle } from '@ui/molecules/inputs/toggles/IconToggle/IconToggle';
+import { ISoundControl } from '@ui/organisms/SoundControl/ISoundControl.interface';
+import { SoundOffIcon } from '@ui/atoms/assets/icons/SoundOffIcon/SoundOffIcon';
+import useActionCreators from '@hooks/useActionCreators/useActionCreators';
 
 /**
  * @name SoundControl
