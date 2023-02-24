@@ -33,6 +33,6 @@ describe('NonTouchScreen', () => {
             preloadedState
         );
 
-        expect(screen.queryByTestId(testId)).toBeNull();
+        expect(screen.queryByTestId(testId)).not.toBeInTheDocument();
     });
 });

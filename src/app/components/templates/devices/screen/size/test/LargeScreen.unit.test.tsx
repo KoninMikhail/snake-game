@@ -3,7 +3,7 @@ import { LargeScreen } from '@templates/devices/screen/size/LargeScreen';
 import { renderWithProviders } from '@utils/test-utils';
 import { AppGlobalState } from '@store/slices/app.slice';
 
-describe('Large screen ', () => {
+describe('Large screen', () => {
     const testId = 'mockElement';
 
     it('should pass content', () => {
@@ -33,6 +33,6 @@ describe('Large screen ', () => {
             preloadedState
         );
 
-        expect(screen.queryByTestId(testId)).toBeNull();
+        expect(screen.queryByTestId(testId)).not.toBeInTheDocument();
     });
 });
