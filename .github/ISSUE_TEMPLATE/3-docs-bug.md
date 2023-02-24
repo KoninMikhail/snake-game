@@ -1,19 +1,18 @@
 ---
-name: "📚 Documentation or README.md issue report"
+name: '📚 Documentation or README.md issue report'
 about: "Report an issue in the project's documentation or README.md file."
-title: ""
-labels: "Documentation"
+title: ''
+labels: 'Documentation'
 assignees: KoninMikhail
-
 ---
+
 # **📚 Documentation Issue Report**
 
 ## **Describe the bug**
+
 <!-- A clear and concise description of what the bug is. -->
 
-*
-
----
+-   ***
 
 ### **To Reproduce**
 
@@ -34,21 +33,22 @@ assignees: KoninMikhail
 ---
 
 ### **Media prove**
+
 <!-- If applicable, add screenshots or videos to help explain your problem. -->
 
 ---
 
 ## **Describe the solution you'd like**
+
 <!-- A clear and concise description of what you want to happen. -->
 
-*
-
----
+-   ***
 
 ### **Additional context**
+
 <!-- Add any other context or additional information about the problem here.-->
 
-*
+-
 
 <!--📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛
 
