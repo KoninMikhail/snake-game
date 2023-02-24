@@ -1,5 +1,5 @@
-import {Copyright} from '@ui/molecules/information/Copyright/Copyright';
-import {renderWithProviders} from '@utils/test-utils';
+import { Copyright } from '@ui/molecules/information/Copyright/Copyright';
+import { renderWithProviders } from '@utils/test-utils';
 
 /**
  * Test
