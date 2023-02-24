@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '@store/store';
-import { Device, DeviceInfo, DeviceOrientation } from '@/types/device';
+import { DeviceInfo, DeviceOrientation, DeviceScreenSize, DeviceTouch } from '@/types/device';
 
 /**
  * Constants
@@ -25,15 +25,15 @@ export interface AppGlobalState {
 /**
  * Initial
  */
-const initialState: AppGlobalState = {
+export const initialState: AppGlobalState = {
     pageState: 'loading',
     init: false,
     currentRoute: null,
-
     device: {
         orientation: null,
         screen: null,
         model: null,
+        touch: false,
     },
 };
 
@@ -53,8 +53,11 @@ const soundSlice = createSlice({
         setPageState: (state, action: PayloadAction<{ state: PageState }>) => {
             state.pageState = action.payload.state;
         },
-        setDeviceScreenType: (state, action: PayloadAction<{ screenType: Device }>) => {
-            state.device.screen = action.payload.screenType;
+        setDeviceScreen: (state, action: PayloadAction<{ screen: DeviceScreenSize }>) => {
+            state.device.screen = action.payload.screen;
+        },
+        setDeviceTouchState: (state, action: PayloadAction<{ touch: DeviceTouch }>) => {
+            state.device.touch = action.payload.touch;
         },
         setDeviceOrientation: (
             state,
@@ -67,6 +70,7 @@ const soundSlice = createSlice({
 
 export const appPageStateSelector = (state: RootState) => state.app.pageState;
 export const appDeviceInfoSelector = (state: RootState) => state.app.device;
+export const appDeviceTouchStateSelector = (state: RootState) => state.app.device.touch;
 export const appDeviceScreenTypeSelector = (state: RootState) => state.app.device.screen;
 export const appDeviceOrientationSelector = (state: RootState) => state.app.device.orientation;
 
