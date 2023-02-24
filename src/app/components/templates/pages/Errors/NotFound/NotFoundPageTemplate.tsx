@@ -7,9 +7,9 @@ import { INotFoundPageTemplate } from '@templates/pages/Errors/NotFound/NotFound
 import { Row } from '@templates/grids/Row/Row';
 import { Column } from '@templates/grids/Row/Column/Column';
 import { ExtraLargeCaption } from '@ui/atoms/typography/caption/ExtraLargeCaption/ExtraLargeCaption';
-import { DesktopScreen } from '@templates/devices/screen/DesktopScreen';
-import { TabletScreen } from '@templates/devices/screen/TabletScreen';
-import { MobileScreen } from '@templates/devices/screen/MobileScreen';
+import { LargeScreen } from '@templates/devices/screen/size/LargeScreen';
+import { MiddleScreen } from '@templates/devices/screen/size/MiddleScreen';
+import { SmallScreen } from '@templates/devices/screen/size/SmallScreen';
 import { Caption } from '@ui/atoms/typography/caption/Caption/Caption';
 import { PrimaryButton } from '@ui/atoms/buttons/PrimaryButton/PrimaryButton';
 import { LightTextShadow } from '@ui/atoms/assets/shadows/text/LightTextShadow/LightTextShadow';
@@ -33,7 +33,7 @@ export const NotFoundPageTemplate = ({
                 <ToolbarWithSoundControlTemplate />
                 <Row>
                     <Column align={'center'}>
-                        <DesktopScreen>
+                        <LargeScreen>
                             <Row>
                                 <Column>
                                     <LightTextShadow>
@@ -46,8 +46,9 @@ export const NotFoundPageTemplate = ({
                                     </PrimaryButton>
                                 </Column>
                             </Row>
-                        </DesktopScreen>
-                        <TabletScreen>
+                        </LargeScreen>
+
+                        <MiddleScreen>
                             <Row>
                                 <Column>
                                     <LightTextShadow>
@@ -58,8 +59,9 @@ export const NotFoundPageTemplate = ({
                                     <PrimaryButton>{buttonLabel}</PrimaryButton>
                                 </Column>
                             </Row>
-                        </TabletScreen>
-                        <MobileScreen>
+                        </MiddleScreen>
+
+                        <SmallScreen>
                             <Row>
                                 <Column justify={'center'}>
                                     <LightTextShadow>
@@ -72,7 +74,7 @@ export const NotFoundPageTemplate = ({
                                     <PrimaryButton>{buttonLabel}</PrimaryButton>
                                 </Column>
                             </Row>
-                        </MobileScreen>
+                        </SmallScreen>
                     </Column>
                 </Row>
                 <FooterTemplate {...footer} />
