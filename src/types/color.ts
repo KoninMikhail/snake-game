@@ -1,4 +1,4 @@
-import {CssNamedColors} from '@/types/enums/css-named-colors.enum';
+import { CssNamedColors } from '@/types/enums/css-named-colors.enum';
 
 /**
  * @name Color
