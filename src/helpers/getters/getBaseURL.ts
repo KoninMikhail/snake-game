@@ -9,7 +9,7 @@ export type BaseUrl = Brand<string, 'baseUrl'>;
  * @returns A string with baseUrl
  */
 const getBaseUrl = (): BaseUrl => {
-    const baseUrl = window.location.origin;
+    const baseUrl = window.location.href;
     if (!baseUrl) sendErrorCode('baseUrl does not exist');
     return baseUrl as BaseUrl;
 };
