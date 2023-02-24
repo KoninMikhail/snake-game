@@ -27,10 +27,10 @@ jest.mock('@ui/molecules/information/Copyright/Copyright', () => ({
 }));
 
 // fake content
-const mockGitHubLink = 'mocked CopyrightContent';
+const mockGitHubLink = 'mocked GithubLink Content';
 
 // fake component
-jest.mock('@ui/molecules/navigation/GithubLink/GithubLink', () => ({
+jest.mock('@ui/molecules/navigation/GithubLink/GitHubLink', () => ({
     GitHubLink: () => mockGitHubLink,
 }));
 
