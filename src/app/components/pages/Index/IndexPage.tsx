@@ -1,7 +1,8 @@
-import {useTranslation} from 'react-i18next';
-import {IndexPageTemplate} from '@templates/pages/Index/IndexPageTemplate';
-import {isTouchDevice} from '@/helpers/validators/isTouchDevice';
-import {IndexPageSounds} from '@sounds/pages/IndexPageSounds';
+import { useTranslation } from 'react-i18next';
+import { IndexPageTemplate } from '@templates/pages/Index/IndexPageTemplate';
+import { IndexPageSounds } from '@sounds/pages/IndexPageSounds';
+import useAppSelector from '@hooks/useAppSelector/useAppSelector';
+import { appDeviceTouchStateSelector } from '@store/slices/app.slice';
 
 /**
  * @name IndexPage
@@ -11,6 +12,7 @@ import {IndexPageSounds} from '@sounds/pages/IndexPageSounds';
  */
 export const IndexPage = () => {
     const { t } = useTranslation();
+    const isTouchDevice = useAppSelector(appDeviceTouchStateSelector);
 
     /** Background
      * ======================== */
@@ -26,7 +28,7 @@ export const IndexPage = () => {
         alt: `${t('app.name').toLowerCase()} - ${t('app.slogan').toLowerCase()}`,
     };
 
-    const CTAMessage = isTouchDevice()
+    const CTAMessage = isTouchDevice
         ? t('home.startMessage.dbtap')
         : t('home.startMessage.keyboard');
 
