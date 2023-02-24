@@ -6,7 +6,7 @@ import { GlobalStyles } from '@styles/globals';
 import { appActions } from '@store/slices/app.slice';
 import { startAppListening } from '@store/store';
 import useWindowOrientation from '@hooks/useWindowOrientation/useWindowOrientation';
-import useDeviceScreenType from '@hooks/useDeviceScreenType/useDeviceScreenType';
+import useDeviceScreenSize from '@hooks/useDeviceScreenSize/useDeviceScreenSize';
 import useActionCreators from '@hooks/useActionCreators/useActionCreators';
 import { setupAppListeners, setupGameListeners } from '@store/middlewares/setupListeners';
 import { Loader } from '@ui/atoms/loaders/Loader/Loader';
@@ -19,11 +19,11 @@ const App = () => {
     const actions = useActionCreators(appActions);
     const location = useLocation();
 
-    /** Detect Screen type
+    /** Detect Screen size
      * ======================== */
-    const screen = useDeviceScreenType();
+    const screen = useDeviceScreenSize();
     useUpdateEffect(() => {
-        actions.setDeviceScreenType({ screenType: screen.type });
+        actions.setDeviceScreen({ screen: screen.size });
     }, [screen]);
 
     /** Detect Orientation
