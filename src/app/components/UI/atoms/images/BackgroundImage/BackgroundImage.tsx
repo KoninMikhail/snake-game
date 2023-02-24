@@ -18,11 +18,11 @@ import { IImage } from '@ui/atoms/images/images.interface';
  */
 
 export const BackgroundImage = ({ sourceID, alt, ...rest }: IImage) => {
-    const ctx = useImagesContext();
+    const context = useImagesContext();
     const deviceInfo = useAppSelector(appDeviceInfoSelector);
     const deviceScreenSize = deviceInfo.screen as DeviceScreenSize;
 
-    const dataForLoading = getImageSourceById(ctx, sourceID, deviceScreenSize);
+    const dataForLoading = getImageSourceById(context, sourceID, deviceScreenSize);
     const output = useProgressiveImageLoader(dataForLoading);
 
     return <StyledBackgroundImage src={output} alt={alt} {...rest} />;

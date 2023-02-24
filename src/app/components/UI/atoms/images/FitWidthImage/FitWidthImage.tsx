@@ -17,11 +17,11 @@ import { DeviceScreenSize } from '@/types/device';
  * @param alt - logo alt attrib.
  */
 export const FitWidthImage = ({ sourceID, alt, ...rest }: IImage) => {
-    const ctx = useImagesContext();
+    const context = useImagesContext();
     const deviceInfo = useAppSelector(appDeviceInfoSelector);
     const deviceScreenSize = deviceInfo.screen as DeviceScreenSize;
 
-    const dataForLoading = getImageSourceById(ctx, sourceID, deviceScreenSize);
+    const dataForLoading = getImageSourceById(context, sourceID, deviceScreenSize);
     const output = useProgressiveImageLoader(dataForLoading);
 
     return <StyledFitWidthImage src={output} alt={alt} {...rest} />;

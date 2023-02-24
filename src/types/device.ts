@@ -1,4 +1,4 @@
-export type Device = 'mobile' | 'tablet' | 'desktop';
+export type DeviceScreenSize = 'small' | 'middle' | 'large';
 
 export type DeviceOrientation = 'portrait' | 'landscape';
 
@@ -8,7 +8,7 @@ export type DeviceTouch = boolean;
 
 export type DeviceInfo = {
     orientation: DeviceOrientation | null;
-    screen: Device | null;
+    screen: DeviceScreenSize | null;
     model: DeviceModel | null;
     touch: DeviceTouch;
 };
