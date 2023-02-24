@@ -1,4 +1,4 @@
-import { IndexPage } from '@pages/Index/IndexPage';
+import { IndexPage } from '@pages/IndexPage';
 
 export default function Index() {
     return <IndexPage />;

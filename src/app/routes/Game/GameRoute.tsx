@@ -1,4 +1,4 @@
-import { GamePage } from '@pages/Game/GamePage';
+import { GamePage } from '@pages/GamePage';
 import useAppSelector from '@hooks/useAppSelector/useAppSelector';
 import { Navigate } from 'react-router-dom';
 import { gameLaunchSelector } from '@store/slices/game.slice';
