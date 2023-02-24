@@ -3,7 +3,7 @@ import { BackgroundImage } from '@ui/atoms/images/BackgroundImage/BackgroundImag
 import { MainContainer } from '@templates/containers/MainContainer';
 import { ToolbarWithSoundControlTemplate } from '@templates/toolbars/ToolbarWithSoundControl/ToolbarWithSoundControlTemplate';
 import { FooterTemplate } from '@templates/footers/Footer/FooterTemplate';
-import { INotFoundPageTemplate } from '@templates/pages/Errors/NotFound/NotFoundPageTemplate.interface';
+import { INotFoundPageTemplate } from '@templates/pages/NotFound/NotFoundPageTemplate.interface';
 import { Row } from '@templates/grids/Row/Row';
 import { Column } from '@templates/grids/Row/Column/Column';
 import { ExtraLargeCaption } from '@ui/atoms/typography/caption/ExtraLargeCaption/ExtraLargeCaption';

@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { NotFoundPageTemplate } from '@templates/pages/Errors/NotFound/NotFoundPageTemplate';
+import { NotFoundPageTemplate } from '@templates/pages/NotFound/NotFoundPageTemplate';
 
 export const NotFoundPage = () => {
     const { t } = useTranslation();
