@@ -8,18 +8,18 @@ exports[`PrimaryButton equal snapshot 1`] = `
   border: 3px dashed deeppink;
   padding: 5px 25px;
   background: black;
-  font-family: 'Nineteen Eighty Seven','Segoe UI','Roboto','Oxygen','Ubuntu','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+  font-family: 'pixeloid_bold','Segoe UI','Roboto','Oxygen','Ubuntu','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
   text-align: center;
-  font-size: mobile:14px;
-  tablet: 17px;
-  desktop: 0.9vw;
+  font-size: small:14px;
+  middle: 16px;
+  large: 1.1vw;
   font-weight: normal;
 }
 
 .c0:hover {
-  color: #ffffff;
+  color: white;
   background: deeppink;
-  border: 3px dashed #000000;
+  border: 3px dashed black;
 }
 
 <div>

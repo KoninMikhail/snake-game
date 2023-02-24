@@ -1,7 +1,7 @@
-import {render} from '@testing-library/react';
-import {ThemeProvider} from 'styled-components';
-import {IBaseTheme} from '@styles/theme';
-import {PrimaryBorder} from '@ui/atoms/assets/borders/PrimaryBorder/PrimaryBorder';
+import { render } from '@testing-library/react';
+import { ThemeProvider } from 'styled-components';
+import { IBaseTheme } from '@styles/theme';
+import { PrimaryBorder } from '@ui/atoms/assets/borders/PrimaryBorder/PrimaryBorder';
 
 /**
  * Mocks

@@ -1,7 +1,7 @@
-import {render, screen} from '@testing-library/react';
-import {PrimaryButton} from '../PrimaryButton';
-import {ThemeProvider} from 'styled-components';
-import {IBaseTheme} from '@styles/theme';
+import { render, screen } from '@testing-library/react';
+import { PrimaryButton } from '../PrimaryButton';
+import { ThemeProvider } from 'styled-components';
+import { IBaseTheme } from '@styles/theme';
 
 /**
  * Mocks
@@ -17,7 +17,7 @@ const fakeTheme = {
             body: `'Nineteen Eighty Seven', 'Segoe UI','Roboto','Oxygen','Ubuntu','Fira Sans','Droid Sans','Helvetica Neue',sans-serif`,
         },
         fontSize: {
-            body: { mobile: '14px', tablet: '17px', desktop: '0.9vw' },
+            body: { small: '14px', middle: '17px', large: '0.9vw' },
         },
     },
 } as unknown as IBaseTheme;
@@ -27,7 +27,7 @@ const fakeTheme = {
  */
 describe('PrimaryButton', () => {
     const demoContent = 'Hello world!';
-    
+
     it('correctly render', async () => {
         render(
             <ThemeProvider theme={fakeTheme}>

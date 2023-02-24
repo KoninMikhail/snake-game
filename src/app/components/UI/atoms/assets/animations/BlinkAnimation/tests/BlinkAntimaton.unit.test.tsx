@@ -1,6 +1,6 @@
-import {BlinkAnimation} from '../BlinkAnimation';
-import {render, screen} from '@testing-library/react';
-import {IBaseTheme} from '@styles/theme';
+import { BlinkAnimation } from '../BlinkAnimation';
+import { render, screen } from '@testing-library/react';
+import { IBaseTheme } from '@styles/theme';
 
 /**
  * Mocks

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ToolbarWithSoundControlDesktop Equals snapshot on desktop devices 1`] = `
+exports[`ToolbarWithSoundControl Equals snapshot on large screen devices 1`] = `
 .c0 {
   display: block;
   width: 100%;
@@ -37,7 +37,7 @@ exports[`ToolbarWithSoundControlDesktop Equals snapshot on desktop devices 1`] =
 </div>
 `;
 
-exports[`ToolbarWithSoundControlDesktop Equals snapshot on mobile devices 1`] = `
+exports[`ToolbarWithSoundControl Equals snapshot on middle screen devices 1`] = `
 .c0 {
   display: block;
   width: 100%;
@@ -74,7 +74,7 @@ exports[`ToolbarWithSoundControlDesktop Equals snapshot on mobile devices 1`] = 
 </div>
 `;
 
-exports[`ToolbarWithSoundControlDesktop Equals snapshot on tablet devices 1`] = `
+exports[`ToolbarWithSoundControl Equals snapshot on small screens 1`] = `
 .c0 {
   display: block;
   width: 100%;

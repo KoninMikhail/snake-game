@@ -1,6 +1,6 @@
-import {AppGlobalState, PageState} from '@store/slices/app.slice';
-import {renderWithProviders} from '@utils/test-utils';
-import {Loader} from '@ui/atoms/loaders/Loader/Loader';
+import { AppGlobalState, PageState } from '@store/slices/app.slice';
+import { renderWithProviders } from '@utils/test-utils';
+import { Loader } from '@ui/atoms/loaders/Loader/Loader';
 
 /**
  * Test

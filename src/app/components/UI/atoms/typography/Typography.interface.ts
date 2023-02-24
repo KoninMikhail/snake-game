@@ -1,5 +1,5 @@
-import {ElementType} from 'react';
-import {TextAlign, TextWeight} from '@/types/typography';
+import { ElementType } from 'react';
+import { TextAlign, TextWeight } from '@/types/typography';
 
 // Text Components props
 // ----------------------------------------------------------------------

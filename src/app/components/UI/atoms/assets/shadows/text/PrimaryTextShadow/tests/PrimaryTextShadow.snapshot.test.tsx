@@ -1,7 +1,7 @@
-import {render} from '@testing-library/react';
-import {PrimaryTextShadow} from '@ui/atoms/assets/shadows/text/PrimaryTextShadow/PrimaryTextShadow';
-import {ThemeProvider} from 'styled-components';
-import {IBaseTheme} from '@styles/theme';
+import { render } from '@testing-library/react';
+import { PrimaryTextShadow } from '@ui/atoms/assets/shadows/text/PrimaryTextShadow/PrimaryTextShadow';
+import { ThemeProvider } from 'styled-components';
+import { IBaseTheme } from '@styles/theme';
 
 /**
  * Mocks

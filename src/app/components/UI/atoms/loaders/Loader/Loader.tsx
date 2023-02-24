@@ -1,6 +1,6 @@
-import {LoaderOverlay} from '@ui/atoms/loaders/Loader/style/StyledLoader';
+import { LoaderOverlay } from '@ui/atoms/loaders/Loader/style/StyledLoader';
 import useAppSelector from '@hooks/useAppSelector/useAppSelector';
-import {appPageStateSelector} from '@store/slices/app.slice';
+import { appPageStateSelector } from '@store/slices/app.slice';
 
 /**
  * @name Loader

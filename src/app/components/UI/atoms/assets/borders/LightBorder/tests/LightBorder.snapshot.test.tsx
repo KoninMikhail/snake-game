@@ -1,7 +1,7 @@
-import {render} from '@testing-library/react';
-import {ThemeProvider} from 'styled-components';
-import {IBaseTheme} from '@styles/theme';
-import {LightBorder} from '@ui/atoms/assets/borders/LightBorder/LightBorder';
+import { render } from '@testing-library/react';
+import { ThemeProvider } from 'styled-components';
+import { IBaseTheme } from '@styles/theme';
+import { LightBorder } from '@ui/atoms/assets/borders/LightBorder/LightBorder';
 
 /**
  * Mocks

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {IExternalLinkProps} from '@ui/atoms/navigation/ExternalLink/ExternalLink.interface';
+import { IExternalLinkProps } from '@ui/atoms/navigation/ExternalLink/ExternalLink.interface';
 
 /**
  * @name ExternalLinkProps
