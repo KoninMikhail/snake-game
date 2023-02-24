@@ -8,6 +8,9 @@ import { LightBorder } from '@ui/atoms/assets/borders/LightBorder/LightBorder';
 import { InfoBox } from '@ui/molecules/information/Infobox/InfoBox';
 import { KeyboardArrowsIcon } from '@ui/atoms/assets/icons/KeyboardArrowsIcon/KeyboardArrowsIcon';
 import { MaxScore } from '@ui/molecules/information/MaxScore/MaxScore';
+import { TouchScreen } from '@templates/devices/screen/type/TouchScreen';
+import { NonTouchScreen } from '@templates/devices/screen/type/NonTouchScreen';
+import { HandIcon } from '@ui/atoms/assets/icons/HandIcon/HandIcon';
 
 export const GameWideTemplate = <T extends AssertPositive<number>>(game: IGameTemplate<T>) => (
     <Row columns={3} style={{ height: '100%' }}>
@@ -27,10 +30,18 @@ export const GameWideTemplate = <T extends AssertPositive<number>>(game: IGameTe
             </LightBorder>
         </Column>
         <Column align="center" justify={'end'}>
-            <InfoBox
-                icon={<KeyboardArrowsIcon size={'xxxl'} />}
-                message={game.locale.messages.keyboardControl}
-            />
+            <TouchScreen>
+                <InfoBox
+                    icon={<HandIcon size={'xxxl'} />}
+                    message={game.locale.messages.swipeControl}
+                />
+            </TouchScreen>
+            <NonTouchScreen>
+                <InfoBox
+                    icon={<KeyboardArrowsIcon size={'xxxl'} />}
+                    message={game.locale.messages.keyboardControl}
+                />
+            </NonTouchScreen>
         </Column>
     </Row>
 );
