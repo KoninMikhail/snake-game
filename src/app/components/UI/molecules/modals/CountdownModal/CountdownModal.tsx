@@ -1,12 +1,12 @@
-import {useCountdown} from 'usehooks-ts';
+import { useCountdown } from 'usehooks-ts';
 import {
     StyledCountdownModal,
     StyledCountdownModalContent,
 } from '@ui/molecules/modals/CountdownModal/style/StyledCountdownModal';
-import {useEffect} from 'react';
-import {HeavyCaption} from '@ui/atoms/typography/caption/HeavyCaption/HeavyCaption';
-import {Text} from '@ui/atoms/typography/body/Text/Text';
-import {ICountdownModal} from '@ui/molecules/modals/CountdownModal/CountdownModalProps.interface';
+import { useEffect } from 'react';
+import { HeavyCaption } from '@ui/atoms/typography/caption/HeavyCaption/HeavyCaption';
+import { Text } from '@ui/atoms/typography/body/Text/Text';
+import { ICountdownModal } from '@ui/molecules/modals/CountdownModal/CountdownModalProps.interface';
 
 /**
  * @name CountdownModal

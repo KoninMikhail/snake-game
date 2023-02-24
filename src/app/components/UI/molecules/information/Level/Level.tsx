@@ -1,9 +1,13 @@
-import {StyledLevel, StyledLevelCounter, StyledLevelLabel,} from '@ui/molecules/information/Level/style/StyledLevel';
-import {Text} from '@ui/atoms/typography/body/Text/Text';
-import {ExtraLargeCaption} from '@ui/atoms/typography/caption/ExtraLargeCaption/ExtraLargeCaption';
+import {
+    StyledLevel,
+    StyledLevelCounter,
+    StyledLevelLabel,
+} from '@ui/molecules/information/Level/style/StyledLevel';
+import { Text } from '@ui/atoms/typography/body/Text/Text';
+import { ExtraLargeCaption } from '@ui/atoms/typography/caption/ExtraLargeCaption/ExtraLargeCaption';
 import useAppSelector from '@hooks/useAppSelector/useAppSelector';
-import {gameLevelSelector} from '@store/slices/game.slice';
-import {ILevel} from '@ui/molecules/information/Level/Level.interface';
+import { gameLevelSelector } from '@store/slices/game.slice';
+import { ILevel } from '@ui/molecules/information/Level/Level.interface';
 
 /**
  * @name Level

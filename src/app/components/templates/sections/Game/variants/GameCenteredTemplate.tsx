@@ -6,6 +6,8 @@ import { AssertPositive } from '@/types/assert-positive';
 import { IGameTemplate } from '@templates/sections/Game/GameTemplate.interface';
 import { LightBorder } from '@ui/atoms/assets/borders/LightBorder/LightBorder';
 import { MaxScore } from '@ui/molecules/information/MaxScore/MaxScore';
+import { TouchScreen } from '@templates/devices/screen/type/TouchScreen';
+import { NonTouchScreen } from '@templates/devices/screen/type/NonTouchScreen';
 
 export const GameCenteredTemplate = <T extends AssertPositive<number>>(game: IGameTemplate<T>) => (
     <Row columns={1} templateColumns={'max-content auto max-content'} style={{ height: '100%' }}>
@@ -27,7 +29,8 @@ export const GameCenteredTemplate = <T extends AssertPositive<number>>(game: IGa
                     </LightBorder>
                 </Column>
                 <Column align="center" justify={'center'}>
-                    {game.locale.messages.swipeControl}
+                    <TouchScreen>{game.locale.messages.swipeControl}</TouchScreen>
+                    <NonTouchScreen>{game.locale.messages.keyboardControl}</NonTouchScreen>
                 </Column>
             </Row>
         </Column>

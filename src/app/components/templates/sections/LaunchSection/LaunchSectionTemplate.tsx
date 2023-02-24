@@ -3,9 +3,9 @@ import { Launcher } from '@ui/molecules/information/Launcher/Launcher';
 import { ILaunchSectionTemplate } from '@templates/sections/LaunchSection/LaunchSectionTemplate.interface';
 import { Row } from '@templates/grids/Row/Row';
 import { Column } from '@templates/grids/Row/Column/Column';
-import { MobileScreen } from '@templates/devices/screen/MobileScreen';
-import { TabletScreen } from '@templates/devices/screen/TabletScreen';
-import { DesktopScreen } from '@templates/devices/screen/DesktopScreen';
+import { SmallScreen } from '@templates/devices/screen/size/SmallScreen';
+import { MiddleScreen } from '@templates/devices/screen/size/MiddleScreen';
+import { LargeScreen } from '@templates/devices/screen/size/LargeScreen';
 import { useCustomNavigate } from '@hooks/useCustomRouter/useCustomNavigate';
 import useAppDispatch from '@hooks/useAppDispatch/useAppDispatch';
 import useAppSelector from '@hooks/useAppSelector/useAppSelector';
@@ -13,7 +13,7 @@ import { appDeviceInfoSelector } from '@store/slices/app.slice';
 import { delay } from '@utils/delay/delay';
 import { PAGE_TRANSITION_DURATION } from '@constants/APP';
 import { requestNewGame } from '@store/actions/requestNewGame';
-import isDesktop from '@/helpers/validators/isDesktop';
+import isLargeScreen from '@helpers/validators/isLargeScreen';
 import useKeyPress from '@hooks/useKeyPress/useKeyPress';
 
 export const LaunchSectionTemplate = ({
@@ -34,7 +34,7 @@ export const LaunchSectionTemplate = ({
     };
 
     const handleKeyPress = () => launchGame();
-    const handleDoubleClickLaunchSection = () => !isDesktop(device) && launchGame();
+    const handleDoubleClickLaunchSection = () => !isLargeScreen(device) && launchGame();
 
     useKeyPress(keyboardKeysForLaunch, handleKeyPress);
 
@@ -42,17 +42,17 @@ export const LaunchSectionTemplate = ({
         <LaunchSectionContainer onDoubleClick={handleDoubleClickLaunchSection}>
             <Row>
                 <Column align={'center'} justify={'center'}>
-                    <MobileScreen>
+                    <SmallScreen>
                         <Launcher image={image} message={message} style={{ width: '100%' }} />
-                    </MobileScreen>
+                    </SmallScreen>
 
-                    <TabletScreen>
+                    <MiddleScreen>
                         <Launcher image={image} message={message} style={{ width: '80%' }} />
-                    </TabletScreen>
+                    </MiddleScreen>
 
-                    <DesktopScreen>
+                    <LargeScreen>
                         <Launcher image={image} message={message} style={{ width: '36vw' }} />
-                    </DesktopScreen>
+                    </LargeScreen>
                 </Column>
             </Row>
         </LaunchSectionContainer>

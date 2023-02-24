@@ -1,5 +1,5 @@
-import {InfoBox} from '@ui/molecules/information/Infobox/InfoBox';
-import {renderWithProviders} from '@utils/test-utils';
+import { InfoBox } from '@ui/molecules/information/Infobox/InfoBox';
+import { renderWithProviders } from '@utils/test-utils';
 
 /**
  * Test

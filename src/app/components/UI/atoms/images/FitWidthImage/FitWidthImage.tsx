@@ -4,8 +4,8 @@ import { IImage } from '@ui/atoms/images/images.interface';
 import { useImagesContext } from '@context/ImagesContext';
 import useAppSelector from '@hooks/useAppSelector/useAppSelector';
 import { appDeviceInfoSelector } from '@store/slices/app.slice';
-import { Device } from '@/types/device';
 import getImageSourceById from '@/helpers/getters/getImageSourceById';
+import { DeviceScreenSize } from '@/types/device';
 
 /**
  * @name FitWidthImage
@@ -17,11 +17,11 @@ import getImageSourceById from '@/helpers/getters/getImageSourceById';
  * @param alt - logo alt attrib.
  */
 export const FitWidthImage = ({ sourceID, alt, ...rest }: IImage) => {
-    const ctx = useImagesContext();
+    const context = useImagesContext();
     const deviceInfo = useAppSelector(appDeviceInfoSelector);
-    const deviceScreenType = deviceInfo.screen as Device;
+    const deviceScreenSize = deviceInfo.screen as DeviceScreenSize;
 
-    const dataForLoading = getImageSourceById(ctx, sourceID, deviceScreenType);
+    const dataForLoading = getImageSourceById(context, sourceID, deviceScreenSize);
     const output = useProgressiveImageLoader(dataForLoading);
 
     return <StyledFitWidthImage src={output} alt={alt} {...rest} />;

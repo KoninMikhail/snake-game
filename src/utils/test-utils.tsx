@@ -1,22 +1,22 @@
-import React, {PropsWithChildren} from 'react';
-import type {RenderOptions} from '@testing-library/react';
-import {render} from '@testing-library/react';
-import type {PreloadedState} from '@reduxjs/toolkit';
-import {configureStore} from '@reduxjs/toolkit';
-import {Provider} from 'react-redux';
+import React, { PropsWithChildren } from 'react';
+import type { RenderOptions } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import type { PreloadedState } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
+import { Provider } from 'react-redux';
 
-import type {AppStore, RootState} from '@store/store';
+import type { AppStore, RootState } from '@store/store';
 import appSlice from '@store/slices/app.slice';
 import soundSlice from '@store/slices/sound.slice';
 import maxScoreSlice from '@store/slices/maxScore.slice';
 import gameDataSlice from '@store/slices/game.slice';
-import {ImagesData} from '@data/imagesData';
-import {mockImagesData, mockSoundData} from '@/setupTests';
+import { ImagesData } from '@data/imagesData';
+import { mockImagesData, mockSoundData } from '@/setupTests';
 import SoundsProvider from '@context/SoundsContext';
 import ImagesProvider from '@context/ImagesContext';
-import {SoundsData} from '@data/soundsData';
-import {DefaultTheme, ThemeProvider} from 'styled-components';
-import {theme as appTheme} from '@styles/theme';
+import { SoundsData } from '@data/soundsData';
+import { DefaultTheme, ThemeProvider } from 'styled-components';
+import { theme as appTheme } from '@styles/theme';
 
 // As a basic setup, import your same slice reducers
 
@@ -50,7 +50,7 @@ export function renderWithProviders(
         ...renderOptions
     }: ExtendedRenderOptions = {}
 ) {
-    function Wrapper({children}: PropsWithChildren): JSX.Element {
+    function Wrapper({ children }: PropsWithChildren): JSX.Element {
         return (
             <Provider store={store}>
                 <ThemeProvider theme={theme}>
@@ -63,5 +63,5 @@ export function renderWithProviders(
     }
 
     // Return an object with the store and all of RTL's query functions
-    return {store, ...render(ui, {wrapper: Wrapper, ...renderOptions})};
+    return { store, ...render(ui, { wrapper: Wrapper, ...renderOptions }) };
 }

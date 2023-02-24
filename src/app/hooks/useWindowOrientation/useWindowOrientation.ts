@@ -1,6 +1,6 @@
-import {useState} from 'react';
-import {useEffectOnce, useEventListener} from 'usehooks-ts';
-import {DeviceOrientation} from '@/types/device';
+import { useState } from 'react';
+import { useEffectOnce, useEventListener } from 'usehooks-ts';
+import { DeviceOrientation } from '@/types/device';
 
 /**
  * @name useWindowOrientation

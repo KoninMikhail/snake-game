@@ -1,9 +1,9 @@
-import {ThemeColors} from '@styles/theme_parts/colors';
-import {IBaseTheme} from '@styles/theme';
+import { ThemeColors } from '@styles/theme_parts/colors';
+import { IBaseTheme } from '@styles/theme';
 
 /**
  * @name getThemeColor
- * 
+ *
  * Get the color from theme.
  *
  * @param theme - The theme object

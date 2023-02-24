@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToolbarWithSoundControl Equals snapshot on large screen devices 1`] = `
+.c1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.c2 {
+  display: block;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: start;
+}
+
+.c3 {
+  display: block;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: end;
+}
+
+.c0 {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+<div>
+  <footer
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        mocked CopyrightContent
+      </div>
+      <div
+        class="c3"
+      >
+        mocked CopyrightContent
+      </div>
+    </div>
+  </footer>
+</div>
+`;
+
+exports[`ToolbarWithSoundControl Equals snapshot on middle screen devices 1`] = `
+.c1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.c2 {
+  display: block;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: start;
+}
+
+.c3 {
+  display: block;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: end;
+}
+
+.c0 {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+<div>
+  <footer
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        mocked CopyrightContent
+      </div>
+      <div
+        class="c3"
+      >
+        mocked CopyrightContent
+      </div>
+    </div>
+  </footer>
+</div>
+`;
+
+exports[`ToolbarWithSoundControl Equals snapshot on small screens 1`] = `
+.c1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  grid-template-columns: repeat(1,1fr);
+}
+
+.c2 {
+  display: block;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.c0 {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+<div>
+  <footer
+    class="c0"
+  >
+    <div
+      class="c1"
+      style="text-align: center;"
+    >
+      <div
+        class="c2"
+      >
+        mocked CopyrightContent
+      </div>
+      <div
+        class="c2"
+      >
+        mocked CopyrightContent
+      </div>
+    </div>
+  </footer>
+</div>
+`;

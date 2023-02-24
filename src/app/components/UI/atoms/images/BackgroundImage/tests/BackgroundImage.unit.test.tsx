@@ -1,9 +1,9 @@
-import {screen, waitFor} from '@testing-library/react';
-import {BackgroundImage} from '@ui/atoms/images/BackgroundImage/BackgroundImage';
-import {renderWithProviders} from '@utils/test-utils';
-import {LOAD_SUCCESS_SRC, PLACEHOLDER_SRC, PLACEHOLDER_SRC_TABLET} from '@/setupTests';
-import {FitWidthImage} from '@ui/atoms/images/FitWidthImage/FitWidthImage';
-import {AppGlobalState} from '@store/slices/app.slice';
+import { screen, waitFor } from '@testing-library/react';
+import { BackgroundImage } from '@ui/atoms/images/BackgroundImage/BackgroundImage';
+import { renderWithProviders } from '@utils/test-utils';
+import { LOAD_SUCCESS_SRC, PLACEHOLDER_SRC, PLACEHOLDER_SRC_TABLET } from '@/setupTests';
+import { FitWidthImage } from '@ui/atoms/images/FitWidthImage/FitWidthImage';
+import { AppGlobalState } from '@store/slices/app.slice';
 
 /**
  * Constants
@@ -47,9 +47,9 @@ describe('BackgroundImage', () => {
         expect(screen.getByTestId(IMAGE_TEST_ID)).toHaveAttribute('alt', IMAGE_ALT);
     });
 
-    it('should render tablet background', async () => {
+    it('should render middle background', async () => {
         const initialState = {
-            preloadedState: { app: { device: { screen: 'tablet' } } as AppGlobalState },
+            preloadedState: { app: { device: { screen: 'middle' } } as AppGlobalState },
         };
 
         renderWithProviders(

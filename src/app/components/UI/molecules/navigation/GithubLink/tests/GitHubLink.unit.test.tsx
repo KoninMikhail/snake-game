@@ -1,6 +1,6 @@
-import {screen} from '@testing-library/react';
-import {GitHubLink} from '../GitHubLink';
-import {renderWithProviders} from '@utils/test-utils';
+import { screen } from '@testing-library/react';
+import { GitHubLink } from '../GitHubLink';
+import { renderWithProviders } from '@utils/test-utils';
 
 /**
  * Test

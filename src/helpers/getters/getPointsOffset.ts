@@ -3,12 +3,12 @@ import { Direction } from '@/types/enums/direction';
 
 /**
  * @function getPointsOffset
- * 
+ *
  * "Given a board size and a direction, return the offset to the next point in that direction."
- * 
+ *
  * The first thing to notice is that the function is generic. This is because the board size is a
  * number, and we want to make sure that it's a positive integer
- * 
+ *
  * @param boardSize - The size of the board.
  * @param {Direction} direction - Direction - The direction in which the snake is moving.
  * @returns A function that takes a boardSize and direction and returns a number.

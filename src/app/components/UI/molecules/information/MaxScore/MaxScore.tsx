@@ -1,5 +1,5 @@
-import {Caption} from '@ui/atoms/typography/caption/Caption/Caption';
-import {IMaxScore} from '@ui/molecules/information/MaxScore/MaxScore.interface';
+import { Caption } from '@ui/atoms/typography/caption/Caption/Caption';
+import { IMaxScore } from '@ui/molecules/information/MaxScore/MaxScore.interface';
 
 /**
  * @name MaxScore

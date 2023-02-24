@@ -1,5 +1,5 @@
-import {render} from '@testing-library/react';
-import {ExternalLink} from '../ExternalLink';
+import { render } from '@testing-library/react';
+import { ExternalLink } from '../ExternalLink';
 
 /**
  * Tests

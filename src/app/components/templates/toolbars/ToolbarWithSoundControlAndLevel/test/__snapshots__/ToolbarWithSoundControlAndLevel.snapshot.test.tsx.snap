@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToolbarWithSoundControlDesktop Equals snapshot on large screen devices 1`] = `
+.c0 {
+  display: block;
+}
+
+.c1 {
+  display: grid;
+  grid-template-columns: repeat(2,min-content);
+  gap: 1rem;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.c2 {
+  display: block;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: start;
+}
+
+.c3 {
+  display: block;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: end;
+}
+
+<div>
+  <header
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        mocked Level
+      </div>
+      <div
+        class="c3"
+      >
+        mocked SoundControl
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`ToolbarWithSoundControlDesktop Equals snapshot on middle screen devices 1`] = `
+.c0 {
+  display: block;
+}
+
+.c1 {
+  display: grid;
+  grid-template-columns: repeat(2,min-content);
+  gap: 1rem;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.c2 {
+  display: block;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: start;
+}
+
+.c3 {
+  display: block;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: end;
+}
+
+<div>
+  <header
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        mocked Level
+      </div>
+      <div
+        class="c3"
+      >
+        mocked SoundControl
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`ToolbarWithSoundControlDesktop Equals snapshot on small screens 1`] = `
+.c0 {
+  display: block;
+}
+
+.c1 {
+  display: grid;
+  grid-template-columns: repeat(2,min-content);
+  gap: 1rem;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.c2 {
+  display: block;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: start;
+}
+
+.c3 {
+  display: block;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: end;
+}
+
+<div>
+  <header
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        mocked Level
+      </div>
+      <div
+        class="c3"
+      >
+        mocked SoundControl
+      </div>
+    </div>
+  </header>
+</div>
+`;

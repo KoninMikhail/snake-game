@@ -6,7 +6,7 @@ import {
     gameStatusSelector,
 } from '@store/slices/game.slice';
 import useActionCreators from '@hooks/useActionCreators/useActionCreators';
-import {useUpdateEffect} from 'usehooks-ts';
+import { useUpdateEffect } from 'usehooks-ts';
 
 /**
  * @function useLevel

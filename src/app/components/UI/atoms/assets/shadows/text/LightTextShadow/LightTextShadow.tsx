@@ -1,5 +1,5 @@
-import {cloneElement} from 'react';
-import {IShadow} from '@ui/atoms/assets/shadows/Shadow.interface';
+import { cloneElement } from 'react';
+import { IShadow } from '@ui/atoms/assets/shadows/Shadow.interface';
 
 /**
  * @name LightTextShadow

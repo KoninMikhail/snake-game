@@ -1,7 +1,7 @@
-import {Copyright} from '../Copyright';
-import {screen} from '@testing-library/react';
-import {getYearRange} from '../utils/Copyright.utils';
-import {renderWithProviders} from '@utils/test-utils';
+import { Copyright } from '../Copyright';
+import { screen } from '@testing-library/react';
+import { getYearRange } from '../utils/Copyright.utils';
+import { renderWithProviders } from '@utils/test-utils';
 
 /**
  * Test

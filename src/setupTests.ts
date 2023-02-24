@@ -19,7 +19,7 @@ export const mockImagesData = {
             src: LOAD_SUCCESS_SRC,
             placeholder: PLACEHOLDER_SRC,
         },
-        mobile: {
+        small: {
             src: LOAD_SUCCESS_SRC_MOBILE,
             placeholder: PLACEHOLDER_SRC_MOBILE,
         },
@@ -34,7 +34,7 @@ export const mockImagesData = {
             placeholder: PLACEHOLDER_SRC,
             src: LOAD_SUCCESS_SRC,
         },
-        tablet: {
+        middle: {
             placeholder: PLACEHOLDER_SRC_TABLET,
             src: LOAD_SUCCESS_SRC_TABLET,
         },

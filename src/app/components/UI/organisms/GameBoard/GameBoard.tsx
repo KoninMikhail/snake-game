@@ -3,20 +3,20 @@ import {
     GameBoardContainer,
     GameBoardModalHolder,
 } from '@ui/organisms/GameBoard/style/GameBoardContainer';
-import {Cell} from '@ui/molecules/modules/Cell/Cell';
+import { Cell } from '@ui/molecules/modules/Cell/Cell';
 import useAppSelector from '@hooks/useAppSelector/useAppSelector';
-import {gameActions, gameBoardSizeSelector, gameStatusSelector} from '@store/slices/game.slice';
-import {IGameBoardProps} from '@ui/organisms/GameBoard/GameBoard.interface';
+import { gameActions, gameBoardSizeSelector, gameStatusSelector } from '@store/slices/game.slice';
+import { IGameBoardProps } from '@ui/organisms/GameBoard/GameBoard.interface';
 import useActionCreators from '@hooks/useActionCreators/useActionCreators';
-import {CountdownModal} from '@ui/molecules/modals/CountdownModal/CountdownModal';
-import {PauseModal} from '@ui/molecules/modals/PauseModal/PauseModal';
-import {GameOverModal} from '@ui/molecules/modals/GameOverModal/GameOverModal';
+import { CountdownModal } from '@ui/molecules/modals/CountdownModal/CountdownModal';
+import { PauseModal } from '@ui/molecules/modals/PauseModal/PauseModal';
+import { GameOverModal } from '@ui/molecules/modals/GameOverModal/GameOverModal';
 import useGameEngine from '@/app/services/engine/useGameEngine';
-import {Direction} from '@/types/enums/direction';
-import {useSwipeable} from 'react-swipeable';
+import { Direction } from '@/types/enums/direction';
+import { useSwipeable } from 'react-swipeable';
 import useKeyboardArrows from '@hooks/useKeyboardArrows/useKeyboardArrows';
 import isGameOn from '@/helpers/validators/isGameOn';
-import {useEventListener} from 'usehooks-ts';
+import { useEventListener } from 'usehooks-ts';
 import useKeyPress from '@hooks/useKeyPress/useKeyPress';
 
 /**

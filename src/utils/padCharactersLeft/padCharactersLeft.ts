@@ -1,4 +1,4 @@
-import {PositiveInteger} from '@/types/positive-integer';
+import { PositiveInteger } from '@/types/positive-integer';
 
 /**
  * @function padCharactersLeft

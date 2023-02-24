@@ -1,6 +1,6 @@
-import {screen} from '@testing-library/react';
-import {MaxScore} from '../MaxScore';
-import {renderWithProviders} from '@utils/test-utils';
+import { screen } from '@testing-library/react';
+import { MaxScore } from '../MaxScore';
+import { renderWithProviders } from '@utils/test-utils';
 
 /**
  * Tests

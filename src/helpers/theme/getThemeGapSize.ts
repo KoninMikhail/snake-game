@@ -1,5 +1,5 @@
-import {IBaseTheme} from '@styles/theme';
-import {ThemeGaps} from '@styles/theme_parts/gaps';
+import { IBaseTheme } from '@styles/theme';
+import { ThemeGaps } from '@styles/theme_parts/gaps';
 
 /**
  * @name getThemeGapSize

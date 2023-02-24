@@ -1,6 +1,6 @@
-import {useTheme} from 'styled-components';
-import {cloneElement} from 'react';
-import {IBorderProps} from '@ui/atoms/assets/borders/Border.interface';
+import { useTheme } from 'styled-components';
+import { cloneElement } from 'react';
+import { IBorderProps } from '@ui/atoms/assets/borders/Border.interface';
 
 /**
  * @name PrimaryBorder

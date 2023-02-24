@@ -1,9 +1,9 @@
 import { GameContainer } from '@templates/sections/Game/style/StyledGameTemplate';
-import { DesktopScreen } from '@templates/devices/screen/DesktopScreen';
+import { LargeScreen } from '@templates/devices/screen/size/LargeScreen';
 import { GameWideTemplate } from '@templates/sections/Game/variants/GameWideTemplate';
-import { TabletScreen } from '@templates/devices/screen/TabletScreen';
+import { MiddleScreen } from '@templates/devices/screen/size/MiddleScreen';
 import { GameCenteredTemplate } from '@templates/sections/Game/variants/GameCenteredTemplate';
-import { MobileScreen } from '@templates/devices/screen/MobileScreen';
+import { SmallScreen } from '@templates/devices/screen/size/SmallScreen';
 import { IGameTemplate } from '@templates/sections/Game/GameTemplate.interface';
 import { AssertPositive } from '@/types/assert-positive';
 import { useEffectOnce } from 'usehooks-ts';
@@ -20,17 +20,17 @@ export const GameTemplate = <T extends AssertPositive<number>>(game: IGameTempla
 
     return (
         <GameContainer>
-            <DesktopScreen>
+            <LargeScreen>
                 <GameWideTemplate {...game} />
-            </DesktopScreen>
+            </LargeScreen>
 
-            <TabletScreen>
+            <MiddleScreen>
                 <GameWideTemplate {...game} />
-            </TabletScreen>
+            </MiddleScreen>
 
-            <MobileScreen>
+            <SmallScreen>
                 <GameCenteredTemplate {...game} />
-            </MobileScreen>
+            </SmallScreen>
         </GameContainer>
     );
 };

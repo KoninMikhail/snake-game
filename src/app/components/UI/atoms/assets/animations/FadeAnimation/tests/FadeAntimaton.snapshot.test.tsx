@@ -1,6 +1,6 @@
-import {render} from '@testing-library/react';
-import {FadeAnimation} from '../FadeAnimation';
-import {IBaseTheme} from '@styles/theme';
+import { render } from '@testing-library/react';
+import { FadeAnimation } from '../FadeAnimation';
+import { IBaseTheme } from '@styles/theme';
 
 /**
  * Mocks

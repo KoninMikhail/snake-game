@@ -1,9 +1,8 @@
-
 /**
  * @function getRandomInt
- * 
+ *
  * Return a random integer between min and max, inclusive.
- * 
+ *
  * @param min - The minimum number that can be returned.
  * @param max - The maximum number that can be returned.
  * @returns A random integer between the min and max values.

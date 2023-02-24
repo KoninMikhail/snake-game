@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {ITextProps} from '@ui/atoms/typography/Typography.interface';
+import { ITextProps } from '@ui/atoms/typography/Typography.interface';
 
 /**
  * @name Text

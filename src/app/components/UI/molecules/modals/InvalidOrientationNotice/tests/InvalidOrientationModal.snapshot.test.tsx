@@ -1,5 +1,5 @@
-import {InvalidOrientationModal} from '../InvalidOrientationModal';
-import {renderWithProviders} from '@utils/test-utils';
+import { InvalidOrientationModal } from '../InvalidOrientationModal';
+import { renderWithProviders } from '@utils/test-utils';
 
 /**
  * Test

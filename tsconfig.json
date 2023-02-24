@@ -1,83 +1,46 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ESNext"
-    ],
-    "allowJs": false,
-    "skipLibCheck": true,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "es2022",
-    "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "useUnknownInCatchVariables": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "baseUrl": ".",
-    "types": [
-      "vite-plugin-svgr/client",
-      "jest",
-      "node",
-      "vite/client",
-      "@testing-library/jest-dom"
-    ],
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "@data/*": [
-        "./src/data/*"
-      ],
-      "@context/*": [
-        "./src/context/*"
-      ],
-      "@sounds/*": [
-        "./src/app/components/sounds/*"
-      ],
-      "@constants/*": [
-        "./src/constants/*"
-      ],
-      "@static/*": [
-        "./src/app/static/*"
-      ],
-      "@pages/*": [
-        "./src/app/components/pages/*"
-      ],
-      "@templates/*": [
-        "./src/app/components/templates/*"
-      ],
-      "@ui/*": [
-        "./src/app/components/UI/*"
-      ],
-      "@routes/*": [
-        "./src/app/routes/*"
-      ],
-      "@helpers/*": [
-        "./src/helpers/*"
-      ],
-      "@hooks/*": [
-        "./src/app/hooks/*"
-      ],
-      "@store/*": [
-        "./src/app/store/*"
-      ],
-      "@styles/*": [
-        "./src/app/styles/*"
-      ],
-      "@utils/*": [
-        "./src/utils/*"
-      ]
-    }
-  },
-  "include": [
-    "./src",
-    "./src/setupTests"
-  ]
+    "compilerOptions": {
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "allowJs": false,
+        "skipLibCheck": true,
+        "esModuleInterop": false,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "es2022",
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "useUnknownInCatchVariables": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "baseUrl": ".",
+        "types": [
+            "vite-plugin-svgr/client",
+            "jest",
+            "node",
+            "vite/client",
+            "@testing-library/jest-dom"
+        ],
+        "paths": {
+            "@/*": ["./src/*"],
+            "@data/*": ["./src/data/*"],
+            "@context/*": ["./src/context/*"],
+            "@sounds/*": ["./src/app/components/sounds/*"],
+            "@constants/*": ["./src/constants/*"],
+            "@static/*": ["./src/app/static/*"],
+            "@pages/*": ["./src/app/components/pages/*"],
+            "@templates/*": ["./src/app/components/templates/*"],
+            "@ui/*": ["./src/app/components/UI/*"],
+            "@routes/*": ["./src/app/routes/*"],
+            "@helpers/*": ["./src/helpers/*"],
+            "@hooks/*": ["./src/app/hooks/*"],
+            "@store/*": ["./src/app/store/*"],
+            "@styles/*": ["./src/app/styles/*"],
+            "@utils/*": ["./src/utils/*"]
+        }
+    },
+    "include": ["./src", "./src/setupTests"]
 }

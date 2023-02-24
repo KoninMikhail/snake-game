@@ -1,5 +1,5 @@
-import {Text} from '@ui/atoms/typography/body/Text/Text';
-import {renderWithProviders} from '@utils/test-utils';
+import { Text } from '@ui/atoms/typography/body/Text/Text';
+import { renderWithProviders } from '@utils/test-utils';
 
 /**
  * Test

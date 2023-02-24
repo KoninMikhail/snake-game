@@ -1,8 +1,8 @@
-import {Text} from '@ui/atoms/typography/body/Text/Text';
-import {StyledCopyright} from './style/StyledCopyright';
-import {ICopyrightProps} from './Copyright.interface';
-import {getYearRange} from './utils/Copyright.utils';
-import {useMemo} from 'react';
+import { Text } from '@ui/atoms/typography/body/Text/Text';
+import { StyledCopyright } from './style/StyledCopyright';
+import { ICopyrightProps } from './Copyright.interface';
+import { getYearRange } from './utils/Copyright.utils';
+import { useMemo } from 'react';
 
 /**
  * @name Copyright
@@ -16,7 +16,7 @@ import {useMemo} from 'react';
  * @param licence
  * @returns {JSX.Element}
  */
-export const Copyright = ({author, creationYear, license, ...rest}: ICopyrightProps) => {
+export const Copyright = ({ author, creationYear, license, ...rest }: ICopyrightProps) => {
     const projectYears = useMemo(() => getYearRange(creationYear), [creationYear]);
     return (
         <StyledCopyright {...rest}>

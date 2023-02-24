@@ -1,6 +1,6 @@
-import {Score} from '../Score';
-import {GameData} from '@store/slices/game.slice';
-import {renderWithProviders} from '@utils/test-utils';
+import { Score } from '../Score';
+import { GameData } from '@store/slices/game.slice';
+import { renderWithProviders } from '@utils/test-utils';
 
 /**
  * Tests
@@ -10,9 +10,9 @@ describe('Score', () => {
         const mockScore = 30;
 
         const initialState = {
-            preloadedState: {game: {score: mockScore} as GameData},
+            preloadedState: { game: { score: mockScore } as GameData },
         };
-        const {container} = renderWithProviders(<Score/>, initialState);
+        const { container } = renderWithProviders(<Score />, initialState);
 
         expect(container).toMatchSnapshot();
     });

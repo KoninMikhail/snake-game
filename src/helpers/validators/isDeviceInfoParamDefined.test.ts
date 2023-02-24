@@ -6,7 +6,7 @@ describe('isDeviceInfoParamDefined', () => {
         jest.mock('@store/store');
 
         const mockState = {
-            app: { device: { screen: 'desktop', model: null } },
+            app: { device: { screen: 'large', model: null } },
         } as RootState;
 
         // in this point store.getState is going to be mocked

@@ -39,15 +39,15 @@ export const imagesData: ImagesData = {
             src: `${baseImagesPath}/Identity/Logo.png`,
             placeholder: `${baseImagesPath}/Identity/Logo_placeholder.png`,
         },
-        mobile: {
+        small: {
             src: `${baseImagesPath}/Identity/Logo.png`,
             placeholder: `${baseImagesPath}/Identity/Logo_placeholder.png`,
         },
-        tablet: {
+        middle: {
             src: `${baseImagesPath}/Identity/Logo.png`,
             placeholder: `${baseImagesPath}/Identity/Logo_placeholder.png`,
         },
-        desktop: {
+        large: {
             src: `${baseImagesPath}/Identity/Logo.png`,
             placeholder: `${baseImagesPath}/Identity/Logo_placeholder.png`,
         },
@@ -57,15 +57,15 @@ export const imagesData: ImagesData = {
             placeholder: `${baseImagesPath}/backgrounds/placeholders/bg_animation.jpg`,
             src: `${baseImagesPath}/backgrounds/bg_animation.gif`,
         },
-        mobile: {
+        small: {
             placeholder: `${baseImagesPath}/backgrounds/placeholders/bg_animation_mobile.jpg`,
             src: `${baseImagesPath}/backgrounds/bg_animation_mobile.gif`,
         },
-        tablet: {
+        middle: {
             placeholder: `${baseImagesPath}/backgrounds/placeholders/bg_animation_tablet.jpg`,
             src: `${baseImagesPath}/backgrounds/bg_animation_tablet.gif`,
         },
-        desktop: {
+        large: {
             placeholder: `${baseImagesPath}/backgrounds/placeholders/bg_animation.jpg`,
             src: `${baseImagesPath}/backgrounds/bg_animation.gif`,
         },

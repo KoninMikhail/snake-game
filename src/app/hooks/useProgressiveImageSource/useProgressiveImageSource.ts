@@ -1,6 +1,6 @@
-import {useState} from 'react';
-import {useEffectOnce} from 'usehooks-ts';
-import {IProgressiveImageSourceLoader} from './useProgressiveImageSource.interface';
+import { useState } from 'react';
+import { useEffectOnce } from 'usehooks-ts';
+import { IProgressiveImageSourceLoader } from './useProgressiveImageSource.interface';
 
 /**
  * @name useProgressiveImageSourceLoader

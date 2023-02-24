@@ -1,5 +1,5 @@
-import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {RootState} from '@store/store';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { RootState } from '@store/store';
 
 /**
  * constants
@@ -10,7 +10,7 @@ const SLICE_NAME = 'maxScore';
  * initial state
  */
 
-const initialState = 0;
+export const initialState = 0;
 
 /**
  * Slice

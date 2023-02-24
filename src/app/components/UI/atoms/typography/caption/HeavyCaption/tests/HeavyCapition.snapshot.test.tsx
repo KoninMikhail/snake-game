@@ -1,5 +1,5 @@
-import {HeavyCaption} from '@ui/atoms/typography/caption/HeavyCaption/HeavyCaption';
-import {renderWithProviders} from '@utils/test-utils';
+import { HeavyCaption } from '@ui/atoms/typography/caption/HeavyCaption/HeavyCaption';
+import { renderWithProviders } from '@utils/test-utils';
 
 /**
  * Test

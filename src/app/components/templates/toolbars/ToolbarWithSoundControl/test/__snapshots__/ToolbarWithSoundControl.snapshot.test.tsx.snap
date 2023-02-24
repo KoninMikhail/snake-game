@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToolbarWithSoundControl Equals snapshot on large screen devices 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  display: block;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: end;
+}
+
+.c1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+<div>
+  <header
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        mocked SoundControl
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`ToolbarWithSoundControl Equals snapshot on middle screen devices 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  display: block;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: end;
+}
+
+.c1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+<div>
+  <header
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        mocked SoundControl
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`ToolbarWithSoundControl Equals snapshot on small screens 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  display: block;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: end;
+}
+
+.c1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+<div>
+  <header
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        mocked SoundControl
+      </div>
+    </div>
+  </header>
+</div>
+`;

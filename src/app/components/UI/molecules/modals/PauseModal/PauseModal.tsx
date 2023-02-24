@@ -1,7 +1,10 @@
-import {StyledPauseModal, StyledPauseModalContainer,} from '@ui/molecules/modals/PauseModal/style/StyledPauseModal';
-import {ExtraLargeCaption} from '@ui/atoms/typography/caption/ExtraLargeCaption/ExtraLargeCaption';
-import {IPauseModal} from './PauseModal.interface';
-import {Text} from '@ui/atoms/typography/body/Text/Text';
+import {
+    StyledPauseModal,
+    StyledPauseModalContainer,
+} from '@ui/molecules/modals/PauseModal/style/StyledPauseModal';
+import { ExtraLargeCaption } from '@ui/atoms/typography/caption/ExtraLargeCaption/ExtraLargeCaption';
+import { IPauseModal } from './PauseModal.interface';
+import { Text } from '@ui/atoms/typography/body/Text/Text';
 
 /**
  * @name PauseModal

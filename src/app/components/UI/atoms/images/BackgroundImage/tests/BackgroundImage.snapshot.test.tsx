@@ -1,5 +1,5 @@
-import {BackgroundImage} from '@ui/atoms/images/BackgroundImage/BackgroundImage';
-import {renderWithProviders} from '@utils/test-utils';
+import { BackgroundImage } from '@ui/atoms/images/BackgroundImage/BackgroundImage';
+import { renderWithProviders } from '@utils/test-utils';
 
 /**
  * Constants

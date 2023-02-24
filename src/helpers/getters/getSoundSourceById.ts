@@ -1,5 +1,5 @@
-import {GetFromSoundFnsFn} from '@/types/declare/get-from-sound-fn';
-import {SoundsData} from '@data/soundsData';
+import { GetFromSoundFnsFn } from '@/types/declare/get-from-sound-fn';
+import { SoundsData } from '@data/soundsData';
 
 /**
  * @function getSoundSourceById

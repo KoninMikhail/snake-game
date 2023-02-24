@@ -1,5 +1,5 @@
-import {FitWidthImage} from '../FitWidthImage';
-import {renderWithProviders} from "@utils/test-utils";
+import { FitWidthImage } from '../FitWidthImage';
+import { renderWithProviders } from '@utils/test-utils';
 
 /**
  * Constants

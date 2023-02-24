@@ -1,8 +1,8 @@
-import {screen} from '@testing-library/react';
-import {Score} from '../Score';
+import { screen } from '@testing-library/react';
+import { Score } from '../Score';
 import padCharactersLeft from '@utils/padCharactersLeft/padCharactersLeft';
-import {renderWithProviders} from '@utils/test-utils';
-import {GameData} from '@store/slices/game.slice';
+import { renderWithProviders } from '@utils/test-utils';
+import { GameData } from '@store/slices/game.slice';
 
 /**
  * Tests
