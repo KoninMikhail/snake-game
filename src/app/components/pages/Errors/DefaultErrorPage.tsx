@@ -1,20 +1,14 @@
 import { isRouteErrorResponse, useRouteError } from 'react-router-dom';
+import { ErrorPageTemplate } from '@templates/pages/Error/ErrorPageTemplate';
+import { useTranslation } from 'react-i18next';
 
 export const DefaultErrorPage = () => {
     const error = useRouteError();
+    const { t } = useTranslation();
 
     if (isRouteErrorResponse(error)) {
-        return (
-            <div>
-                <h1>Oops!</h1>
-                <h2>{error.status}</h2>
-                <p>{error.statusText}</p>
-                {error.data?.message && <p>{error.data.message}</p>}
-            </div>
-        );
-    } else {
-        return <div>Oops</div>;
+        return <ErrorPageTemplate status={error.status} message={error.data?.message} />;
     }
 
-    throw error;
+    return <ErrorPageTemplate message={t('app.error.text')} />;
 };
