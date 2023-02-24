@@ -1,6 +1,6 @@
-import {fireEvent, screen} from '@testing-library/react';
-import {GameOverModal} from '@ui/molecules/modals/GameOverModal/GameOverModal';
-import {renderWithProviders} from '@utils/test-utils';
+import { fireEvent, screen } from '@testing-library/react';
+import { GameOverModal } from '@ui/molecules/modals/GameOverModal/GameOverModal';
+import { renderWithProviders } from '@utils/test-utils';
 
 /**
  * Test

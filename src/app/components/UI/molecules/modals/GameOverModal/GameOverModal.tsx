@@ -2,9 +2,9 @@ import {
     StyledGameOverModal,
     StyledGameOverModalContainer,
 } from '@ui/molecules/modals/GameOverModal/style/StyledGameOverModal';
-import {ExtraLargeCaption} from '@ui/atoms/typography/caption/ExtraLargeCaption/ExtraLargeCaption';
-import {PrimaryButton} from '@ui/atoms/buttons/PrimaryButton/PrimaryButton';
-import {IGameOverModal} from './GameOverModal.interface';
+import { ExtraLargeCaption } from '@ui/atoms/typography/caption/ExtraLargeCaption/ExtraLargeCaption';
+import { PrimaryButton } from '@ui/atoms/buttons/PrimaryButton/PrimaryButton';
+import { IGameOverModal } from './GameOverModal.interface';
 
 /**
  * @name GameOverModal
