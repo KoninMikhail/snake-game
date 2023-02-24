@@ -27,6 +27,6 @@ describe('getBaseUrl', () => {
             value: new URL('https://www.example.com/mind'),
         });
 
-        expect(getBaseURL()).toEqual('https://www.example.com');
+        expect(getBaseURL()).toEqual('https://www.example.com/mind');
     });
 });

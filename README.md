@@ -20,7 +20,7 @@
     <a href="https://github.com/KoninMikhail/snake-game/pulls">
       <img src="https://img.shields.io/github/issues-pr/koninmikhail/social-analytics-dashboard-template?color=informational&style=for-the-badge&logo=github"  alt="KoninMikhail/ pull requests"/>
     </a>
-    <a href="https://case.mikekonin.com/snake-game/">
+    <a href="https://react-typescript-snake.vercel.app/">
          <img src="https://img.shields.io/badge/ -live demo-blue?style=for-the-badge&color=success" alt="KoninMikhail/snake-game link to live demo.">
     </a>
     <a href="https://github.com/KoninMikhail/snake-game/fork">
