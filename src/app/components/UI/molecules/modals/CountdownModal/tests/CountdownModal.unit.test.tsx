@@ -1,6 +1,6 @@
-import {waitFor} from '@testing-library/react';
-import {CountdownModal} from '@ui/molecules/modals/CountdownModal/CountdownModal';
-import {renderWithProviders} from '@utils/test-utils';
+import { waitFor } from '@testing-library/react';
+import { CountdownModal } from '@ui/molecules/modals/CountdownModal/CountdownModal';
+import { renderWithProviders } from '@utils/test-utils';
 
 /**
  * Test
