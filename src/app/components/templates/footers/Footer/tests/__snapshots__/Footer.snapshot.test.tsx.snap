@@ -45,7 +45,7 @@ exports[`ToolbarWithSoundControl Equals snapshot on large screen devices 1`] = `
       <div
         class="c3"
       >
-        mocked CopyrightContent
+        mocked GithubLink Content
       </div>
     </div>
   </footer>
