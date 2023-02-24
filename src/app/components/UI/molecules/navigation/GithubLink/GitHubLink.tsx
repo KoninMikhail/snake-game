@@ -1,10 +1,10 @@
-import {PrimaryBorder} from '@ui/atoms/assets/borders/PrimaryBorder/PrimaryBorder';
-import {ExtraShadow} from '@ui/atoms/assets/shadows/blocks/ExtraShadow/ExtraShadow';
-import {StyledGithubLink} from './style/StyledGithubLink';
-import {GitHubIcon} from '@ui/atoms/assets/icons/GithubIcon/GitHubIcon';
-import {ExternalLink} from '@ui/atoms/navigation/ExternalLink/ExternalLink';
-import {TextLink} from '@ui/atoms/typography/link/TextLink';
-import {IGitHubLinkProps} from '@ui/molecules/navigation/GithubLink/GitHubLink.interface';
+import { PrimaryBorder } from '@ui/atoms/assets/borders/PrimaryBorder/PrimaryBorder';
+import { ExtraShadow } from '@ui/atoms/assets/shadows/blocks/ExtraShadow/ExtraShadow';
+import { StyledGithubLink } from './style/StyledGithubLink';
+import { GitHubIcon } from '@ui/atoms/assets/icons/GithubIcon/GitHubIcon';
+import { ExternalLink } from '@ui/atoms/navigation/ExternalLink/ExternalLink';
+import { TextLink } from '@ui/atoms/typography/link/TextLink';
+import { IGitHubLinkProps } from '@ui/molecules/navigation/GithubLink/GitHubLink.interface';
 
 /**
  * GitHubLink

@@ -1,5 +1,5 @@
-import {GitHubLink} from '../GitHubLink';
-import {renderWithProviders} from '@utils/test-utils';
+import { GitHubLink } from '../GitHubLink';
+import { renderWithProviders } from '@utils/test-utils';
 
 /**
  * Test
