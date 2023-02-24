@@ -7,7 +7,16 @@ import {
     TypedAddListener,
     TypedStartListening,
 } from '@reduxjs/toolkit';
-import {FLUSH, PAUSE, PERSIST, persistReducer, persistStore, PURGE, REGISTER, REHYDRATE,} from 'redux-persist';
+import {
+    FLUSH,
+    PAUSE,
+    PERSIST,
+    persistReducer,
+    persistStore,
+    PURGE,
+    REGISTER,
+    REHYDRATE,
+} from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import gameDataSlice from '@store/slices/game.slice';
 import maxScoreSlice from '@store/slices/maxScore.slice';

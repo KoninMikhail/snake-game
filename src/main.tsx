@@ -1,20 +1,20 @@
-import {PersistGate} from 'redux-persist/integration/react';
-import {ThemeProvider} from 'styled-components';
-import {StrictMode} from 'react';
-import {Provider} from 'react-redux';
-import {createRoot} from 'react-dom/client';
-import {createBrowserRouter, RouterProvider} from 'react-router-dom';
-import store, {persist} from '@/app/store/store';
+import { PersistGate } from 'redux-persist/integration/react';
+import { ThemeProvider } from 'styled-components';
+import { StrictMode } from 'react';
+import { Provider } from 'react-redux';
+import { createRoot } from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import store, { persist } from '@/app/store/store';
 import routesList from '@routes/routes';
-import {theme} from '@styles/theme';
-import {imagesData} from '@data/imagesData';
+import { theme } from '@styles/theme';
+import { imagesData } from '@data/imagesData';
 import ImagesProvider from '@context/ImagesContext';
 import i18next from 'i18next';
-import {initReactI18next} from 'react-i18next';
+import { initReactI18next } from 'react-i18next';
 import locales from './locale/index';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import SoundsProvider from '@context/SoundsContext';
-import {soundsData} from '@data/soundsData';
+import { soundsData } from '@data/soundsData';
 
 // Prepare DOM
 const container = document.getElementById('root') as HTMLElement;
