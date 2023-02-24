@@ -1,7 +1,11 @@
-import {StyledCell, StyledCellContent} from '@ui/molecules/modules/Cell/style/StyledCell';
-import {ICellProps} from '@ui/molecules/modules/Cell/Cell.interface';
+import { StyledCell, StyledCellContent } from '@ui/molecules/modules/Cell/style/StyledCell';
+import { ICellProps } from '@ui/molecules/modules/Cell/Cell.interface';
 import useAppSelector from '@hooks/useAppSelector/useAppSelector';
-import {gameFruitPositionSelector, gameSnakeHeadSelector, gameSnakePointsSelector,} from '@store/slices/game.slice';
+import {
+    gameFruitPositionSelector,
+    gameSnakeHeadSelector,
+    gameSnakePointsSelector,
+} from '@store/slices/game.slice';
 
 /**
  * @name Cell
