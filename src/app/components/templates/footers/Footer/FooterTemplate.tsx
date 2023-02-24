@@ -2,22 +2,22 @@ import { FooterSingleColumnTemplate } from '@templates/footers/Footer/variants/F
 import { FooterDoubleColumnsTemplate } from '@templates/footers/Footer/variants/FooterDoubleColumnsTemplate';
 import { FooterContainer } from '@templates/footers/Footer/styles/StyledFooter';
 import { IFooter } from '@templates/footers/Footer/FooterTemplate.interface';
-import { MobileScreen } from '@templates/devices/screen/MobileScreen';
-import { TabletScreen } from '@templates/devices/screen/TabletScreen';
-import { DesktopScreen } from '@templates/devices/screen/DesktopScreen';
+import { SmallScreen } from '@templates/devices/screen/size/SmallScreen';
+import { MiddleScreen } from '@templates/devices/screen/size/MiddleScreen';
+import { LargeScreen } from '@templates/devices/screen/size/LargeScreen';
 
 export const FooterTemplate = (props: IFooter) => (
     <FooterContainer>
-        <MobileScreen>
+        <SmallScreen>
             <FooterSingleColumnTemplate {...props} />
-        </MobileScreen>
+        </SmallScreen>
 
-        <TabletScreen>
+        <MiddleScreen>
             <FooterDoubleColumnsTemplate {...props} />
-        </TabletScreen>
+        </MiddleScreen>
 
-        <DesktopScreen>
+        <LargeScreen>
             <FooterDoubleColumnsTemplate {...props} />
-        </DesktopScreen>
+        </LargeScreen>
     </FooterContainer>
 );
