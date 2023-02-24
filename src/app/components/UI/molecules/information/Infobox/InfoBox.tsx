@@ -1,5 +1,5 @@
-import {StyledInfoBox, StyledInfoBoxContent} from './style/StyledInfoBox';
-import {IInfoBoxProps} from './InfoBox.interface';
+import { StyledInfoBox, StyledInfoBoxContent } from './style/StyledInfoBox';
+import { IInfoBoxProps } from './InfoBox.interface';
 
 /**
  * @name InfoBox

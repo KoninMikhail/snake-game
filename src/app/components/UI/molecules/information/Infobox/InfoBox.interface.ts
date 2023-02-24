@@ -1,5 +1,5 @@
-import {TextAlign} from '@/types/typography';
-import {ReactElement} from 'react';
+import { TextAlign } from '@/types/typography';
+import { ReactElement } from 'react';
 
 // InfoBox
 // ----------------------------------------------------------------------
