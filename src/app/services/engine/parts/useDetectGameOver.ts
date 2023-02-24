@@ -6,7 +6,7 @@ import {
     gameSnakeHeadSelector,
     gameSnakePointsSelector,
 } from '@store/slices/game.slice';
-import {useUpdateEffect} from 'usehooks-ts';
+import { useUpdateEffect } from 'usehooks-ts';
 import useAppSelector from '@hooks/useAppSelector/useAppSelector';
 import getPointsOffset from '@/helpers/getters/getPointsOffset';
 
@@ -43,6 +43,6 @@ export const useDetectGameOver = () => {
 
     useUpdateEffect(() => {
         if (isWallUp() || isWallDown() || isWallLeftOrRight() || isHimself())
-            gameActionsList.setStatus({status: 'OVER'});
+            gameActionsList.setStatus({ status: 'OVER' });
     });
 };

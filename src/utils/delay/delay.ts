@@ -1,4 +1,4 @@
-import {AssertPositive} from '@/types/assert-positive';
+import { AssertPositive } from '@/types/assert-positive';
 
 /**
  * @function delay

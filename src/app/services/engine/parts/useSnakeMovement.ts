@@ -1,7 +1,7 @@
 import useActionCreators from '@hooks/useActionCreators/useActionCreators';
-import {gameActions, gameSpeedSelector, gameStatusSelector} from '@store/slices/game.slice';
+import { gameActions, gameSpeedSelector, gameStatusSelector } from '@store/slices/game.slice';
 import useAppSelector from '@hooks/useAppSelector/useAppSelector';
-import {useInterval} from 'usehooks-ts';
+import { useInterval } from 'usehooks-ts';
 import isGameOn from '@/helpers/validators/isGameOn';
 
 /**

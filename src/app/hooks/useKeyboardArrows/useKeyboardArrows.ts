@@ -1,5 +1,5 @@
 import useKeyPress from '@hooks/useKeyPress/useKeyPress';
-import {IKeyboardArrows} from '@hooks/useKeyboardArrows/useKeyboardArrows.interface';
+import { IKeyboardArrows } from '@hooks/useKeyboardArrows/useKeyboardArrows.interface';
 
 /**
  * @name useKeyboardArrows

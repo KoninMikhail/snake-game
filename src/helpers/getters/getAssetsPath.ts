@@ -1,6 +1,6 @@
-import {Brand} from '@/types/brand';
+import { Brand } from '@/types/brand';
 import getBaseUrl from '@/helpers/getters/getBaseURL';
-import {ASSETS_DIR} from '@constants/APP';
+import { ASSETS_DIR } from '@constants/APP';
 import sendErrorCode from '@utils/sendErrorCode/sendErrorCode';
 
 type AssetsPath = Brand<string, 'assets'>;

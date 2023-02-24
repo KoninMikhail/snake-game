@@ -1,5 +1,5 @@
-import {RootState} from '@store/store';
-import {DeviceInfo} from '@/types/device';
+import { RootState } from '@store/store';
+import { DeviceInfo } from '@/types/device';
 
 /**
  * @function isDeviceInfoParamDefined
@@ -7,9 +7,9 @@ import {DeviceInfo} from '@/types/device';
  * If the value of the property of the device object in the state is not null, return true, otherwise
  * return false.
  *
- * @param params - keyof DeviceInfo - this is the type of the parameter that we want to check.
+ * @param params - keyof DeviceInfo - this is the size of the parameter that we want to check.
  * @param state - RootState - this is the state of the entire application.
- * @returns A function that takes a parameter of type keyof DeviceInfo and a parameter of type
+ * @returns A function that takes a parameter of size keyof DeviceInfo and a parameter of size
  * RootState and returns a boolean.
  */
 export const isDeviceInfoParamDefined = (params: keyof DeviceInfo, state: RootState) => {

@@ -3,7 +3,7 @@
 module.exports = {
     preset: 'ts-jest',
     testEnvironment: 'jsdom',
-    testEnvironmentOptions: {resources: 'usable'},
+    testEnvironmentOptions: { resources: 'usable' },
     coverageDirectory: 'coverage',
     coverageProvider: 'v8',
     extensionsToTreatAsEsm: ['.ts', '.tsx'],
