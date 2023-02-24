@@ -6,9 +6,10 @@ import useAppDispatch from '@hooks/useAppDispatch/useAppDispatch';
 
 /**
  * @name useCustomNavigate
- * It's a wrapper around the `useNavigate` hook that dispatches 
+ *
+ * It's a wrapper around the `useNavigate` hook that dispatches
  * an action to the Redux store beforenavigating
- * 
+ *
  * @returns A function that takes two arguments, to and options, and returns a promise.
  */
 export const useCustomNavigate = () => {
