@@ -1,5 +1,5 @@
-import React, {ReactElement} from 'react';
-import {IconSize} from '@ui/atoms/assets/icons/Icon.types';
+import React, { ReactElement } from 'react';
+import { IconSize } from '@ui/atoms/assets/icons/Icon.types';
 
 // ISoundControlProps
 // ----------------------------------------------------------------------
