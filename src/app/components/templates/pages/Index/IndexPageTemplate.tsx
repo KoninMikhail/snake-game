@@ -7,7 +7,7 @@ import { FooterTemplate } from '@templates/footers/Footer/FooterTemplate';
 import { OrientationLandscape } from '@templates/devices/orientations/Landscape/OrientationLandscape';
 import { InvalidOrientationModal } from '@ui/molecules/modals/InvalidOrientationNotice/InvalidOrientationModal';
 import { IIndexPageTemplate } from '@templates/pages/Index/IndexPageTemplate.interface';
-import { MobileScreen } from '@templates/devices/screen/MobileScreen';
+import { SmallScreen } from '@templates/devices/screen/size/SmallScreen';
 
 export const IndexPageTemplate = ({
     launchBox,
@@ -16,11 +16,11 @@ export const IndexPageTemplate = ({
     invalidOrientationMessage,
 }: IIndexPageTemplate) => (
     <>
-        <MobileScreen>
+        <SmallScreen>
             <OrientationLandscape>
                 <InvalidOrientationModal {...invalidOrientationMessage} />
             </OrientationLandscape>
-        </MobileScreen>
+        </SmallScreen>
 
         <BackgroundContainer>
             <BackgroundImage {...background} />
