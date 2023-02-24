@@ -1,6 +1,6 @@
-import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {RootState} from '@store/store';
-import {SOUND_ENABLED} from '@constants/APP';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { RootState } from '@store/store';
+import { SOUND_ENABLED } from '@constants/APP';
 
 /**
  * constants
@@ -19,7 +19,7 @@ export interface SoundsState {
  * Initial
  */
 
-const initialState: SoundsState = {
+export const initialState: SoundsState = {
     isEnabled: SOUND_ENABLED,
 };
 

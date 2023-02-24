@@ -44,7 +44,7 @@ export type GameData = {
 /**
  * Initial values
  */
-const initialState: GameData = {
+export const initialState: GameData = {
     gameLaunch: 'wait',
     boardSize: 16,
     status: 'INIT',
@@ -139,7 +139,7 @@ const gameSlice = createSlice({
         increaseSpeed: (state: GameData) => {
             return {
                 ...state,
-                speed: state.speed > 30 ? state.speed * LEVEL_UP_SPEED_AMPLIFIER : state.speed,
+                speed: state.speed > 50 ? state.speed * LEVEL_UP_SPEED_AMPLIFIER : state.speed,
             };
         },
         increaseLevel: (state: GameData) => {
